@@ -1,7 +1,7 @@
 export const setCookie = (
   cookieName: string,
   cookieValue: string,
-  expirationDays: number
+  expirationDays: number,
 ): void => {
   const date = new Date();
 
@@ -10,9 +10,9 @@ export const setCookie = (
 };
 
 export const getCookie = (cookieName: string): string => {
-  const allStoredCookies = document.cookie.split('; ');
+  const allStoredCookies = document.cookie.split("; ");
 
-  const [foundCookie] = allStoredCookies.filter((cookie) => cookie.split('=').includes(cookieName));
+  const [foundCookie] = allStoredCookies.filter((cookie) => cookie.split("=").includes(cookieName));
 
   return foundCookie;
 };

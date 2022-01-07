@@ -4,7 +4,7 @@ import type { NextPage } from "next";
 const Home: NextPage = () => {
   return (
     <>
-      <SEO title="Homepage"/>
+      <SEO title="Homepage" />
       <h1>Hello World!</h1>
     </>
   );
