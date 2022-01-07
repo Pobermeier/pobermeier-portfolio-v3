@@ -1,0 +1,8 @@
+node_modules
+npm-debug.log
+.husky
+.git
+.next
+.husky
+.vscode
+out
