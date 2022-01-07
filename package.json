@@ -22,10 +22,12 @@
     "build:netlify": "yarn export",
     "dev": "next dev",
     "export": "yarn build && next export",
+    "format": "prettier --write ./src",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "start": "next start",
-    "start:static": "serve ./out"
+    "start:static": "serve ./out",
+    "ts-validate": "tsc --noEmit"
   },
   "dependencies": {
     "next": "12.0.7",
