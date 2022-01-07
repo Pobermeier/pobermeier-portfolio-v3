@@ -18,15 +18,20 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "next build",
-    "build:netlify": "yarn export",
+    "build": "yarn clean && next build",
+    "build:netlify": "yarn test && yarn export",
+    "clean": "rm -rf .next out",
     "dev": "next dev",
+    "dev:docker": "docker-compose up dev",
     "export": "yarn build && next export",
     "format": "prettier --write ./src",
+    "format:check": "prettier --check ./src",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "start": "next start",
+    "start:docker": "docker run -p 3000:3000 pobermeier-portfolio",
     "start:static": "serve ./out",
+    "test": "npm run lint && npm run ts-validate",
     "ts-validate": "tsc --noEmit"
   },
   "dependencies": {
