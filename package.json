@@ -19,6 +19,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
+    "build:netlify": "yarn export",
     "dev": "next dev",
     "export": "yarn build && next export",
     "lint": "next lint",
