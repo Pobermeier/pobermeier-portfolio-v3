@@ -1,6 +1,6 @@
 import SEO from "@/components/SEO";
 
-const NotFound = () => {
+const NotFoundPage = () => {
   return (
     <>
       <SEO title="Not Found | Patrick Obermeier" />
@@ -9,4 +9,4 @@ const NotFound = () => {
   );
 };
 
-export default NotFound;
+export default NotFoundPage;
