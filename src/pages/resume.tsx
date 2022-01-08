@@ -1,11 +1,26 @@
+import { gql } from "graphql-request";
 import SEO from "@/components/SEO/SEO";
+import { request } from "clients/datocms";
 import config from "config";
 
-const ResumePage: React.FC = () => {
+interface ResumeData {
+  resume: {
+    cvPdf: {
+      url: string;
+      title: string;
+    };
+  };
+}
+
+interface Props {
+  data: ResumeData;
+}
+
+const ResumePage: React.FC<Props> = ({ data }) => {
   return (
     <>
       <SEO title={`Curriculum Vitae | ${config.meta.siteOwnerName}`} />
-      <iframe src="/doc/CV_EN.pdf" id="pdf" title="Curriculum Vitae" />
+      <iframe src={data.resume.cvPdf.url} id="pdf" title={data.resume.cvPdf.title} />
       <style jsx>
         {`
           * {
@@ -25,5 +40,24 @@ const ResumePage: React.FC = () => {
     </>
   );
 };
+
+const RESUME_QUERY = gql`
+  query ResumePage {
+    resume {
+      cvPdf {
+        url
+        title
+      }
+    }
+  }
+`;
+
+export async function getStaticProps() {
+  const data = await request(RESUME_QUERY);
+
+  return {
+    props: { data },
+  };
+}
 
 export default ResumePage;
