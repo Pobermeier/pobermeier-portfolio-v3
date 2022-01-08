@@ -42,7 +42,7 @@ const useCookieBanner = (): void => {
 
     document.addEventListener("click", (event) => {
       if ((event.target as HTMLButtonElement).id === "open-privacy-notice") {
-        router.push("/privacy", undefined, { shallow: true });
+        router.push("/privacy-notice", undefined, { shallow: true });
       }
     });
   }, [router]);
