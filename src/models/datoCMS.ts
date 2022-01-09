@@ -34,6 +34,7 @@ export type CallToAction = {
   ctaType: "primary" | "secondary";
   isExternalLink: boolean;
   linkUrl: string;
+  title: string;
 };
 
 export type CTAContainer = {
