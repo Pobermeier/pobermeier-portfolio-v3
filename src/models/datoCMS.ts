@@ -1,6 +1,8 @@
 import { FooterProps } from "@/components/Navigation/Footer";
+import { NavbarProps } from "@/components/Navigation/Navbar";
 
 export type PageData = {
+  navbar: NavbarProps | null;
   footer: FooterProps | null;
 };
 
