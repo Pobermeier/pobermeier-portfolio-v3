@@ -32,6 +32,8 @@ class MyDocument extends Document {
           <link rel="dns-prefetch" href="https://www.google-analytics.com" />
           <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 
+          <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
           {/* <!-- Icons --> */}
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
