@@ -53,8 +53,6 @@ export async function getStaticProps(ctx: GetStaticPropsContext) {
 
   const data = await request(GET_PAGE_DATA_QUERY, { slug: currentSlug });
 
-  console.log(data);
-
   return {
     props: { data },
   };
