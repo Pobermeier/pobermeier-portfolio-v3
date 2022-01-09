@@ -5,13 +5,14 @@ interface Props {
   name: string;
   url: string;
   iconSrc: string;
+  size?: number;
 }
 
-const SocialMediaIcon = ({ iconSrc, name, url }: Props) => {
+const SocialMediaIcon = ({ iconSrc, name, url, size = 6 }: Props) => {
   return (
     <a href={url} className="text-gray-400 hover:text-gray-500" title={name}>
       <span className="sr-only">{name}</span>
-      <img className="h-6 w-6" aria-hidden="true" alt={name} src={iconSrc} />
+      <img className={`h-${size} w-${size}`} aria-hidden="true" alt={name} src={iconSrc} />
     </a>
   );
 };
