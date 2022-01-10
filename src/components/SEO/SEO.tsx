@@ -1,6 +1,7 @@
 import Head from "next/head";
-import config from "config";
 import { useRouter } from "next/dist/client/router";
+
+import config from "config";
 
 const SEO: React.FC<Props> = ({ title, description, keywords, socialShareImgUrl, siteName }) => {
   const router = useRouter();
