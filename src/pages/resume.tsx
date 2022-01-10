@@ -1,5 +1,6 @@
 import { gql } from "graphql-request";
-import SEO from "@/components/SEO/SEO";
+
+import SEO from "components/SEO/SEO";
 import { request } from "clients/datocms";
 import config from "config";
 
