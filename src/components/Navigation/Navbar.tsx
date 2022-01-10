@@ -35,13 +35,14 @@ const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProp
       <SocialMediaIconComponent key={id} iconSrc={icon.url} name={name} url={url} size={size} />
     ));
 
-  const renderButtons = (onCloseCallback = () => {}, isFullWidth?: boolean) =>
+  const renderCallToActions = (onCloseCallback = () => {}, isFullWidth?: boolean) =>
     callToActions?.[0]?.callToActions?.map(
       ({ ctaType, icon, id, isExternalLink, linkUrl, title }) => (
         <Button
           key={id}
           text={title}
           isFullWidth={isFullWidth}
+          isIconVisible={!isFullWidth}
           type={ctaType}
           as="a"
           iconUrl={icon.url}
@@ -70,7 +71,7 @@ const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProp
               {renderSocialMediaIcons(SOCIAL_ICON_SIZE_DESKTOP)}
             </div>
             <nav className="space-x-10">{renderNavItems()}</nav>
-            <div className="flex justify-center space-x-5">{renderButtons()}</div>
+            <div className="flex justify-center space-x-5">{renderCallToActions()}</div>
           </div>
         </div>
       </div>
@@ -105,7 +106,7 @@ const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProp
               </div>
               <div className="py-6 px-5 space-y-6">
                 <div className="grid grid-cols-1 gap-y-4 text-right">{renderNavItems(close)}</div>
-                <div className="flex flex-col space-y-3">{renderButtons(close, true)}</div>
+                <div className="flex flex-col space-y-3">{renderCallToActions(close, true)}</div>
                 <div className="flex justify-end space-x-5">
                   {renderSocialMediaIcons(SOCIAL_ICON_SIZE_MOBILE)}
                 </div>
