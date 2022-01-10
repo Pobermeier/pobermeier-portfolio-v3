@@ -6,8 +6,8 @@ import SocialMediaIconComponent from "components/SocialMedia/SocialMediaIcon";
 import NavItem from "components/Navigation/NavItem";
 import Button from "components/Buttons/Button";
 import SiteLogo from "components/Logos/SiteLogo";
+import SiteLogoLinked from "components/Logos/SiteLogoLinked";
 import { SocialMediaIcon, NavigationLink, CTAContainer } from "models/datoCMS";
-import config from "config";
 
 export interface NavbarProps {
   socialMediaIcons: SocialMediaIcon[];
@@ -15,8 +15,8 @@ export interface NavbarProps {
   callToActions: CTAContainer[];
 }
 
-const SOCIAL_ICON_SIZE_DESKTOP = 4;
-const SOCIAL_ICON_SIZE_MOBILE = 5;
+const SOCIAL_ICON_SIZE_DESKTOP = 5;
+const SOCIAL_ICON_SIZE_MOBILE = 4;
 
 const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProps) => {
   const navItems = navigationLinks.map(({ id, isExternalLink, title, url }) => (
@@ -45,14 +45,11 @@ const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProp
     );
 
   return (
-    <Popover className="relative bg-white shadow">
+    <Popover className="relative bg-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-2 md:justify-start md:space-x-10">
           <div className="flex">
-            <a href="/">
-              <span className="sr-only">{config.meta.siteOwnerName}</span>
-              <SiteLogo className="h-12 w-auto sm:h-14" />
-            </a>
+            <SiteLogoLinked />
           </div>
           <div className="-mr-2 -my-2 md:hidden">
             <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-800">
