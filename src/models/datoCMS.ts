@@ -1,8 +1,23 @@
-import { FooterProps } from "@/components/Navigation/Footer";
-import { NavbarProps } from "@/components/Navigation/Navbar";
+import { FooterProps } from "components/Footer/Footer";
+import { NavbarProps } from "components/Navigation/Navbar";
+import StaticContentBlock, {
+  StaticContentBlockRecordProps,
+} from "components/StaticContentBlock/StaticContentBlock";
+
+export type CmsComponentName = "StaticContentBlockRecord";
+
+type GeneralCmsComponentProps = {
+  __typename: CmsComponentName;
+  id: string;
+};
+
+type StaticContentBlock = StaticContentBlockRecordProps & GeneralCmsComponentProps;
+
+type CmsComponent = StaticContentBlock;
 
 export type PageData = {
   navbar: NavbarProps | null;
+  sections: CmsComponent[];
   footer: FooterProps | null;
 };
 
