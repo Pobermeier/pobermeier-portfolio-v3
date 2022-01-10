@@ -45,7 +45,7 @@ const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProp
     );
 
   return (
-    <Popover className="relative bg-white shadow-lg">
+    <Popover as="header" className="relative bg-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-2 md:justify-start md:space-x-10">
           <div className="flex">
