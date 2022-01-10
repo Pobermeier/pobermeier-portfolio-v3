@@ -8,10 +8,10 @@ const useCookieBanner = (): void => {
 
   const showCookieAlert = useCallback((): void => {
     const template = `
-      <section class="w-10/12 max-w-7xl p-3 backdrop-blur-sm bg-white/30 mb-4 mx-auto rounded-lg shadow-lg">
+      <section class="w-10/12 max-w-7xl p-4 backdrop-blur-md bg-white/30 mb-4 mx-auto rounded-lg shadow-lg">
         <div class="md:flex items-center -mx-3">
           <div class="md:flex-1 px-5 mb-5 md:mb-0">
-            <p class="text-center md:text-left text-gray-600 text-sm leading-tight md:pr-12">This website uses cookies. If you continue to use the website, we assume your consent. <a href="privacy-notice" class="text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800">You can check out our privacy policy by clicking here</a>.</p>
+            <p class="text-center md:text-left text-gray-800 text-sm leading-tight md:pr-12">This website uses cookies. If you continue to use the website, we assume your consent. <a href="privacy-notice" class="text-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800">You can check out our privacy policy by clicking here</a>.</p>
           </div>
           <div class="px-3 items-center">
             <button
