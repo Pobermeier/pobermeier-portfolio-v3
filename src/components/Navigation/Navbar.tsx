@@ -19,16 +19,23 @@ const SOCIAL_ICON_SIZE_DESKTOP = 5;
 const SOCIAL_ICON_SIZE_MOBILE = 4;
 
 const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProps) => {
-  const navItems = navigationLinks.map(({ id, isExternalLink, title, url }) => (
-    <NavItem key={id} isExternalLink={isExternalLink} name={title} url={url} />
-  ));
+  const renderNavItems = (onCloseCallback = () => {}) =>
+    navigationLinks.map(({ id, isExternalLink, title, url }) => (
+      <NavItem
+        key={id}
+        isExternalLink={isExternalLink}
+        name={title}
+        url={url}
+        onClick={onCloseCallback}
+      />
+    ));
 
   const renderSocialMediaIcons = (size: number) =>
     socialMediaIcons.map(({ icon, id, name, url }) => (
       <SocialMediaIconComponent key={id} iconSrc={icon.url} name={name} url={url} size={size} />
     ));
 
-  const renderButtons = (isFullWidth?: boolean) =>
+  const renderButtons = (onCloseCallback = () => {}, isFullWidth?: boolean) =>
     callToActions?.[0]?.callToActions?.map(
       ({ ctaType, icon, id, isExternalLink, linkUrl, title }) => (
         <Button
@@ -40,6 +47,7 @@ const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProp
           iconUrl={icon.url}
           isExternalLink={isExternalLink}
           url={linkUrl}
+          onClick={onCloseCallback}
         />
       ),
     );
@@ -61,7 +69,7 @@ const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProp
             <div className="flex justify-center space-x-5">
               {renderSocialMediaIcons(SOCIAL_ICON_SIZE_DESKTOP)}
             </div>
-            <nav className="space-x-10">{navItems}</nav>
+            <nav className="space-x-10">{renderNavItems()}</nav>
             <div className="flex justify-center space-x-5">{renderButtons()}</div>
           </div>
         </div>
@@ -80,28 +88,30 @@ const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProp
           focus
           className="absolute top-0 inset-x-0 z-10 p-2 transition transform origin-top-right md:hidden"
         >
-          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-            <div className="pt-5 pb-6 px-5">
-              <div className="flex items-center justify-between">
-                <div>
-                  <SiteLogo className="h-10 w-auto" />
+          {({ close }) => (
+            <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+              <div className="pt-5 pb-6 px-5">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <SiteLogo className="h-10 w-auto" />
+                  </div>
+                  <div className="-mr-2">
+                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-800">
+                      <span className="sr-only">Close menu</span>
+                      <XIcon className="h-6 w-6" aria-hidden="true" />
+                    </Popover.Button>
+                  </div>
                 </div>
-                <div className="-mr-2">
-                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-800">
-                    <span className="sr-only">Close menu</span>
-                    <XIcon className="h-6 w-6" aria-hidden="true" />
-                  </Popover.Button>
+              </div>
+              <div className="py-6 px-5 space-y-6">
+                <div className="grid grid-cols-1 gap-y-4 text-right">{renderNavItems(close)}</div>
+                <div className="flex flex-col space-y-3">{renderButtons(close, true)}</div>
+                <div className="flex justify-end space-x-5">
+                  {renderSocialMediaIcons(SOCIAL_ICON_SIZE_MOBILE)}
                 </div>
               </div>
             </div>
-            <div className="py-6 px-5 space-y-6">
-              <div className="grid grid-cols-1 gap-y-4 text-right">{navItems}</div>
-              <div className="flex flex-col space-y-3">{renderButtons(true)}</div>
-              <div className="flex justify-end space-x-5">
-                {renderSocialMediaIcons(SOCIAL_ICON_SIZE_MOBILE)}
-              </div>
-            </div>
-          </div>
+          )}
         </Popover.Panel>
       </Transition>
     </Popover>

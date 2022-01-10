@@ -71,7 +71,9 @@ const Button = ({
   if (as === "a" && !isExternalLink) {
     return (
       <Link href={url as string}>
-        <a className={computedClassName}>{buttonContent}</a>
+        <a className={computedClassName} onClick={onClick}>
+          {buttonContent}
+        </a>
       </Link>
     );
   }
