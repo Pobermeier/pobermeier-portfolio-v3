@@ -40,6 +40,18 @@ export const GET_PAGE_DATA_QUERY = gql`
           heading
           subHeading
           backgroundImage {
+            responsiveImage {
+              srcSet
+              webpSrcSet
+              sizes
+              src
+              width
+              height
+              aspectRatio
+              alt
+              title
+              base64
+            }
             url
           }
           callToActions {
@@ -51,6 +63,7 @@ export const GET_PAGE_DATA_QUERY = gql`
               ctaType
               isExternalLink
               linkUrl
+              title
             }
           }
         }
