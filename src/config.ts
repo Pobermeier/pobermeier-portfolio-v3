@@ -15,7 +15,7 @@ const config = {
     twitterHandle: "@Pobermeier87",
     socialShareImgUrl:
       "https://images.ctfassets.net/2hiw8js7vnar/2lp32wEzpzwoRKSEgpj5k4/ab48007f6d160cfc6b26e087206d1840/large_image.png",
-    themeColor: "#f5f5f5",
+    themeColor: "#ffffff",
   },
   urls: {
     email: "patrick.obermeier@outlook.com",
