@@ -1,5 +1,6 @@
 import { useCallback, useEffect } from "react";
 import { useRouter } from "next/dist/client/router";
+
 import { checkCookie, setCookie } from "utils/cookies";
 
 const useCookieBanner = (): void => {
@@ -7,14 +8,17 @@ const useCookieBanner = (): void => {
 
   const showCookieAlert = useCallback((): void => {
     const template = `
-      <section class="w-full p-5 lg:px-24 bg-gray-600">
+      <section class="w-10/12 max-w-7xl p-3 backdrop-blur-sm bg-white/30 mb-4 mx-auto rounded-lg shadow-lg">
         <div class="md:flex items-center -mx-3">
-          <div class="md:flex-1 px-3 mb-5 md:mb-0">
-            <p class="text-center md:text-left text-white text-sm leading-tight md:pr-12">This website uses cookies. If you continue to use the website, we assume your consent.</p>
+          <div class="md:flex-1 px-5 mb-5 md:mb-0">
+            <p class="text-center md:text-left text-gray-600 text-sm leading-tight md:pr-12">This website uses cookies. If you continue to use the website, we assume your consent. <a href="privacy-notice" class="text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800">You can check out our privacy policy by clicking here</a>.</p>
           </div>
-          <div class="px-3 flex-1 items-center">
-            <button class="py-2 px-8 bg-gray-800 hover:bg-gray-900 text-white rounded font-bold text-xs shadow-xl sm:mr-3 mb-2 sm:mb-0" id="open-privacy-notice">Privacy policy</button>
-            <button class="py-2 px-8 bg-green-400 hover:bg-green-500 text-white rounded font-bold text-xs shadow-xl mb-2 sm:mb-0" id="accept-cookies">Accept cookies</button>
+          <div class="px-3 items-center">
+            <button
+              class="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-full shadow-sm text-white bg-primary hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800 hover:scale-105 transition-all" id="accept-cookies"
+            >
+              Accept Cookies
+            </button>
           </div>
         </div>
       </section>
