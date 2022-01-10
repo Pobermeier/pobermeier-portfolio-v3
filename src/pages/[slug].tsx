@@ -2,11 +2,13 @@ import { GetStaticPropsContext } from "next";
 
 import Navbar, { NavbarProps } from "components/Navigation/Navbar";
 import Footer, { FooterProps } from "components/Footer/Footer";
+import CmsComponentMapper from "components/CMS/CmsComponentMapper";
+import SEO from "components/SEO/SEO";
 import { request } from "clients/datocms";
 import { CmsData } from "models/datoCMS";
 import { GET_PAGE_DATA_QUERY } from "graphql/queries/getPageData";
 import { GET_ALL_PAGE_SLUGS_QUERY } from "graphql/queries/getAllPageSlugs";
-import CmsComponentMapper from "components/CMS/CmsComponentMapper";
+import config from "config";
 
 interface Props {
   data: CmsData;
@@ -14,9 +16,14 @@ interface Props {
 
 const Page = ({
   data: {
-    page: { navbar, footer, sections },
+    page: { navbar, footer, sections, title, slug },
   },
 }: Props) => {
+  const computedTitle = `${title} | ${config.meta.siteOwnerName}`;
+  const homeRouteTitle = `Senior Frontend Developer | ${config.meta.siteOwnerName}`;
+
+  const isHomeRoute = slug === "home";
+
   const renderNavbar = () => {
     const { socialMediaIcons, navigationLinks, callToActions } = navbar as NavbarProps;
 
@@ -43,6 +50,7 @@ const Page = ({
 
   return (
     <>
+      <SEO title={isHomeRoute ? homeRouteTitle : computedTitle} />
       {navbar && renderNavbar()}
       <main>
         {sections?.map(({ __typename, id, ...other }) => (
