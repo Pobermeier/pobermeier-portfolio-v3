@@ -22,7 +22,14 @@ const BackgroundPattern = ({ positionClassName }: Props) => {
           height={20}
           patternUnits="userSpaceOnUse"
         >
-          <rect x={0} y={0} width={4} height={4} className="text-green-200" fill="currentColor" />
+          <rect
+            x={0}
+            y={0}
+            width={4}
+            height={4}
+            className="text-primary text-opacity-25"
+            fill="currentColor"
+          />
         </pattern>
       </defs>
       <rect width={404} height={384} fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)" />
