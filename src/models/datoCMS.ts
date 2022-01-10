@@ -18,6 +18,8 @@ type HeroSection = HeroSectionProps & GeneralCmsComponentProps;
 type CmsComponent = StaticContentBlock | HeroSection;
 
 export type PageData = {
+  title: string;
+  slug: string;
   navbar: NavbarProps | null;
   sections: CmsComponent[];
   footer: FooterProps | null;
