@@ -37,13 +37,16 @@ const Button = ({
     "shadow-sm",
     "font-medium",
     "rounded-full",
-    type === "primary" ? "text-white" : "text-black",
-    type === "primary" ? "bg-green-600" : "bg-green-100",
-    type === "primary" ? "hover:bg-green-800" : "hover:bg-green-400",
+    "transition-all",
+    "hover:scale-105",
     "focus:outline-none",
     "focus:ring-2",
     "focus:ring-offset-2",
     "focus:ring-green-800",
+    "cursor-pointer",
+    type === "primary" ? "text-white" : "text-black",
+    type === "primary" ? "bg-primary" : "bg-green-100",
+    type === "primary" ? "hover:bg-green-800" : "hover:bg-green-400",
     {
       "px-3": size === "xs",
       "py-2": size === "xs" || size === "sm" || size === "md",
@@ -65,7 +68,7 @@ const Button = ({
     </>
   );
 
-  if (as === "a" && isExternalLink) {
+  if (as === "a" && !isExternalLink) {
     return (
       <Link href={url as string}>
         <a className={computedClassName}>{buttonContent}</a>
@@ -74,7 +77,13 @@ const Button = ({
   }
 
   return (
-    <Tag href={url} onClick={onClick} className={computedClassName}>
+    <Tag
+      href={url}
+      onClick={onClick}
+      className={computedClassName}
+      target="_blank"
+      rel="noreferrer noopener"
+    >
       {buttonContent}
     </Tag>
   );
