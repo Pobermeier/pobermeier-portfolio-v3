@@ -7,6 +7,7 @@ import Document, {
   DocumentContext,
   DocumentInitialProps,
 } from "next/document";
+
 import config from "config";
 import { isProd } from "Contants";
 
@@ -53,7 +54,7 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         </Head>
-        <body>
+        <body className="bg-gray-50 min-h-screen">
           {/* Google Tag Manager (noscript) */}
           {isProd && (
             <noscript
