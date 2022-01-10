@@ -54,7 +54,7 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         </Head>
-        <body className="bg-gray-50 min-h-screen">
+        <body className="bg-gray-50 min-h-screen selection:bg-primary selection:text-white">
           {/* Google Tag Manager (noscript) */}
           {isProd && (
             <noscript
