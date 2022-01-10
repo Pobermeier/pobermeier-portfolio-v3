@@ -8,6 +8,7 @@ interface Props {
   iconUrl?: string;
   isExternalLink?: boolean;
   isFullWidth?: boolean;
+  isIconVisible?: boolean;
   onClick?: () => void;
   size?: "xs" | "sm" | "md" | "lg";
   text: string;
@@ -21,6 +22,7 @@ const Button = ({
   iconUrl,
   isExternalLink = false,
   isFullWidth = false,
+  isIconVisible = true,
   size = "md",
   text,
   type = "primary",
@@ -33,7 +35,6 @@ const Button = ({
     "inline-flex",
     "items-center",
     "border",
-    "border-transparent",
     "shadow-sm",
     "font-medium",
     "rounded-full",
@@ -44,9 +45,10 @@ const Button = ({
     "focus:ring-offset-2",
     "focus:ring-green-800",
     "cursor-pointer",
+    type === "primary" ? "border-transparent" : "border-primary",
     type === "primary" ? "text-white" : "text-black",
-    type === "primary" ? "bg-primary" : "bg-green-100",
-    type === "primary" ? "hover:bg-green-800" : "hover:bg-green-400",
+    type === "primary" ? "bg-primary" : "bg-white",
+    type === "primary" ? "hover:bg-green-800" : "hover:bg-gray-100",
     {
       "px-3": size === "xs",
       "py-2": size === "xs" || size === "sm" || size === "md",
@@ -61,8 +63,8 @@ const Button = ({
 
   const buttonContent = (
     <>
-      {iconUrl && !isFullWidth && (
-        <img src={iconUrl} alt={text} aria-hidden={true} className="-ml-1 mr-3 h-5 w-5" />
+      {iconUrl && isIconVisible && (
+        <img src={iconUrl} alt={text} aria-hidden={true} className="-ml-1 mr-3 h-6 w-6" />
       )}
       {text}
     </>
