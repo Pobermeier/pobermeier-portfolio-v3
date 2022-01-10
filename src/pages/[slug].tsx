@@ -42,13 +42,15 @@ const Page = ({
   };
 
   return (
-    <div className="relative bg-gray-50">
+    <>
       {navbar && renderNavbar()}
-      {sections?.map(({ __typename, id, ...other }) => (
-        <CmsComponentMapper key={id} typeName={__typename} componentProps={other} />
-      ))}
+      <main>
+        {sections?.map(({ __typename, id, ...other }) => (
+          <CmsComponentMapper key={id} typeName={__typename} componentProps={other} />
+        ))}
+      </main>
       {footer && renderFooter()}
-    </div>
+    </>
   );
 };
 
