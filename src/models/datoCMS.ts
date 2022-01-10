@@ -1,10 +1,11 @@
 import { FooterProps } from "components/Footer/Footer";
+import { HeroSectionProps } from "components/Hero/HeroSection";
 import { NavbarProps } from "components/Navigation/Navbar";
 import StaticContentBlock, {
   StaticContentBlockRecordProps,
 } from "components/StaticContentBlock/StaticContentBlock";
 
-export type CmsComponentName = "StaticContentBlockRecord";
+export type CmsComponentName = "StaticContentBlockRecord" | "HeroRecord";
 
 type GeneralCmsComponentProps = {
   __typename: CmsComponentName;
@@ -12,8 +13,9 @@ type GeneralCmsComponentProps = {
 };
 
 type StaticContentBlock = StaticContentBlockRecordProps & GeneralCmsComponentProps;
+type HeroSection = HeroSectionProps & GeneralCmsComponentProps;
 
-type CmsComponent = StaticContentBlock;
+type CmsComponent = StaticContentBlock | HeroSection;
 
 export type PageData = {
   navbar: NavbarProps | null;
@@ -54,4 +56,17 @@ export type CallToAction = {
 
 export type CTAContainer = {
   callToActions: CallToAction[];
+};
+
+export type ResponsiveImage = {
+  srcSet: string;
+  webpSrcSet: string;
+  sizes: string;
+  src: string;
+  width: number;
+  height: number;
+  aspectRatio: number;
+  alt?: string;
+  title?: string;
+  base64: string;
 };
