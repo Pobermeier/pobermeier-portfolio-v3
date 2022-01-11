@@ -6,7 +6,9 @@ import config from "config";
 const NotFoundPage = () => {
   return (
     <>
-      <SEO title={`Not Found | ${config.meta.siteOwnerName}`} />
+      <SEO>
+        <title>{`Not Found | ${config.meta.siteOwnerName}`}</title>
+      </SEO>
       <div className="min-h-screen pt-16 pb-12 flex flex-col bg-gray-50">
         <main className="flex-grow flex flex-col justify-center max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex-shrink-0 flex justify-center">
