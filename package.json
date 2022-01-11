@@ -29,6 +29,7 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "prepare": "husky install",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "start:docker": "docker run -p 3000:3000 pobermeier-portfolio",
     "start:static": "serve ./out",
