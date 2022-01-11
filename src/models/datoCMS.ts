@@ -23,7 +23,7 @@ type FullscreenPdfViewer = FullscreenPdfViewerProps & GeneralCmsComponentProps;
 type CmsComponent = StaticContentBlock | HeroSection | FullscreenPdfViewer;
 
 export type PageData = {
-  _seoMetaTags: SeoMetaTag[];
+  seo: SeoMetaTag[];
   title: string;
   slug: string;
   navbar: NavbarProps | null;
@@ -32,6 +32,7 @@ export type PageData = {
 };
 
 export type CmsData = {
+  site: SiteData;
   page: PageData;
 };
 
@@ -83,4 +84,14 @@ type SeoMetaTag = {
   tag: string;
   content: string | null;
   attributes: { property?: string; content?: string } | null;
+};
+
+type FaviconMetaTag = {
+  tag: string;
+  content: string | null;
+  attributes: { sizes: string; type: string; rel: string; href: string } | null;
+};
+
+type SiteData = {
+  favicon: FaviconMetaTag[];
 };
