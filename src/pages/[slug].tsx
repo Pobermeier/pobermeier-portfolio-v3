@@ -1,5 +1,5 @@
 import { GetStaticPropsContext } from "next";
-import { useQuerySubscription } from "react-datocms";
+import { useQuerySubscription, renderMetaTags } from "react-datocms";
 
 import Navbar, { NavbarProps } from "components/Navigation/Navbar";
 import Footer, { FooterProps } from "components/Footer/Footer";
@@ -11,7 +11,6 @@ import { CmsData } from "models/datoCMS";
 import { GET_PAGE_DATA_QUERY } from "graphql/queries/getPageData";
 import { GET_ALL_PAGE_SLUGS_QUERY } from "graphql/queries/getAllPageSlugs";
 import { isDev, PREVIEW_STORAGE_ITEM_NAME } from "Constants";
-import config from "config";
 
 type InternalProps = {
   data: CmsData;
@@ -36,13 +35,9 @@ const Page = ({ data, isPreview, deactivatePreviewMode }: Props) => {
   });
 
   const {
-    page: { navbar, footer, sections, title, slug },
+    site: { favicon },
+    page: { seo, navbar, footer, sections },
   } = cmsData as CmsData;
-
-  const computedTitle = `${title} | ${config.meta.siteOwnerName}`;
-  const homeRouteTitle = `Senior Frontend Developer | ${config.meta.siteOwnerName}`;
-
-  const isHomeRoute = slug === "home";
 
   const renderNavbar = () => {
     const { socialMediaIcons, navigationLinks, callToActions } = navbar as NavbarProps;
@@ -70,7 +65,7 @@ const Page = ({ data, isPreview, deactivatePreviewMode }: Props) => {
 
   return (
     <>
-      <SEO title={isHomeRoute ? homeRouteTitle : computedTitle} />
+      <SEO>{renderMetaTags([...seo, ...favicon])}</SEO>
       {isPreview && <PreviewBanner onLeavePreviewBtnClick={deactivatePreviewMode} />}
       {navbar && renderNavbar()}
       <main>
