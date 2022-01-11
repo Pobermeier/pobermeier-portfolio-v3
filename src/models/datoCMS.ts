@@ -23,6 +23,7 @@ type FullscreenPdfViewer = FullscreenPdfViewerProps & GeneralCmsComponentProps;
 type CmsComponent = StaticContentBlock | HeroSection | FullscreenPdfViewer;
 
 export type PageData = {
+  _seoMetaTags: SeoMetaTag[];
   title: string;
   slug: string;
   navbar: NavbarProps | null;
@@ -76,4 +77,10 @@ export type ResponsiveImage = {
   alt?: string;
   title?: string;
   base64: string;
+};
+
+type SeoMetaTag = {
+  tag: string;
+  content: string | null;
+  attributes: { property?: string; content?: string } | null;
 };

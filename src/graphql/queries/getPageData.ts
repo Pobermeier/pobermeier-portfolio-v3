@@ -3,6 +3,11 @@ import { gql } from "graphql-request";
 export const GET_PAGE_DATA_QUERY = gql`
   query GetPageData($slug: String!) {
     page(filter: { slug: { eq: $slug } }) {
+      _seoMetaTags {
+        tag
+        content
+        attributes
+      }
       title
       slug
       navbar {
