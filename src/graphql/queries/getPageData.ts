@@ -2,8 +2,15 @@ import { gql } from "graphql-request";
 
 export const GET_PAGE_DATA_QUERY = gql`
   query GetPageData($slug: String!) {
+    site: _site {
+      favicon: faviconMetaTags {
+        attributes
+        content
+        tag
+      }
+    }
     page(filter: { slug: { eq: $slug } }) {
-      _seoMetaTags {
+      seo: _seoMetaTags {
         tag
         content
         attributes
