@@ -2,6 +2,7 @@ import { gql } from "graphql-request";
 
 import SEO from "components/SEO/SEO";
 import { request } from "clients/datocms";
+import { isDev } from "Constants";
 import config from "config";
 
 interface ResumeData {
@@ -54,7 +55,7 @@ const RESUME_QUERY = gql`
 `;
 
 export async function getStaticProps() {
-  const data = await request(RESUME_QUERY);
+  const data = await request(RESUME_QUERY, null, isDev);
 
   return {
     props: { data },
