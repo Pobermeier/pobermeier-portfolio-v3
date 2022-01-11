@@ -1,3 +1,6 @@
+import FullscreenPdfViewer, {
+  FullscreenPdfViewerProps,
+} from "components/FullscreenPdfViewer/FullscreenPdfViewer";
 import HeroSection, { HeroSectionProps } from "components/Hero/HeroSection";
 import StaticContentBlock, {
   StaticContentBlockRecordProps,
@@ -6,7 +9,7 @@ import { CmsComponentName } from "models/datoCMS";
 
 interface Props {
   typeName: CmsComponentName;
-  componentProps: StaticContentBlockRecordProps | HeroSectionProps;
+  componentProps: StaticContentBlockRecordProps | HeroSectionProps | FullscreenPdfViewerProps;
 }
 
 const CmsComponentMapper = ({ typeName, componentProps }: Props) => {
@@ -27,6 +30,11 @@ const CmsComponentMapper = ({ typeName, componentProps }: Props) => {
           callToActions={callToActions}
         />
       );
+
+    case typeName === "FullscreenPdfViewerRecord":
+      const { pdfFile, pdfTitle } = componentProps as FullscreenPdfViewerProps;
+
+      return <FullscreenPdfViewer pdfFile={pdfFile} pdfTitle={pdfTitle} />;
 
     default:
       return null;

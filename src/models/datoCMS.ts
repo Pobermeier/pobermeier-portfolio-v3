@@ -1,11 +1,15 @@
 import { FooterProps } from "components/Footer/Footer";
+import { FullscreenPdfViewerProps } from "components/FullscreenPdfViewer/FullscreenPdfViewer";
 import { HeroSectionProps } from "components/Hero/HeroSection";
 import { NavbarProps } from "components/Navigation/Navbar";
 import StaticContentBlock, {
   StaticContentBlockRecordProps,
 } from "components/StaticContentBlock/StaticContentBlock";
 
-export type CmsComponentName = "StaticContentBlockRecord" | "HeroRecord";
+export type CmsComponentName =
+  | "StaticContentBlockRecord"
+  | "HeroRecord"
+  | "FullscreenPdfViewerRecord";
 
 type GeneralCmsComponentProps = {
   __typename: CmsComponentName;
@@ -14,8 +18,9 @@ type GeneralCmsComponentProps = {
 
 type StaticContentBlock = StaticContentBlockRecordProps & GeneralCmsComponentProps;
 type HeroSection = HeroSectionProps & GeneralCmsComponentProps;
+type FullscreenPdfViewer = FullscreenPdfViewerProps & GeneralCmsComponentProps;
 
-type CmsComponent = StaticContentBlock | HeroSection;
+type CmsComponent = StaticContentBlock | HeroSection | FullscreenPdfViewer;
 
 export type PageData = {
   title: string;
