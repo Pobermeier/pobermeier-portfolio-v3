@@ -67,6 +67,13 @@ export const GET_PAGE_DATA_QUERY = gql`
             }
           }
         }
+        ... on FullscreenPdfViewerRecord {
+          id
+          pdfFile {
+            url
+          }
+          pdfTitle
+        }
         ... on StaticContentBlockRecord {
           id
           title
@@ -76,7 +83,6 @@ export const GET_PAGE_DATA_QUERY = gql`
           id
           headline
           description
-          reactComponent
           dynamicContent {
             __typename
             ... on CtaContainerRecord {
