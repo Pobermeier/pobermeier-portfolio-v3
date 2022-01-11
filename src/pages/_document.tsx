@@ -9,7 +9,7 @@ import Document, {
 } from "next/document";
 
 import config from "config";
-import { isProd } from "Contants";
+import { isProd } from "Constants";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {

@@ -547,5 +547,8 @@ export const keys = {
   },
 };
 
-export const isProd = process.env.NODE_ENV === "production";
+export const isProd =
+  process.env.NODE_ENV === "production" || process.env.NEXT_PUBLIC_APP_ENVIRONMENT === "production";
 export const isDev = !isProd;
+
+export const PREVIEW_STORAGE_ITEM_NAME = "isPreview";
