@@ -2,6 +2,8 @@ import React from "react";
 
 export type IconSize = "xs" | "sm" | "md" | "lg" | "xl" | "xxl" | "xxxl";
 
+type SizeMap = Record<IconSize, string>;
+
 interface Props {
   name: string;
   url: string;
@@ -9,7 +11,7 @@ interface Props {
   size?: IconSize;
 }
 
-const sizeMap = {
+const sizeMap: SizeMap = {
   xs: "2",
   sm: "3",
   md: "4",
