@@ -11,19 +11,17 @@ interface Props {
   size?: IconSize;
 }
 
-const sizeMap: SizeMap = {
-  xs: "2",
-  sm: "3",
-  md: "4",
-  lg: "5",
-  xl: "6",
-  xxl: "7",
-  xxxl: "8",
+const sizeToClassnameMap: SizeMap = {
+  xs: "h-2 w-2",
+  sm: "h-3 w-3",
+  md: "h-4 w-4",
+  lg: "h-5 w-5",
+  xl: "h-6 w-6",
+  xxl: "h-7 w-7",
+  xxxl: "h-8 w-8",
 };
 
 const SocialMediaIcon = ({ iconSrc, name, url, size = "lg" }: Props) => {
-  const computedSize = sizeMap[size];
-
   return (
     <a
       href={url}
@@ -33,12 +31,7 @@ const SocialMediaIcon = ({ iconSrc, name, url, size = "lg" }: Props) => {
       title={name}
     >
       <span className="sr-only">{name}</span>
-      <img
-        className={`h-${computedSize} w-${computedSize}`}
-        aria-hidden="true"
-        alt={name}
-        src={iconSrc}
-      />
+      <img className={sizeToClassnameMap[size]} aria-hidden="true" alt={name} src={iconSrc} />
     </a>
   );
 };
