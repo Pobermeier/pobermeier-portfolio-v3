@@ -31,6 +31,7 @@ const SocialMediaIcon = ({ iconSrc, name, url, size = "lg" }: Props) => {
       title={name}
     >
       <span className="sr-only">{name}</span>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img className={sizeToClassnameMap[size]} aria-hidden="true" alt={name} src={iconSrc} />
     </a>
   );
