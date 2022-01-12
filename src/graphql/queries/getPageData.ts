@@ -86,6 +86,12 @@ export const GET_PAGE_DATA_QUERY = gql`
           }
           pdfTitle
         }
+        ... on ContactFormRecord {
+          id
+          heading
+          description
+          ctaButtonText
+        }
         ... on StaticContentBlockRecord {
           id
           title
