@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
-import SocialMediaIconComponent from "components/SocialMedia/SocialMediaIcon";
+import SocialMediaIconComponent, { IconSize } from "components/SocialMedia/SocialMediaIcon";
 import NavItem from "components/Navigation/NavItem";
 import Button from "components/Buttons/Button";
 import SiteLogo from "components/Logos/SiteLogo";
@@ -30,9 +30,7 @@ const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProp
       />
     ));
 
-  const renderSocialMediaIcons = (
-    size?: "xs" | "sm" | "md" | "lg" | "xl" | "xxl" | "xxxl" | undefined,
-  ) =>
+  const renderSocialMediaIcons = (size?: IconSize | undefined) =>
     socialMediaIcons.map(({ icon, id, name, url }) => (
       <SocialMediaIconComponent key={id} iconSrc={icon.url} name={name} url={url} size={size} />
     ));

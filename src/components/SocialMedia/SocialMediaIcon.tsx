@@ -1,10 +1,12 @@
 import React from "react";
 
+export type IconSize = "xs" | "sm" | "md" | "lg" | "xl" | "xxl" | "xxxl";
+
 interface Props {
   name: string;
   url: string;
   iconSrc: string;
-  size?: "xs" | "sm" | "md" | "lg" | "xl" | "xxl" | "xxxl";
+  size?: IconSize;
 }
 
 const sizeMap = {
