@@ -69,8 +69,12 @@ const Page = ({ data, isPreview, deactivatePreviewMode }: Props) => {
       {isPreview && <PreviewBanner onLeavePreviewBtnClick={deactivatePreviewMode} />}
       {navbar && renderNavbar()}
       <main>
-        {sections?.map(({ __typename, id, ...other }) => (
-          <CmsComponentMapper key={id} typeName={__typename} componentProps={other} />
+        {sections?.map((section) => (
+          <CmsComponentMapper
+            key={section.id}
+            typeName={section.__typename}
+            componentProps={section}
+          />
         ))}
       </main>
       {footer && renderFooter()}

@@ -1,3 +1,4 @@
+import { ContactSectionProps } from "components/Contact/ContactSection";
 import { FooterProps } from "components/Footer/Footer";
 import { FullscreenPdfViewerProps } from "components/FullscreenPdfViewer/FullscreenPdfViewer";
 import { HeroSectionProps } from "components/Hero/HeroSection";
@@ -9,7 +10,8 @@ import StaticContentBlock, {
 export type CmsComponentName =
   | "StaticContentBlockRecord"
   | "HeroRecord"
-  | "FullscreenPdfViewerRecord";
+  | "FullscreenPdfViewerRecord"
+  | "ContactFormRecord";
 
 type GeneralCmsComponentProps = {
   __typename: CmsComponentName;
@@ -19,8 +21,9 @@ type GeneralCmsComponentProps = {
 type StaticContentBlock = StaticContentBlockRecordProps & GeneralCmsComponentProps;
 type HeroSection = HeroSectionProps & GeneralCmsComponentProps;
 type FullscreenPdfViewer = FullscreenPdfViewerProps & GeneralCmsComponentProps;
+type ContactSection = ContactSectionProps & GeneralCmsComponentProps;
 
-type CmsComponent = StaticContentBlock | HeroSection | FullscreenPdfViewer;
+export type CmsComponent = StaticContentBlock | HeroSection | FullscreenPdfViewer | ContactSection;
 
 export type PageData = {
   seo: SeoMetaTag[];
