@@ -15,8 +15,8 @@ export interface NavbarProps {
   callToActions: CTAContainer[];
 }
 
-const SOCIAL_ICON_SIZE_DESKTOP = 5;
-const SOCIAL_ICON_SIZE_MOBILE = 4;
+const SOCIAL_ICON_SIZE_DESKTOP = "md";
+const SOCIAL_ICON_SIZE_MOBILE = "lg";
 
 const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProps) => {
   const renderNavItems = (onCloseCallback = () => {}) =>
@@ -30,7 +30,9 @@ const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProp
       />
     ));
 
-  const renderSocialMediaIcons = (size: number) =>
+  const renderSocialMediaIcons = (
+    size?: "xs" | "sm" | "md" | "lg" | "xl" | "xxl" | "xxxl" | undefined,
+  ) =>
     socialMediaIcons.map(({ icon, id, name, url }) => (
       <SocialMediaIconComponent key={id} iconSrc={icon.url} name={name} url={url} size={size} />
     ));

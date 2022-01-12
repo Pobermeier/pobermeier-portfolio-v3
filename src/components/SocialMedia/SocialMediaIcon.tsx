@@ -4,10 +4,22 @@ interface Props {
   name: string;
   url: string;
   iconSrc: string;
-  size?: number;
+  size?: "xs" | "sm" | "md" | "lg" | "xl" | "xxl" | "xxxl";
 }
 
-const SocialMediaIcon = ({ iconSrc, name, url, size = 5 }: Props) => {
+const sizeMap = {
+  xs: "2",
+  sm: "3",
+  md: "4",
+  lg: "5",
+  xl: "6",
+  xxl: "7",
+  xxxl: "8",
+};
+
+const SocialMediaIcon = ({ iconSrc, name, url, size = "lg" }: Props) => {
+  const computedSize = sizeMap[size];
+
   return (
     <a
       href={url}
@@ -17,7 +29,12 @@ const SocialMediaIcon = ({ iconSrc, name, url, size = 5 }: Props) => {
       title={name}
     >
       <span className="sr-only">{name}</span>
-      <img className={`h-${size} w-${size}`} aria-hidden="true" alt={name} src={iconSrc} />
+      <img
+        className={`h-${computedSize} w-${computedSize}`}
+        aria-hidden="true"
+        alt={name}
+        src={iconSrc}
+      />
     </a>
   );
 };
