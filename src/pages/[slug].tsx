@@ -7,7 +7,7 @@ import CmsComponentMapper from "components/CMS/CmsComponentMapper";
 import PreviewBanner from "components/Banner/PreviewBanner";
 import SEO from "components/SEO/SEO";
 import { request } from "clients/datocms";
-import { CmsData } from "models/datoCMS";
+import { CmsData, PageData } from "models/datoCMS";
 import { GET_PAGE_DATA_QUERY } from "graphql/queries/getPageData";
 import { GET_ALL_PAGE_SLUGS_QUERY } from "graphql/queries/getAllPageSlugs";
 import { isDev, PREVIEW_STORAGE_ITEM_NAME } from "Constants";
@@ -91,7 +91,7 @@ export async function getStaticProps(ctx: GetStaticPropsContext) {
 export async function getStaticPaths() {
   const cmsData = await request(GET_ALL_PAGE_SLUGS_QUERY, null, isDev);
 
-  const paths = cmsData.allPages.map((page: any) => ({ params: { slug: page.slug } }));
+  const paths = cmsData.allPages.map((page: PageData) => ({ params: { slug: page.slug } }));
 
   return {
     fallback: false,
