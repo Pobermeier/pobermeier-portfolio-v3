@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import classNames from "classnames";
 
+import { noop } from "utils/utilFns";
+
 interface Props {
   as?: "button" | "a";
   className?: string;
@@ -27,7 +29,7 @@ const Button = ({
   text,
   type = "primary",
   url,
-  onClick = () => {},
+  onClick = noop,
 }: Props) => {
   const Tag = as;
 

@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
+import { noop } from "utils/utilFns";
+
 interface Props {
   isExternalLink: boolean;
   name: string;
@@ -11,7 +13,7 @@ interface Props {
 const linkClassName =
   "text-base font-medium text-gray-500 hover:text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800";
 
-const NavItem = ({ isExternalLink, name, onClick = () => {}, url }: Props) => {
+const NavItem = ({ isExternalLink, name, onClick = noop, url }: Props) => {
   return (
     <>
       {isExternalLink ? (

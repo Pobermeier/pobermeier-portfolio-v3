@@ -8,6 +8,7 @@ import Button from "components/Buttons/Button";
 import SiteLogo from "components/Logos/SiteLogo";
 import SiteLogoLinked from "components/Logos/SiteLogoLinked";
 import { SocialMediaIcon, NavigationLink, CTAContainer } from "models/datoCMS";
+import { noop } from "utils/utilFns";
 
 export interface NavbarProps {
   socialMediaIcons: SocialMediaIcon[];
@@ -19,7 +20,7 @@ const SOCIAL_ICON_SIZE_DESKTOP = "md";
 const SOCIAL_ICON_SIZE_MOBILE = "lg";
 
 const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProps) => {
-  const renderNavItems = (onCloseCallback = () => {}) =>
+  const renderNavItems = (onCloseCallback = noop) =>
     navigationLinks.map(({ id, isExternalLink, title, url }) => (
       <NavItem
         key={id}
@@ -35,7 +36,7 @@ const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProp
       <SocialMediaIconComponent key={id} iconSrc={icon.url} name={name} url={url} size={size} />
     ));
 
-  const renderCallToActions = (onCloseCallback = () => {}, isFullWidth?: boolean) =>
+  const renderCallToActions = (onCloseCallback = noop, isFullWidth?: boolean) =>
     callToActions?.[0]?.callToActions?.map(
       ({ ctaType, icon, id, isExternalLink, linkUrl, title }) => (
         <Button
