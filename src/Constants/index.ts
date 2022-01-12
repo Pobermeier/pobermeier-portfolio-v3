@@ -248,7 +248,6 @@ export const keys = {
     keyCode: 80,
     keyName: "p",
     keyNameAsString: "KeyP",
-    // eslint-disable-next-line max-lines
   },
   q: {
     keyCode: 81,

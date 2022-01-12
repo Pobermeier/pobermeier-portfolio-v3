@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import { Image } from "react-datocms";
 
@@ -55,6 +54,7 @@ const HeroSection = ({ heading, subHeading, backgroundImage, callToActions }: He
         </div>
       </div>
       <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+        {/* eslint-disable-next-line jsx-a11y/alt-text */}
         <Image
           layout="responsive"
           objectFit="cover"
