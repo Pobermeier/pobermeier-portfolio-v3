@@ -7,7 +7,7 @@ interface Props {
 }
 
 const linkClassName =
-  "text-base text-gray-500 hover:text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800";
+  "text-base text-gray-500 dark:text-gray-500 font-medium hover:text-primary dark:hover:text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800";
 
 const FooterNavItem = ({ isExternalLink, name, url }: Props) => {
   return (

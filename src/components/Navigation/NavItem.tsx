@@ -11,7 +11,7 @@ interface Props {
 }
 
 const linkClassName =
-  "text-base font-medium text-gray-500 hover:text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800";
+  "text-base font-medium text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800";
 
 const NavItem = ({ isExternalLink, name, onClick = noop, url }: Props) => {
   return (

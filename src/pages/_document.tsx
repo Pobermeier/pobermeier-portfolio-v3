@@ -19,7 +19,7 @@ class MyDocument extends Document {
 
   render(): JSX.Element {
     return (
-      <Html lang="en">
+      <Html lang="en" id="htmlRoot">
         <Head>
           {/* <!-- General Meta-Tags & SEO--> */}
           <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
@@ -50,7 +50,7 @@ class MyDocument extends Document {
           {/* <!-- Fonts --> */}
           <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         </Head>
-        <body className="bg-gray-50 min-h-screen selection:bg-primary selection:text-white">
+        <body className="bg-gray-50 dark:bg-gray-900 min-h-screen selection:bg-primary selection:text-white">
           {/* Google Tag Manager (noscript) */}
           {isProd && (
             <noscript

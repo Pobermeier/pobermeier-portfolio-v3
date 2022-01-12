@@ -27,7 +27,7 @@ const BackgroundPattern = ({ positionClassName }: Props) => {
             y={0}
             width={4}
             height={4}
-            className="text-primary text-opacity-25"
+            className="text-primary dark:text-green-300 text-opacity-25 dark:text-opacity-25"
             fill="currentColor"
           />
         </pattern>

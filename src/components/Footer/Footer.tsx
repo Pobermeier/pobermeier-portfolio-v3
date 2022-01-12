@@ -11,7 +11,7 @@ export interface FooterProps {
 
 const Footer = ({ copyrightText, socialMediaIcons, navigationLinks }: FooterProps) => {
   return (
-    <footer className="bg-gray-50">
+    <footer className="bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
         <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
           {navigationLinks.map(({ id, isExternalLink, title, url }) => (

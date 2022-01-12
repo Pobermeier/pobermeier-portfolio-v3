@@ -7,6 +7,7 @@ import NavItem from "components/Navigation/NavItem";
 import Button from "components/Buttons/Button";
 import SiteLogo from "components/Logos/SiteLogo";
 import SiteLogoLinked from "components/Logos/SiteLogoLinked";
+import DarkModeToggle from "components/Buttons/DarkModeToggle";
 import { SocialMediaIcon, NavigationLink, CTAContainer } from "models/datoCMS";
 import { noop } from "utils/utilFns";
 
@@ -55,20 +56,21 @@ const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProp
     );
 
   return (
-    <Popover as="header" className="relative bg-white shadow-lg">
+    <Popover as="header" className="relative bg-white dark:bg-gray-900 shadow-lg dark:shadow-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center py-2 md:justify-start md:space-x-10">
+        <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
           <div className="flex">
             <SiteLogoLinked />
           </div>
           <div className="-mr-2 -my-2 md:hidden">
-            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-800">
+            <Popover.Button className="bg-white dark:bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-800">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
           </div>
           <div className="hidden md:flex items-center justify-end md:flex-1 space-x-10">
-            <div className="flex justify-center space-x-5">
+            <div className="flex justify-center items-center space-x-5">
+              <DarkModeToggle />
               {renderSocialMediaIcons(SOCIAL_ICON_SIZE_DESKTOP)}
             </div>
             <nav className="space-x-10">{renderNavItems()}</nav>
@@ -91,14 +93,14 @@ const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProp
           className="absolute top-0 inset-x-0 z-10 p-2 transition transform origin-top-right md:hidden"
         >
           {({ close }) => (
-            <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+            <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white dark:bg-gray-700">
               <div className="pt-5 pb-6 px-5">
                 <div className="flex items-center justify-between">
                   <div>
                     <SiteLogo className="h-10 w-auto" />
                   </div>
                   <div className="-mr-2">
-                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-800">
+                    <Popover.Button className="bg-white dark:bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-800">
                       <span className="sr-only">Close menu</span>
                       <XIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
