@@ -2,3 +2,5 @@
 **/out
 **/.next
 **/public
+lint-staged.config.js
+tailwind.config.js
