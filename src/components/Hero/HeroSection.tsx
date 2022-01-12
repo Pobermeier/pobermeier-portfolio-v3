@@ -35,7 +35,7 @@ const HeroSection = ({ heading, subHeading, backgroundImage, callToActions }: He
     );
 
   return (
-    <div className="lg:relative">
+    <section className="lg:relative">
       <div className="mx-auto max-w-7xl w-full pt-12 md:pt-16 pb-12 md:pb-20 text-center lg:py-48 lg:text-left">
         <div className="relative px-4 lg:w-1/2 sm:px-8 xl:pr-16">
           <h1
@@ -62,7 +62,7 @@ const HeroSection = ({ heading, subHeading, backgroundImage, callToActions }: He
           data={backgroundImage.responsiveImage}
         />
       </div>
-    </div>
+    </section>
   );
 };
 
