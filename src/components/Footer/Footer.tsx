@@ -20,7 +20,7 @@ const Footer = ({ copyrightText, socialMediaIcons, navigationLinks }: FooterProp
         </nav>
         <div className="mt-8 flex justify-center space-x-6">
           {socialMediaIcons.map(({ icon, id, name, url }) => (
-            <SocialMediaIconComponent key={id} iconSrc={icon.url} name={name} url={url} />
+            <SocialMediaIconComponent key={id} iconSrc={icon.url} name={name} url={url} size="xl" />
           ))}
         </div>
         <p className="mt-8 text-center text-base text-gray-400">{copyrightText}</p>
