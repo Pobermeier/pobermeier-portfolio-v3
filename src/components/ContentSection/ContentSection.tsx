@@ -18,7 +18,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
   return (
     <div>
       <section className="bg-gray-50 dark:bg-gray-900 py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24 relative">
-        <div className="max-w-7xl mx-auto" data-aos="fade-up">
+        <div className="max-w-5xl mx-auto" data-aos="fade-up">
           <div className="text-center">
             {heading && <ContentSectionHeading headingText={heading} />}
             {description && <ContentSectionParagraph text={description} />}
