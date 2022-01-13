@@ -68,11 +68,11 @@ const Page = ({ data, isPreview, deactivatePreviewMode }: Props) => {
   };
 
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <SEO>{renderMetaTags([...seo, ...favicon])}</SEO>
       {isPreview && <PreviewBanner onLeavePreviewBtnClick={deactivatePreviewMode} />}
       {navbar && renderNavbar()}
-      <main id="main">
+      <main id="main" className="flex flex-col flex-grow justify-center h-full w-full mx-auto">
         {sections?.map((section) => (
           <CmsComponentMapper
             key={section.id}
@@ -82,7 +82,7 @@ const Page = ({ data, isPreview, deactivatePreviewMode }: Props) => {
         ))}
       </main>
       {footer && renderFooter()}
-    </>
+    </div>
   );
 };
 
