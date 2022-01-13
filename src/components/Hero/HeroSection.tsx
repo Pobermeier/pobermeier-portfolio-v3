@@ -1,5 +1,6 @@
 import React from "react";
 import { Image } from "react-datocms";
+import ReactMarkdown from "react-markdown";
 
 import Button from "components/Buttons/Button";
 import BackgroundPatternWrapper from "components/BackgroundPattern/BackgroundPatternWrapper";
@@ -43,7 +44,7 @@ const HeroSection = ({ heading, subHeading, backgroundImage, callToActions }: He
             dangerouslySetInnerHTML={{ __html: heading }}
           />
           <p className="mt-3 max-w-md mx-auto text-lg text-gray-600 dark:text-gray-300 sm:text-xl md:mt-5 md:max-w-3xl">
-            {subHeading}
+            <ReactMarkdown>{subHeading}</ReactMarkdown>
           </p>
           <div className="mt-8 sm:flex sm:justify-center lg:justify-start space-y-3 sm:space-x-3 sm:space-y-0">
             {renderCallToActions()}
