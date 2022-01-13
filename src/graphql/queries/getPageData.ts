@@ -22,6 +22,7 @@ export const GET_PAGE_DATA_QUERY = gql`
           id
           url
           name
+          reactIconIdentifier
           icon {
             url
           }
@@ -172,6 +173,7 @@ export const GET_PAGE_DATA_QUERY = gql`
           id
           url
           name
+          reactIconIdentifier
           icon {
             url
           }

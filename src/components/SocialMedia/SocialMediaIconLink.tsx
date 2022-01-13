@@ -1,0 +1,57 @@
+import React, { ReactElement } from "react";
+import { SocialMediaIconIdentifier } from "models/datoCMS";
+
+import TwitterIcon from "components/Logos/TwitterIcon";
+import GitHubIcon from "components/Logos/GitHubIcon";
+import LinkedinIcon from "components/Logos/LinkedinIcon";
+
+export type IconSize = "xs" | "sm" | "md" | "lg" | "xl" | "xxl" | "xxxl";
+
+type SizeMap = Record<IconSize, string>;
+type IconMap = Record<SocialMediaIconIdentifier, ReactElement>;
+
+interface Props {
+  name: string;
+  url: string;
+  reactIconIdentifier: SocialMediaIconIdentifier;
+  size?: IconSize;
+}
+
+const sizeMap: SizeMap = {
+  xs: "h-2 w-2",
+  sm: "h-3 w-3",
+  md: "h-4 w-4",
+  lg: "h-5 w-5",
+  xl: "h-6 w-6",
+  xxl: "h-7 w-7",
+  xxxl: "h-8 w-8",
+};
+
+const SocialMediaIconLink = ({ name, url, size = "lg", reactIconIdentifier }: Props) => {
+  const iconProps = {
+    className: `${sizeMap[size]}`,
+    "aria-hidden": true,
+    alt: name,
+  };
+
+  const iconMap: IconMap = {
+    twitter: <TwitterIcon {...iconProps} />,
+    github: <GitHubIcon {...iconProps} />,
+    linkedin: <LinkedinIcon {...iconProps} />,
+  };
+
+  return (
+    <a
+      href={url}
+      target="_blank"
+      rel="noreferrer noopener"
+      className="text-gray-800 dark:text-gray-400 hover:text-primary dark:hover:text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800 hover:scale-110 transition-all"
+      title={name}
+    >
+      <span className="sr-only">{name}</span>
+      {iconMap[reactIconIdentifier]}
+    </a>
+  );
+};
+
+export default SocialMediaIconLink;

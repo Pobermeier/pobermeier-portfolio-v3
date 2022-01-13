@@ -43,9 +43,12 @@ export type Icon = {
   url: string;
 };
 
+export type SocialMediaIconIdentifier = "github" | "linkedin" | "twitter";
+
 export type SocialMediaIcon = {
   id: string;
   url: string;
+  reactIconIdentifier: SocialMediaIconIdentifier;
   name: string;
   icon: Icon;
 };
