@@ -14,6 +14,7 @@ const StaticContentBlock = dynamic(
   () => import("components/StaticContentBlock/StaticContentBlock"),
 );
 const HeroSection = dynamic(() => import("components/Hero/HeroSection"));
+const ContentSection = dynamic(() => import("components/ContentSection/ContentSection"));
 
 interface Props {
   typeName: CmsComponentName;
@@ -42,6 +43,11 @@ const CmsComponentMapper = ({ typeName, componentProps }: Props) => {
     case typeName === "FullscreenPdfViewerRecord":
       const { pdfFile, pdfTitle } = componentProps as FullscreenPdfViewerProps;
       return <FullscreenPdfViewer pdfFile={pdfFile} pdfTitle={pdfTitle} />;
+
+    case typeName === "SectionRecord":
+      const { description: descriptionText, heading: headingText } =
+        componentProps as ContactSectionProps;
+      return <ContentSection heading={headingText} description={descriptionText} />;
 
     case typeName === "ContactFormRecord":
       const {
