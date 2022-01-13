@@ -10,7 +10,7 @@ export type StaticContentBlockRecordProps = {
 
 const StaticContentBlock = ({ title, text }: StaticContentBlockRecordProps) => {
   return (
-    <div className="relative pt-12 overflow-hidden">
+    <section className="relative pt-12 overflow-hidden">
       <BackgroundPatternWrapper>
         <BackgroundPattern positionClassName="top-24 left-full transform translate-x-40 rotate-45" />
       </BackgroundPatternWrapper>
@@ -25,7 +25,7 @@ const StaticContentBlock = ({ title, text }: StaticContentBlockRecordProps) => {
       <BackgroundPatternWrapper>
         <BackgroundPattern positionClassName="bottom-24 right-full transform -translate-x-44 rotate-45" />
       </BackgroundPatternWrapper>
-    </div>
+    </section>
   );
 };
 
