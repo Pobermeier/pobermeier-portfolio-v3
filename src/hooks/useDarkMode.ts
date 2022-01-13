@@ -1,14 +1,16 @@
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
+const DEFAULT_VALUE = true;
+
 const useDarkMode = (
   localStorageKey: string,
   rootElementId: string,
   darkmodeClassname: string,
 ): [boolean, Dispatch<SetStateAction<boolean>>] => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(DEFAULT_VALUE);
 
   useEffect(() => {
-    setDarkMode(Boolean(localStorage.getItem(localStorageKey)) || false);
+    setDarkMode(Boolean(localStorage.getItem(localStorageKey)) || DEFAULT_VALUE);
   }, [localStorageKey]);
 
   useEffect(() => {
