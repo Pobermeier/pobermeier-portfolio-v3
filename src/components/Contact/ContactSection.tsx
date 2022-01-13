@@ -1,6 +1,8 @@
 import BackgroundPatternWrapper from "components/BackgroundPattern/BackgroundPatternWrapper";
 import BackgroundPattern from "components/BackgroundPattern/BackgroundPattern";
 import Button from "components/Buttons/Button";
+import ContentSectionHeading from "components/ContentSection/ContentSectionHeading";
+import ContentSectionParagraph from "components/ContentSection/ContentSectionParagraph";
 
 export interface ContactSectionProps {
   ctaButtonText?: string;
@@ -19,14 +21,8 @@ const ContactSection = ({
     <section className="bg-gray-50 dark:bg-gray-900 py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24 relative">
       <div className="max-w-xl mx-auto">
         <div className="text-center">
-          {heading && (
-            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
-              {heading}
-            </h2>
-          )}
-          {description && (
-            <p className="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-100">{description}</p>
-          )}
+          {heading && <ContentSectionHeading headingText={heading} />}
+          {description && <ContentSectionParagraph text={description} />}
         </div>
         <div className={(heading || description) && "mt-12"}>
           <form
