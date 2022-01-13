@@ -1,12 +1,19 @@
-import ContactSection, { ContactSectionProps } from "components/Contact/ContactSection";
-import FullscreenPdfViewer, {
-  FullscreenPdfViewerProps,
-} from "components/FullscreenPdfViewer/FullscreenPdfViewer";
-import HeroSection, { HeroSectionProps } from "components/Hero/HeroSection";
-import StaticContentBlock, {
-  StaticContentBlockRecordProps,
-} from "components/StaticContentBlock/StaticContentBlock";
+import dynamic from "next/dynamic";
+
+import { ContactSectionProps } from "components/Contact/ContactSection";
+import { FullscreenPdfViewerProps } from "components/FullscreenPdfViewer/FullscreenPdfViewer";
+import { HeroSectionProps } from "components/Hero/HeroSection";
+import { StaticContentBlockRecordProps } from "components/StaticContentBlock/StaticContentBlock";
 import { CmsComponent, CmsComponentName } from "models/datoCMS";
+
+const FullscreenPdfViewer = dynamic(
+  () => import("components/FullscreenPdfViewer/FullscreenPdfViewer"),
+);
+const ContactSection = dynamic(() => import("components/Contact/ContactSection"));
+const StaticContentBlock = dynamic(
+  () => import("components/StaticContentBlock/StaticContentBlock"),
+);
+const HeroSection = dynamic(() => import("components/Hero/HeroSection"));
 
 interface Props {
   typeName: CmsComponentName;

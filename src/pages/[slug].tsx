@@ -1,8 +1,9 @@
 import { GetStaticPropsContext } from "next";
+import dynamic from "next/dynamic";
 import { useQuerySubscription, renderMetaTags } from "react-datocms";
 
-import Navbar, { NavbarProps } from "components/Navigation/Navbar";
-import Footer, { FooterProps } from "components/Footer/Footer";
+import { NavbarProps } from "components/Navigation/Navbar";
+import { FooterProps } from "components/Footer/Footer";
 import CmsComponentMapper from "components/CMS/CmsComponentMapper";
 import PreviewBanner from "components/Banner/PreviewBanner";
 import SEO from "components/SEO/SEO";
@@ -11,6 +12,9 @@ import { CmsData, PageData } from "models/datoCMS";
 import { GET_PAGE_DATA_QUERY } from "graphql/queries/getPageData";
 import { GET_ALL_PAGE_SLUGS_QUERY } from "graphql/queries/getAllPageSlugs";
 import { isDev, PREVIEW_STORAGE_ITEM_NAME } from "Constants";
+
+const Navbar = dynamic(() => import("components/Navigation/Navbar"));
+const Footer = dynamic(() => import("components/Footer/Footer"));
 
 type InternalProps = {
   data: CmsData;
