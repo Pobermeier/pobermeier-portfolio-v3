@@ -4,14 +4,17 @@ import useCookieBanner from "hooks/useCookieBanner";
 import useGoogleTagManager from "hooks/useGoogleTagManager";
 import useQueryCheck from "hooks/useQueryCheck";
 import usePreviewMode from "hooks/usePreviewMode";
+import useAOS from "hooks/useAOS";
 
 import "styles/globals.css";
+import "aos/dist/aos.css";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const [isPreview, setIsPreview] = usePreviewMode();
   useQueryCheck("isPreview", setIsPreview);
   useGoogleTagManager();
   useCookieBanner();
+  useAOS({ once: true, delay: 300 });
 
   const deactivatePreviewMode = () => {
     setIsPreview(false);
