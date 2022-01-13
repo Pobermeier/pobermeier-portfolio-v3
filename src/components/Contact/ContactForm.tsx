@@ -14,7 +14,7 @@ const ContactForm = ({ ctaButtonText, id }: Props) => {
       id={`contact-form-${id}`}
       name={`contact-form-${id}`}
       method="POST"
-      className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8 max-w-xl mx-auto"
+      className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8 max-w-2xl mx-auto"
     >
       <div>
         <label
