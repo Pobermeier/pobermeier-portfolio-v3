@@ -1,38 +1,61 @@
 import Button from "components/Buttons/Button";
 import SiteLogoLinked from "components/Logos/SiteLogoLinked";
+import Navbar, { NavbarProps } from "components/Navigation/Navbar";
 import SEO from "components/SEO/SEO";
 import config from "config";
 
+const navbarProps: NavbarProps = {
+  callToActions: [
+    {
+      callToActions: [
+        {
+          id: "0",
+          linkUrl: "/",
+          title: "Back to Homepage",
+          ctaType: "primary",
+          isExternalLink: false,
+        },
+      ],
+    },
+  ],
+  navigationLinks: [],
+  socialMediaIcons: [],
+};
+
+const content = {
+  title: "404 Page Not Found",
+  heading: "Oh noes! A big ol' 404!",
+  subHeading: "This is not the page you're looking for...",
+};
+
 const NotFoundPage = () => {
+  const { title, heading, subHeading } = content;
+
   return (
-    <main id="main">
+    <div className="min-h-screen flex flex-col">
       <SEO>
-        <title>{`Not Found | ${config.meta.siteOwnerName}`}</title>
+        <title>{`404 Page Not Found | ${config.meta.siteOwnerName}`}</title>
       </SEO>
-      <div className="min-h-screen pt-16 pb-12 flex flex-col bg-gray-50 dark:bg-gray-900">
-        <main className="flex-grow flex flex-col justify-center max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex-shrink-0 flex justify-center">
-            <SiteLogoLinked />
+      <Navbar {...navbarProps} />
+      <main
+        id="main"
+        className="flex flex-col flex-grow bg-gray-50 dark:bg-gray-900 justify-center h-full max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8"
+      >
+        <div className="flex-shrink-0 flex justify-center">
+          <SiteLogoLinked />
+        </div>
+        <div className="py-16 text-center">
+          <p className="text-sm font-semibold text-primary uppercase tracking-wide">{title}</p>
+          <h1 className="mt-2 text-4xl font-extrabold text-gray-900 dark:text-gray-300 tracking-tight sm:text-5xl">
+            {heading}
+          </h1>
+          <p className="mt-2 text-base text-gray-600 dark:text-gray-400">{subHeading}</p>
+          <div className="mt-6">
+            <Button text="Back to Homepage" as="a" size="lg" url="/" />
           </div>
-          <div className="py-16">
-            <div className="text-center">
-              <p className="text-sm font-semibold text-primary uppercase tracking-wide">
-                404 Page Not Found
-              </p>
-              <h1 className="mt-2 text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
-                Oh noes! A big ol&apos; 404!
-              </h1>
-              <p className="mt-2 text-base text-gray-500">
-                This is not the page you&apos;re looking for...
-              </p>
-              <div className="mt-6">
-                <Button text="Back to Homepage" as="a" size="lg" url="/" />
-              </div>
-            </div>
-          </div>
-        </main>
-      </div>
-    </main>
+        </div>
+      </main>
+    </div>
   );
 };
 
