@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.skip-to-content-link {
+  background: #fff;
+  color: #4a4a4a;
+  left: 50%;
+  top: -1px;
+  position: absolute;
+  transform: translateY(-100%);
+  display: flex;
+  padding: 0.5rem 2rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.skip-to-content-link:focus {
+  transform: translateY(0%);
+}
