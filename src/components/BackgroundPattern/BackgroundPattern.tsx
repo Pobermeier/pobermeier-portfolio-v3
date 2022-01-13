@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
+import { generateUUID } from "utils/uuid";
 
 interface Props {
   positionClassName: string;
 }
 
 const BackgroundPattern = ({ positionClassName }: Props) => {
+  const uniqueIdRef = useRef(generateUUID());
+
+  const uniqueId = uniqueIdRef.current;
+
   return (
     <svg
       className={`absolute ${positionClassName}`}
@@ -14,14 +19,7 @@ const BackgroundPattern = ({ positionClassName }: Props) => {
       viewBox="0 0 404 384"
     >
       <defs>
-        <pattern
-          id="74b3fd99-0a6f-4271-bef2-e80eeafdf357"
-          x={0}
-          y={0}
-          width={20}
-          height={20}
-          patternUnits="userSpaceOnUse"
-        >
+        <pattern id={uniqueId} x={0} y={0} width={20} height={20} patternUnits="userSpaceOnUse">
           <rect
             x={0}
             y={0}
@@ -32,7 +30,7 @@ const BackgroundPattern = ({ positionClassName }: Props) => {
           />
         </pattern>
       </defs>
-      <rect width={404} height={384} fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)" />
+      <rect width={404} height={384} fill={`url(#${uniqueId})`} />
     </svg>
   );
 };
