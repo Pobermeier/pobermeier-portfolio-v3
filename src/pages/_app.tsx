@@ -19,7 +19,16 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   };
 
   return (
-    <Component {...pageProps} isPreview={isPreview} deactivatePreviewMode={deactivatePreviewMode} />
+    <>
+      <a className="skip-to-content-link" href="#main">
+        Skip to content
+      </a>
+      <Component
+        {...pageProps}
+        isPreview={isPreview}
+        deactivatePreviewMode={deactivatePreviewMode}
+      />
+    </>
   );
 };
 
