@@ -11,7 +11,7 @@ const SiteLogoLinked = ({ url = "/" }: Props) => {
   return (
     <Link href={url}>
       <a className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800 text-gray-100 dark:text-gray-800">
-        <span className="sr-only">{config.meta.siteOwnerName}</span>
+        <span className="sr-only">{config.meta.siteOwnerName} | Go To Homepage</span>
         <SiteLogo className="h-12 w-auto sm:h-14" />
       </a>
     </Link>
