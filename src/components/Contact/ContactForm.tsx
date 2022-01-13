@@ -29,6 +29,7 @@ const ContactForm = ({ ctaButtonText, id }: Props) => {
             name="first-name"
             id="first-name"
             autoComplete="given-name"
+            required
             className="py-3 px-4 block w-full shadow-sm focus:ring-green-800 focus:border-green-800 border-gray-300 rounded-md"
           />
         </div>
@@ -46,22 +47,7 @@ const ContactForm = ({ ctaButtonText, id }: Props) => {
             name="last-name"
             id="last-name"
             autoComplete="family-name"
-            className="py-3 px-4 block w-full shadow-sm focus:ring-green-800 focus:border-green-800 border-gray-300 rounded-md"
-          />
-        </div>
-      </div>
-      <div className="sm:col-span-2">
-        <label
-          htmlFor="subject"
-          className="block text-sm font-medium text-gray-700 dark:text-gray-400"
-        >
-          Subject
-        </label>
-        <div className="mt-1">
-          <input
-            type="text"
-            name="subject"
-            id="subject"
+            required
             className="py-3 px-4 block w-full shadow-sm focus:ring-green-800 focus:border-green-800 border-gray-300 rounded-md"
           />
         </div>
@@ -79,6 +65,24 @@ const ContactForm = ({ ctaButtonText, id }: Props) => {
             name="email"
             type="email"
             autoComplete="email"
+            required
+            className="py-3 px-4 block w-full shadow-sm focus:ring-green-800 focus:border-green-800 border-gray-300 rounded-md"
+          />
+        </div>
+      </div>
+      <div className="sm:col-span-2">
+        <label
+          htmlFor="subject"
+          className="block text-sm font-medium text-gray-700 dark:text-gray-400"
+        >
+          Subject
+        </label>
+        <div className="mt-1">
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            required
             className="py-3 px-4 block w-full shadow-sm focus:ring-green-800 focus:border-green-800 border-gray-300 rounded-md"
           />
         </div>
@@ -95,6 +99,7 @@ const ContactForm = ({ ctaButtonText, id }: Props) => {
             id="message"
             name="message"
             rows={4}
+            required
             className="py-3 px-4 block w-full shadow-sm focus:ring-green-800 focus:border-green-800 border border-gray-300 rounded-md"
             defaultValue={""}
           />
