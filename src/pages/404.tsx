@@ -5,7 +5,7 @@ import config from "config";
 
 const NotFoundPage = () => {
   return (
-    <>
+    <main id="main">
       <SEO>
         <title>{`Not Found | ${config.meta.siteOwnerName}`}</title>
       </SEO>
@@ -32,7 +32,7 @@ const NotFoundPage = () => {
           </div>
         </main>
       </div>
-    </>
+    </main>
   );
 };
 

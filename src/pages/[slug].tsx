@@ -68,7 +68,7 @@ const Page = ({ data, isPreview, deactivatePreviewMode }: Props) => {
       <SEO>{renderMetaTags([...seo, ...favicon])}</SEO>
       {isPreview && <PreviewBanner onLeavePreviewBtnClick={deactivatePreviewMode} />}
       {navbar && renderNavbar()}
-      <main>
+      <main id="main">
         {sections?.map((section) => (
           <CmsComponentMapper
             key={section.id}
