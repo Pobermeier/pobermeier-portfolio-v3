@@ -6,7 +6,9 @@ interface Props {
 
 const ContentSectionHeading = ({ headingText }: Props) => {
   return (
-    <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">{headingText}</h2>
+    <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl mb-10">
+      {headingText}
+    </h2>
   );
 };
 
