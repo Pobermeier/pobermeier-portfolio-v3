@@ -11,7 +11,8 @@ export type CmsComponentName =
   | "StaticContentBlockRecord"
   | "HeroRecord"
   | "FullscreenPdfViewerRecord"
-  | "ContactFormRecord";
+  | "ContactFormRecord"
+  | "SectionRecord";
 
 type GeneralCmsComponentProps = {
   __typename: CmsComponentName;
@@ -22,8 +23,14 @@ type StaticContentBlock = StaticContentBlockRecordProps & GeneralCmsComponentPro
 type HeroSection = HeroSectionProps & GeneralCmsComponentProps;
 type FullscreenPdfViewer = FullscreenPdfViewerProps & GeneralCmsComponentProps;
 type ContactSection = ContactSectionProps & GeneralCmsComponentProps;
+type ContentSection = ContactSectionProps & GeneralCmsComponentProps;
 
-export type CmsComponent = StaticContentBlock | HeroSection | FullscreenPdfViewer | ContactSection;
+export type CmsComponent =
+  | StaticContentBlock
+  | HeroSection
+  | FullscreenPdfViewer
+  | ContactSection
+  | ContentSection;
 
 export type PageData = {
   seo: SeoMetaTag[];
