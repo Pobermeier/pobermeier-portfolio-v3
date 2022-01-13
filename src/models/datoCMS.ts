@@ -69,7 +69,7 @@ export type NavigationLink = {
 
 export type CallToAction = {
   id: string;
-  icon: Icon;
+  icon?: Icon;
   ctaType: "primary" | "secondary";
   isExternalLink: boolean;
   linkUrl: string;
