@@ -100,7 +100,7 @@ export const GET_PAGE_DATA_QUERY = gql`
         }
         ... on SectionRecord {
           id
-          headline
+          heading: headline
           description
           dynamicContent {
             __typename
