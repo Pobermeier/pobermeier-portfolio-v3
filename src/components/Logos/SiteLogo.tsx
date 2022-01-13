@@ -6,7 +6,7 @@ interface Props {
   height?: string;
 }
 
-const SiteLogo = ({ className = "", width = "256", height = "256" }: Props) => {
+const SiteLogo = ({ className, width = "256", height = "256" }: Props) => {
   return (
     <svg
       className={className}
@@ -16,7 +16,7 @@ const SiteLogo = ({ className = "", width = "256", height = "256" }: Props) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect width="256" height="256" rx="50" fill="#EBEDF0" />
+      <rect width="256" height="256" rx="50" fill="currentColor" />
       <path
         d="M76.8 102.4H128V103.6C128 131.214 105.614 153.6 78 153.6H76.8V102.4Z"
         fill="#7BC96F"
