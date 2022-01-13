@@ -50,7 +50,7 @@ class MyDocument extends Document {
           {/* <!-- Fonts --> */}
           <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         </Head>
-        <body className="bg-gray-50 dark:bg-gray-900 min-h-screen selection:bg-primary selection:text-white">
+        <body className="bg-gray-50 dark:bg-gray-900 min-h-screen selection:bg-primary selection:text-white relative">
           {/* Google Tag Manager (noscript) */}
           {isProd && (
             <noscript
