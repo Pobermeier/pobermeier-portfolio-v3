@@ -41,12 +41,21 @@ const HeroSection = ({ heading, subHeading, backgroundImage, callToActions }: He
         <div className="relative px-4 lg:w-1/2 sm:px-8 xl:pr-16">
           <h1
             className="text-4xl tracking-tight font-extrabold text-gray-800 dark:text-gray-200 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl"
+            data-aos="fade-right"
             dangerouslySetInnerHTML={{ __html: heading }}
           />
-          <p className="mt-3 max-w-md mx-auto text-lg text-gray-600 dark:text-gray-300 sm:text-xl md:mt-5 md:max-w-3xl">
+          <p
+            className="mt-3 max-w-md mx-auto text-lg text-gray-600 dark:text-gray-300 sm:text-xl md:mt-5 md:max-w-3xl"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
             <ReactMarkdown>{subHeading}</ReactMarkdown>
           </p>
-          <div className="mt-8 sm:flex sm:justify-center lg:justify-start space-y-3 sm:space-x-3 sm:space-y-0">
+          <div
+            className="mt-8 sm:flex sm:justify-center lg:justify-start space-y-3 sm:space-x-3 sm:space-y-0"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
             {renderCallToActions()}
           </div>
           <BackgroundPatternWrapper>
