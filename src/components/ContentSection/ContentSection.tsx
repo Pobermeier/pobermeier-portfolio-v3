@@ -3,13 +3,13 @@ import React, { ReactElement } from "react";
 import ContentSectionHeading from "./ContentSectionHeading";
 import ContentSectionParagraph from "./ContentSectionParagraph";
 
-interface Props {
+export interface ContentSectionProps {
   description?: string;
   heading?: string;
   decorationElements?: ReactElement | ReactElement[];
 }
 
-const ContentSection: React.FC<Props> = ({
+const ContentSection: React.FC<ContentSectionProps> = ({
   children,
   decorationElements,
   description,
