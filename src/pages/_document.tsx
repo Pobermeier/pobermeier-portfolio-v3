@@ -46,9 +46,6 @@ class MyDocument extends Document {
 
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-
-          {/* <!-- Fonts --> */}
-          <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         </Head>
         <body className="bg-gray-50 dark:bg-gray-900 min-h-screen selection:bg-primary selection:text-white relative">
           {/* Google Tag Manager (noscript) */}

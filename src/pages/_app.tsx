@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import type { AppProps } from "next/app";
 
 import useCookieBanner from "hooks/useCookieBanner";
@@ -7,14 +8,17 @@ import usePreviewMode from "hooks/usePreviewMode";
 import useAOS from "hooks/useAOS";
 
 import "styles/globals.css";
-import "aos/dist/aos.css";
+import "styles/inter.css";
+
+const AOSStyles = dynamic(() => import("components/AOS/AOSStyles"));
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const [isPreview, setIsPreview] = usePreviewMode();
   useQueryCheck("isPreview", setIsPreview);
   useGoogleTagManager();
   useCookieBanner();
-  useAOS({ once: true, delay: 300 });
+
+  const isAosInitiated = useAOS({ delay: 300, disable: "mobile" });
 
   const deactivatePreviewMode = () => {
     setIsPreview(false);
@@ -23,6 +27,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
   return (
     <>
+      {isAosInitiated && <AOSStyles />}
       <a className="skip-to-content-link" href="#main">
         Skip to content
       </a>
