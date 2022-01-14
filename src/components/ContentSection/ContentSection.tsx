@@ -16,18 +16,16 @@ const ContentSection: React.FC<ContentSectionProps> = ({
   heading,
 }) => {
   return (
-    <div>
-      <section className="bg-gray-50 dark:bg-gray-900 py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24 relative">
-        <div className="max-w-5xl mx-auto" data-aos="fade-up">
-          <div className="text-center">
-            {heading && <ContentSectionHeading headingText={heading} />}
-            {description && <ContentSectionParagraph text={description} />}
-          </div>
-          <div className={(heading || description) && "mt-12"}>{children}</div>
+    <section className="bg-gray-50 dark:bg-gray-900 py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24 relative">
+      <div className="max-w-5xl mx-auto" data-aos="fade-up">
+        <div className="text-center">
+          {heading && <ContentSectionHeading headingText={heading} />}
+          {description && <ContentSectionParagraph text={description} />}
         </div>
-        {decorationElements}
-      </section>
-    </div>
+        <div className={(heading || description) && "mt-12"}>{children}</div>
+      </div>
+      {decorationElements}
+    </section>
   );
 };
 
