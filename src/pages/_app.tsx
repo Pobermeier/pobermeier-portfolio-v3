@@ -9,6 +9,7 @@ import useAOS from "hooks/useAOS";
 
 import "styles/globals.css";
 import "styles/inter.css";
+import useScrollToHashOnPageLoad from "hooks/useScrolltoHashOnPageLoad";
 
 const AOSStyles = dynamic(() => import("components/AOS/AOSStyles"));
 
@@ -17,6 +18,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   useQueryCheck("isPreview", setIsPreview);
   useGoogleTagManager();
   useCookieBanner();
+  useScrollToHashOnPageLoad();
 
   const isAosInitiated = useAOS({ delay: 300, disable: "mobile" });
 
