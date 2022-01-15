@@ -101,12 +101,13 @@ const GET_PAGE_DATA_QUERY = gql`
         }
         ... on SectionRecord {
           id
-          htmlId: htmlid
           heading: headline
+          htmlId: htmlid
           description
           dynamicContent {
             __typename
             ... on CtaContainerRecord {
+              id
               callToActions {
                 id
                 icon {
@@ -118,6 +119,7 @@ const GET_PAGE_DATA_QUERY = gql`
               }
             }
             ... on LogoSliderRecord {
+              id
               title
               logos {
                 id
