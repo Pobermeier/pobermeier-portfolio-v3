@@ -8,6 +8,7 @@ import { CmsComponent, CmsComponentName } from "models/datoCMS";
 import { LogoSliderProps } from "components/LogoSlider/LogoSlider";
 import { ContentSectionProps } from "components/ContentSection/ContentSection";
 import { TextWithImageProps } from "components/TextWithImage/TextWithImage";
+import { CTAContainerProps } from "components/Buttons/CTAContainer";
 
 const FullscreenPdfViewer = dynamic(
   () => import("components/FullscreenPdfViewer/FullscreenPdfViewer"),
@@ -20,6 +21,7 @@ const HeroSection = dynamic(() => import("components/Hero/HeroSection"));
 const ContentSection = dynamic(() => import("components/ContentSection/ContentSection"));
 const LogoSlider = dynamic(() => import("components/LogoSlider/LogoSlider"));
 const TextWithImage = dynamic(() => import("components/TextWithImage/TextWithImage"));
+const CTAContainer = dynamic(() => import("components/Buttons/CTAContainer"));
 
 interface Props {
   typeName: CmsComponentName;
@@ -72,6 +74,10 @@ const CmsComponentMapper = ({ typeName, componentProps }: Props) => {
     case typeName === "TextWithImageRecord":
       const { image, text: sideText } = componentProps as TextWithImageProps;
       return <TextWithImage image={image} text={sideText} />;
+
+    case typeName === "CtaContainerRecord":
+      const { callToActions: ctaCollection } = componentProps as CTAContainerProps;
+      return <CTAContainer callToActions={ctaCollection} />;
 
     case typeName === "ContactFormRecord":
       const {
