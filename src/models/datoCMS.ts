@@ -1,18 +1,23 @@
 import { ContactSectionProps } from "components/Contact/ContactSection";
+import { ContentSectionProps } from "components/ContentSection/ContentSection";
 import { FooterProps } from "components/Footer/Footer";
 import { FullscreenPdfViewerProps } from "components/FullscreenPdfViewer/FullscreenPdfViewer";
 import { HeroSectionProps } from "components/Hero/HeroSection";
+import { LogoSliderProps } from "components/LogoSlider/LogoSlider";
 import { NavbarProps } from "components/Navigation/Navbar";
 import StaticContentBlock, {
   StaticContentBlockRecordProps,
 } from "components/StaticContentBlock/StaticContentBlock";
+import { TextWithImageProps } from "components/TextWithImage/TextWithImage";
 
 export type CmsComponentName =
   | "StaticContentBlockRecord"
   | "HeroRecord"
   | "FullscreenPdfViewerRecord"
   | "ContactFormRecord"
-  | "SectionRecord";
+  | "SectionRecord"
+  | "LogoSliderRecord"
+  | "TextWithImageRecord";
 
 type GeneralCmsComponentProps = {
   __typename: CmsComponentName;
@@ -23,14 +28,20 @@ type StaticContentBlock = StaticContentBlockRecordProps & GeneralCmsComponentPro
 type HeroSection = HeroSectionProps & GeneralCmsComponentProps;
 type FullscreenPdfViewer = FullscreenPdfViewerProps & GeneralCmsComponentProps;
 type ContactSection = ContactSectionProps & GeneralCmsComponentProps;
-type ContentSection = ContactSectionProps & GeneralCmsComponentProps;
+type ContentSection = ContentSectionProps & GeneralCmsComponentProps;
+type LogoSlider = LogoSliderProps & GeneralCmsComponentProps;
+type TextWithImage = TextWithImageProps & GeneralCmsComponentProps;
+
+export type ContentSectionAllowedComponent = LogoSlider | TextWithImage;
 
 export type CmsComponent =
   | StaticContentBlock
   | HeroSection
   | FullscreenPdfViewer
   | ContactSection
-  | ContentSection;
+  | ContentSection
+  | LogoSlider
+  | TextWithImage;
 
 export type PageData = {
   seo: SeoMetaTag[];
