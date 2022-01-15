@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 import { GetStaticPropsContext } from "next";
 import dynamic from "next/dynamic";
 import { useQuerySubscription, renderMetaTags } from "react-datocms";
@@ -11,6 +12,7 @@ import { CmsData, PageData } from "models/datoCMS";
 import { GET_PAGE_DATA_QUERY } from "graphql/queries/getPageData";
 import { GET_ALL_PAGE_SLUGS_QUERY } from "graphql/queries/getAllPageSlugs";
 import { isDev, PREVIEW_STORAGE_ITEM_NAME } from "Constants";
+import config from "config";
 
 const Navbar = dynamic(() => import("components/Navigation/Navbar"));
 const CmsComponentMapper = dynamic(() => import("components/CMS/CmsComponentMapper"));
@@ -89,6 +91,22 @@ const Page = ({ data, isPreview, deactivatePreviewMode }: Props) => {
 export async function getStaticProps(ctx: GetStaticPropsContext) {
   const currentSlug = ctx.params?.slug;
 
+  if (config.flags.useMockData) {
+    const fs = require("fs");
+    const path = require("path");
+
+    const mockData = fs.readFileSync(
+      path.resolve(process.cwd(), "src", "mocks", "pages", `${currentSlug}.json`),
+      "utf8",
+    );
+
+    return {
+      props: {
+        data: JSON.parse(mockData),
+      },
+    };
+  }
+
   try {
     const data = await request(GET_PAGE_DATA_QUERY, { slug: currentSlug }, isDev);
 
@@ -101,6 +119,21 @@ export async function getStaticProps(ctx: GetStaticPropsContext) {
 }
 
 export async function getStaticPaths() {
+  if (config.flags.useMockData) {
+    const fs = require("fs");
+    const path = require("path");
+
+    const mockPaths = fs.readFileSync(
+      path.resolve(process.cwd(), "src", "mocks", "paths.json"),
+      "utf8",
+    );
+
+    return {
+      fallback: false,
+      paths: JSON.parse(mockPaths),
+    };
+  }
+
   try {
     const cmsData = await request(GET_ALL_PAGE_SLUGS_QUERY, null, isDev);
 
