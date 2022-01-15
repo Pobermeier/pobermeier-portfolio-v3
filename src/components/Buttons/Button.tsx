@@ -67,7 +67,13 @@ const Button = ({
   const buttonContent = (
     <>
       {iconUrl && isIconVisible && (
-        <img src={iconUrl} alt={text} aria-hidden={true} className="-ml-1 mr-3 h-6 w-6" />
+        <img
+          loading="lazy"
+          src={iconUrl}
+          alt={text}
+          aria-hidden={true}
+          className="-ml-1 mr-3 h-6 w-6"
+        />
       )}
       {text}
     </>
