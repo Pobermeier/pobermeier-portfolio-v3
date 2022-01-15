@@ -8,9 +8,9 @@ import Button from "components/Buttons/Button";
 import SiteLogo from "components/Logos/SiteLogo";
 import SiteLogoLinked from "components/Logos/SiteLogoLinked";
 import DarkModeToggle from "components/Buttons/DarkModeToggle";
+import { CTAContainerProps } from "components/Buttons/CTAContainer";
 import { SocialMediaIcon, NavigationLink } from "models/datoCMS";
 import { noop } from "utils/utilFns";
-import { CTAContainerProps } from "components/Buttons/CTAContainer";
 
 export interface NavbarProps {
   socialMediaIcons: SocialMediaIcon[];
