@@ -39,7 +39,7 @@ const HeroSection = ({ heading, subHeading, backgroundImage, callToActions }: He
     <section className="lg:relative">
       <div className="mx-auto max-w-7xl w-full pt-12 md:pt-16 pb-12 md:pb-20 text-center lg:py-48 lg:text-left">
         <div className="relative px-4 lg:w-1/2 sm:px-8 xl:pr-16">
-          <h1
+          <h2
             className="text-4xl tracking-tight font-extrabold text-gray-800 dark:text-gray-200 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl"
             data-aos="fade-right"
             dangerouslySetInnerHTML={{ __html: heading }}

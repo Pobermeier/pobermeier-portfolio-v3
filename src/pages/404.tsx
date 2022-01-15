@@ -46,9 +46,9 @@ const NotFoundPage = () => {
         </div>
         <div className="py-16 text-center">
           <p className="text-sm font-semibold text-primary uppercase tracking-wide">{title}</p>
-          <h1 className="mt-2 text-4xl font-extrabold text-gray-900 dark:text-gray-300 tracking-tight sm:text-5xl">
+          <h2 className="mt-2 text-4xl font-extrabold text-gray-900 dark:text-gray-300 tracking-tight sm:text-5xl">
             {heading}
-          </h1>
+          </h2>
           <p className="mt-2 text-base text-gray-600 dark:text-gray-400">{subHeading}</p>
           <div className="mt-6">
             <Button text="Back to Homepage" as="a" size="lg" url="/" />
