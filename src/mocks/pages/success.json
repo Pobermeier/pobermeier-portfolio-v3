@@ -1,0 +1,246 @@
+{
+  "site": {
+    "favicon": [
+      {
+        "attributes": {
+          "sizes": "16x16",
+          "type": "image/svg",
+          "rel": "icon",
+          "href": "https://www.datocms-assets.com/60761/1641478169-logo.svg?h=16&w=16"
+        },
+        "content": null,
+        "tag": "link"
+      },
+      {
+        "attributes": {
+          "sizes": "32x32",
+          "type": "image/svg",
+          "rel": "icon",
+          "href": "https://www.datocms-assets.com/60761/1641478169-logo.svg?h=32&w=32"
+        },
+        "content": null,
+        "tag": "link"
+      },
+      {
+        "attributes": {
+          "sizes": "96x96",
+          "type": "image/svg",
+          "rel": "icon",
+          "href": "https://www.datocms-assets.com/60761/1641478169-logo.svg?h=96&w=96"
+        },
+        "content": null,
+        "tag": "link"
+      },
+      {
+        "attributes": {
+          "sizes": "192x192",
+          "type": "image/svg",
+          "rel": "icon",
+          "href": "https://www.datocms-assets.com/60761/1641478169-logo.svg?h=192&w=192"
+        },
+        "content": null,
+        "tag": "link"
+      }
+    ]
+  },
+  "page": {
+    "seo": [
+      { "tag": "title", "content": "Thank you! | Patrick Obermeier", "attributes": null },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": { "property": "og:title", "content": "Thank you!" }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": { "name": "twitter:title", "content": "Thank you!" }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": {
+          "name": "description",
+          "content": "Patrick Obermeier is a Senior React Developer from Vienna, Austria. Creating web apps and websites using latest technologies like React & the MERN-Stack with passion!"
+        }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": {
+          "property": "og:description",
+          "content": "Patrick Obermeier is a Senior React Developer from Vienna, Austria. Creating web apps and websites using latest technologies like React & the MERN-Stack with passion!"
+        }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": {
+          "name": "twitter:description",
+          "content": "Patrick Obermeier is a Senior React Developer from Vienna, Austria. Creating web apps and websites using latest technologies like React & the MERN-Stack with passion!"
+        }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": {
+          "property": "og:image",
+          "content": "https://www.datocms-assets.com/60761/1641397966-large_image.png?fit=max&fm=jpg&w=1000"
+        }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": { "property": "og:image:width", "content": "1280" }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": { "property": "og:image:height", "content": "858" }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": {
+          "name": "twitter:image",
+          "content": "https://www.datocms-assets.com/60761/1641397966-large_image.png?fit=max&fm=jpg&w=1000"
+        }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": { "property": "og:locale", "content": "en" }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": { "property": "og:type", "content": "article" }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": {
+          "property": "og:site_name",
+          "content": "Patrick Obermeier | Senior Frontend Developer"
+        }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": { "property": "article:modified_time", "content": "2022-01-13T22:42:41Z" }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": { "name": "twitter:card", "content": "summary_large_image" }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": { "name": "twitter:site", "content": "@pobermeier87" }
+      }
+    ],
+    "title": "Thank you!",
+    "slug": "success",
+    "navbar": {
+      "socialMediaIcons": [
+        {
+          "id": "94031955",
+          "url": "https://www.linkedin.com/in/patrickobermeier/",
+          "name": "LinkedIn",
+          "reactIconIdentifier": "linkedin",
+          "icon": { "url": "https://www.datocms-assets.com/60761/1641478156-icon_linkedin.svg" }
+        },
+        {
+          "id": "94031960",
+          "url": "https://twitter.com/pobermeier87",
+          "name": "Twitter",
+          "reactIconIdentifier": "twitter",
+          "icon": { "url": "https://www.datocms-assets.com/60761/1641478158-icon_twitter.svg" }
+        },
+        {
+          "id": "94031963",
+          "url": "https://github.com/Pobermeier",
+          "name": "GitHub",
+          "reactIconIdentifier": "github",
+          "icon": { "url": "https://www.datocms-assets.com/60761/1641478154-icon_github.svg" }
+        }
+      ],
+      "navigationLinks": [],
+      "callToActions": []
+    },
+    "sections": [
+      {
+        "__typename": "HeroRecord",
+        "id": "95856171",
+        "heading": "<span class=\"text-primary\">Thank you</span> for your message!",
+        "subHeading": "I will try to get back to you as soon as possible.",
+        "backgroundImage": {
+          "responsiveImage": {
+            "srcSet": "https://www.datocms-assets.com/60761/1641844787-bg.png?dpr=0.25 415w,https://www.datocms-assets.com/60761/1641844787-bg.png?dpr=0.5 831w,https://www.datocms-assets.com/60761/1641844787-bg.png?dpr=0.75 1246w,https://www.datocms-assets.com/60761/1641844787-bg.png 1662w",
+            "webpSrcSet": "https://www.datocms-assets.com/60761/1641844787-bg.png?dpr=0.25&fm=webp 415w,https://www.datocms-assets.com/60761/1641844787-bg.png?dpr=0.5&fm=webp 831w,https://www.datocms-assets.com/60761/1641844787-bg.png?dpr=0.75&fm=webp 1246w,https://www.datocms-assets.com/60761/1641844787-bg.png?fm=webp 1662w",
+            "sizes": "(max-width: 1662px) 100vw, 1662px",
+            "src": "https://www.datocms-assets.com/60761/1641844787-bg.png",
+            "width": 1662,
+            "height": 1054,
+            "aspectRatio": 1.5768500948766604,
+            "alt": "Patrick Obermeier",
+            "title": "Patrick Obermeier",
+            "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoLDhgVDhUVDhcVFhESIx0ZGBYfIhUaHysjGikoHSEWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OFxAQHDsoIhw7NS8vLzs7LzsvLzUvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIAA8AGAMBIgACEQEDEQH/xAAXAAADAQAAAAAAAAAAAAAAAAAABAYF/8QAHRAAAQQDAQEAAAAAAAAAAAAAAQACAyEEBRJBEf/EABcBAAMBAAAAAAAAAAAAAAAAAAECAwD/xAAXEQEBAQEAAAAAAAAAAAAAAAARAAIB/9oADAMBAAIRAxEAPwCQ1X0eJ3OmMcRpMYWG1ppN5OvZJHaxUelFt2HcxbyaQtyTURMeSAEIkjq//9k="
+          },
+          "url": "https://www.datocms-assets.com/60761/1641844787-bg.png"
+        },
+        "callToActions": [
+          {
+            "callToActions": [
+              {
+                "id": "95856169",
+                "icon": null,
+                "ctaType": "primary",
+                "isExternalLink": false,
+                "linkUrl": "/",
+                "title": "Back to Homepage"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "copyrightText": "© 2022 Patrick Obermeier. All rights reserved.",
+      "navigationLinks": [
+        { "id": "94064251", "title": "/uses", "isExternalLink": false, "url": "/uses" },
+        {
+          "id": "94064257",
+          "title": "Privacy Notice",
+          "isExternalLink": false,
+          "url": "/privacy-notice"
+        },
+        { "id": "94064259", "title": "Imprint", "isExternalLink": false, "url": "/imprint" }
+      ],
+      "socialMediaIcons": [
+        {
+          "id": "94031955",
+          "url": "https://www.linkedin.com/in/patrickobermeier/",
+          "name": "LinkedIn",
+          "reactIconIdentifier": "linkedin",
+          "icon": { "url": "https://www.datocms-assets.com/60761/1641478156-icon_linkedin.svg" }
+        },
+        {
+          "id": "94031960",
+          "url": "https://twitter.com/pobermeier87",
+          "name": "Twitter",
+          "reactIconIdentifier": "twitter",
+          "icon": { "url": "https://www.datocms-assets.com/60761/1641478158-icon_twitter.svg" }
+        },
+        {
+          "id": "94031963",
+          "url": "https://github.com/Pobermeier",
+          "name": "GitHub",
+          "reactIconIdentifier": "github",
+          "icon": { "url": "https://www.datocms-assets.com/60761/1641478154-icon_github.svg" }
+        }
+      ]
+    }
+  }
+}

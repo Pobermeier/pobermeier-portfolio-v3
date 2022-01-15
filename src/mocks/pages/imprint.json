@@ -1,0 +1,217 @@
+{
+  "site": {
+    "favicon": [
+      {
+        "attributes": {
+          "sizes": "16x16",
+          "type": "image/svg",
+          "rel": "icon",
+          "href": "https://www.datocms-assets.com/60761/1641478169-logo.svg?h=16&w=16"
+        },
+        "content": null,
+        "tag": "link"
+      },
+      {
+        "attributes": {
+          "sizes": "32x32",
+          "type": "image/svg",
+          "rel": "icon",
+          "href": "https://www.datocms-assets.com/60761/1641478169-logo.svg?h=32&w=32"
+        },
+        "content": null,
+        "tag": "link"
+      },
+      {
+        "attributes": {
+          "sizes": "96x96",
+          "type": "image/svg",
+          "rel": "icon",
+          "href": "https://www.datocms-assets.com/60761/1641478169-logo.svg?h=96&w=96"
+        },
+        "content": null,
+        "tag": "link"
+      },
+      {
+        "attributes": {
+          "sizes": "192x192",
+          "type": "image/svg",
+          "rel": "icon",
+          "href": "https://www.datocms-assets.com/60761/1641478169-logo.svg?h=192&w=192"
+        },
+        "content": null,
+        "tag": "link"
+      }
+    ]
+  },
+  "page": {
+    "seo": [
+      { "tag": "title", "content": "Imprint | Patrick Obermeier", "attributes": null },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": { "property": "og:title", "content": "Imprint" }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": { "name": "twitter:title", "content": "Imprint" }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": {
+          "name": "description",
+          "content": "Patrick Obermeier is a Senior React Developer from Vienna, Austria. Creating web apps and websites using latest technologies like React & the MERN-Stack with passion!"
+        }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": {
+          "property": "og:description",
+          "content": "Patrick Obermeier is a Senior React Developer from Vienna, Austria. Creating web apps and websites using latest technologies like React & the MERN-Stack with passion!"
+        }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": {
+          "name": "twitter:description",
+          "content": "Patrick Obermeier is a Senior React Developer from Vienna, Austria. Creating web apps and websites using latest technologies like React & the MERN-Stack with passion!"
+        }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": {
+          "property": "og:image",
+          "content": "https://www.datocms-assets.com/60761/1641397966-large_image.png?fit=max&fm=jpg&w=1000"
+        }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": { "property": "og:image:width", "content": "1280" }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": { "property": "og:image:height", "content": "858" }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": {
+          "name": "twitter:image",
+          "content": "https://www.datocms-assets.com/60761/1641397966-large_image.png?fit=max&fm=jpg&w=1000"
+        }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": { "property": "og:locale", "content": "en" }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": { "property": "og:type", "content": "article" }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": {
+          "property": "og:site_name",
+          "content": "Patrick Obermeier | Senior Frontend Developer"
+        }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": { "property": "article:modified_time", "content": "2022-01-15T13:05:20Z" }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": { "name": "twitter:card", "content": "summary_large_image" }
+      },
+      {
+        "tag": "meta",
+        "content": null,
+        "attributes": { "name": "twitter:site", "content": "@pobermeier87" }
+      }
+    ],
+    "title": "Imprint",
+    "slug": "imprint",
+    "navbar": {
+      "socialMediaIcons": [
+        {
+          "id": "94031955",
+          "url": "https://www.linkedin.com/in/patrickobermeier/",
+          "name": "LinkedIn",
+          "reactIconIdentifier": "linkedin",
+          "icon": { "url": "https://www.datocms-assets.com/60761/1641478156-icon_linkedin.svg" }
+        },
+        {
+          "id": "94031960",
+          "url": "https://twitter.com/pobermeier87",
+          "name": "Twitter",
+          "reactIconIdentifier": "twitter",
+          "icon": { "url": "https://www.datocms-assets.com/60761/1641478158-icon_twitter.svg" }
+        },
+        {
+          "id": "94031963",
+          "url": "https://github.com/Pobermeier",
+          "name": "GitHub",
+          "reactIconIdentifier": "github",
+          "icon": { "url": "https://www.datocms-assets.com/60761/1641478154-icon_github.svg" }
+        }
+      ],
+      "navigationLinks": [],
+      "callToActions": []
+    },
+    "sections": [
+      {
+        "__typename": "StaticContentBlockRecord",
+        "id": "94033837",
+        "title": "Imprint",
+        "text": "**Site Operator:**  \n\nPatrick Obermeier  \nSenior Front-End Developer  \n1050 Vienna, Austria  \n\n**Technologies and tools used to build this site:**\n\n* Next.js / React\n* TypeScript\n* Tailwind CSS\n* GraphQL\n* DatoCMS\n\nDesigned and created by Patrick Obermeier. The code for this website is available [here.](https://github.com/Pobermeier/pobermeier-portfolio-v3)\n\nDeployed and hosted via [Netlify.](https://www.netlify.com/)\n\n**Terms of Use**\n\nThe contents of this website can be used freely and are for information only. By using the selection options on the website, no legal transactions between Patrick Obermeier (henceforth called \"the operator\") and the users or between the users come about. The further procedure between providers and users and the possible subsequent conclusion of orders between providers and users are at the sole discretion of the users.\n\n**Copyright / Disclaimer**  \n\nWith regard to the technical properties of the Internet, no guarantee can be given for the authenticity, correctness and completeness of the information made available on the Internet. There is also no guarantee for the availability or operation of the website and its content. Any liability for direct, indirect or other damage, regardless of its cause, which arises from the use or unavailability of the data and information on this website, is excluded to the extent permitted by law. The content of this website is protected by copyright. The information is for personal use only. Any further use, in particular storage in databases, duplication and any form of commercial use as well as transfer to third parties - also in parts or in a revised form - without the consent of the operator is prohibited. As far as the content on this page was not created by the operator, the copyrights of third parties are respected. In particular contents of third parties are marked as such. Should you nevertheless become aware of a copyright infringement, the operator asks you to notify us accordingly. Upon notification of violations, such content will be removed immediately. Hyperlinks on www.patrickobermeier.dev are welcome and welcome. However, any integration of individual pages into third-party frames is prohibited, and the RSS feed is not made available on third-party websites.\n\n**Liability for links**  \n\nThis website contains links to external websites of third parties, the content of which the operator has no influence on. Therefore, the operator cannot accept any liability for this third-party content. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time the link was created. No illegal content was discernible at the time the link was created. A permanent control of the content of the linked websites is not reasonable without concrete evidence of an infringement. Upon notification of rights violations, such links will be removed promptly.\n\n**Nutzungsbedingungen**  \n\nDie Inhalte dieser Website sind frei nutzbar und dienen ausschließlich der Information. Es kommen durch die Nutzung der Auswahlmöglichkeiten der Website keinerlei Rechtsgeschäfte zwischen Patrick Obermeier (fortan \"der Betreiber\" genannt) und den Nutzern oder zwischen den Nutzern zu Stande. Die weitere Vorgangsweise zwischen Anbietern und Nutzern und der mögliche spätere Abschluss von Aufträgen zwischen Anbietern und Nutzern liegen im ausschließlichen Ermessen der Nutzer.\n\n**Copyright / Haftungsausschluss**  \n\nIm Hinblick auf die technischen Eigenschaften des Internet kann keine Gewähr für die Authentizität, Richtigkeit und Vollständigkeit der im Internet zur Verfügung gestellten Informationen übernommen werden. Es wird auch keine Gewähr für die Verfügbarkeit oder den Betrieb der gegenständlichen Website und ihrer Inhalte übernommen. Jede Haftung für unmittelbare, mittelbare oder sonstige Schäden, unabhängig von deren Ursachen, die aus der Benutzung oder Nichtverfügbarkeit der Daten und Informationen dieser Website erwachsen, wird, soweit rechtlich zulässig, ausgeschlossen. Der Inhalt dieser Website ist urheberrechtlich geschützt. Die Informationen sind nur für die persönliche Verwendung bestimmt. Jede weitergehende Nutzung insbesondere die Speicherung in Datenbanken, Vervielfältigung und jede Form von gewerblicher Nutzung sowie die Weitergabe an Dritte – auch in Teilen oder in überarbeiteter Form – ohne Zustimmung des Betreibers ist untersagt. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bittet der Betreiber um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden derartige Inhalte umgehend entfernen. Hyperlinks auf www.patrickobermeier.dev sind gewünscht und willkommen. Jedoch ist jede Einbindung einzelner Seiten in fremde Frames zu unterlassen sowie die Zurverfügungstellung des RSS-Feeds auf fremden Websites.\n\n**Haftung für Links**  \n\nDiese Website enthält Links zu externen Websites Dritter, auf deren Inhalte der Betreiber keinen Einfluss hat. Deshalb kann der Betreiber für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Websites ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei bekannt werden von Rechtsverletzungen werden derartige Links umgehend entfernt."
+      }
+    ],
+    "footer": {
+      "copyrightText": "© 2022 Patrick Obermeier. All rights reserved.",
+      "navigationLinks": [
+        { "id": "94064251", "title": "/uses", "isExternalLink": false, "url": "/uses" },
+        {
+          "id": "94064257",
+          "title": "Privacy Notice",
+          "isExternalLink": false,
+          "url": "/privacy-notice"
+        },
+        { "id": "94064259", "title": "Imprint", "isExternalLink": false, "url": "/imprint" }
+      ],
+      "socialMediaIcons": [
+        {
+          "id": "94031955",
+          "url": "https://www.linkedin.com/in/patrickobermeier/",
+          "name": "LinkedIn",
+          "reactIconIdentifier": "linkedin",
+          "icon": { "url": "https://www.datocms-assets.com/60761/1641478156-icon_linkedin.svg" }
+        },
+        {
+          "id": "94031960",
+          "url": "https://twitter.com/pobermeier87",
+          "name": "Twitter",
+          "reactIconIdentifier": "twitter",
+          "icon": { "url": "https://www.datocms-assets.com/60761/1641478158-icon_twitter.svg" }
+        },
+        {
+          "id": "94031963",
+          "url": "https://github.com/Pobermeier",
+          "name": "GitHub",
+          "reactIconIdentifier": "github",
+          "icon": { "url": "https://www.datocms-assets.com/60761/1641478154-icon_github.svg" }
+        }
+      ]
+    }
+  }
+}
