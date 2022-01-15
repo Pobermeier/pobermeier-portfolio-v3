@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes mover {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
 .skip-to-content-link {
   background: #fff;
   color: #4a4a4a;
@@ -18,4 +36,47 @@
 
 .skip-to-content-link:focus {
   transform: translateY(0%);
+}
+
+.technologies {
+  overflow: hidden;
+}
+
+.technologies .subtitle {
+  margin: 3rem 0 2rem 0;
+  font-size: 1.5rem;
+}
+
+.technologies .logo-carousel {
+  height: 5rem;
+  margin: 1rem auto;
+}
+
+.technologies .logo-carousel .logo-carousel__inner {
+  display: block;
+  width: 200%;
+  animation: scroll-left 40s linear infinite;
+  animation-fill-mode: forwards;
+}
+
+.technologies .logo-carousel .logo-carousel__inner:hover {
+  animation-play-state: paused;
+}
+
+.technologies .logo-carousel .logo-carousel__inner .logo-carousel__item {
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  margin: 0 1rem;
+  transition: all 0.2s ease-out;
+}
+
+.technologies .logo-carousel .logo-carousel__inner .logo-carousel__item:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.technologies .logo-carousel .logo-carousel__inner ul {
+  float: left;
+  width: 50%;
 }
