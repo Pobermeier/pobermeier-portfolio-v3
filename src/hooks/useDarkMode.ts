@@ -10,7 +10,7 @@ const useDarkMode = (
   const [darkMode, setDarkMode] = useState(DEFAULT_VALUE);
 
   useEffect(() => {
-    setDarkMode(Boolean(localStorage.getItem(localStorageKey)) || DEFAULT_VALUE);
+    setDarkMode(Boolean(localStorage.getItem(localStorageKey)));
   }, [localStorageKey]);
 
   useEffect(() => {
