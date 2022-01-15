@@ -12,6 +12,7 @@ const SiteLogoLinked = ({ url = "/" }: Props) => {
     <Link href={url}>
       <a
         className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800 text-gray-100 dark:text-gray-800"
+        title={config.meta.siteOwnerName}
         aria-label="To Homepage"
       >
         <SiteLogo className="h-12 w-auto sm:h-14" />
