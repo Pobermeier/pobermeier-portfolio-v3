@@ -18,6 +18,7 @@ const ContactSection = ({
 }: ContactSectionProps) => {
   return (
     <ContentSection
+      htmlId="contact"
       heading={heading}
       description={description}
       decorationElements={

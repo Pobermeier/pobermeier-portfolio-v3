@@ -5,6 +5,9 @@ import { FullscreenPdfViewerProps } from "components/FullscreenPdfViewer/Fullscr
 import { HeroSectionProps } from "components/Hero/HeroSection";
 import { StaticContentBlockRecordProps } from "components/StaticContentBlock/StaticContentBlock";
 import { CmsComponent, CmsComponentName } from "models/datoCMS";
+import { LogoSliderProps } from "components/LogoSlider/LogoSlider";
+import { ContentSectionProps } from "components/ContentSection/ContentSection";
+import { TextWithImageProps } from "components/TextWithImage/TextWithImage";
 
 const FullscreenPdfViewer = dynamic(
   () => import("components/FullscreenPdfViewer/FullscreenPdfViewer"),
@@ -15,6 +18,8 @@ const StaticContentBlock = dynamic(
 );
 const HeroSection = dynamic(() => import("components/Hero/HeroSection"));
 const ContentSection = dynamic(() => import("components/ContentSection/ContentSection"));
+const LogoSlider = dynamic(() => import("components/LogoSlider/LogoSlider"));
+const TextWithImage = dynamic(() => import("components/TextWithImage/TextWithImage"));
 
 interface Props {
   typeName: CmsComponentName;
@@ -45,9 +50,28 @@ const CmsComponentMapper = ({ typeName, componentProps }: Props) => {
       return <FullscreenPdfViewer pdfFile={pdfFile} pdfTitle={pdfTitle} />;
 
     case typeName === "SectionRecord":
-      const { description: descriptionText, heading: headingText } =
-        componentProps as ContactSectionProps;
-      return <ContentSection heading={headingText} description={descriptionText} />;
+      const {
+        description: descriptionText,
+        heading: headingText,
+        dynamicContent,
+        htmlId,
+      } = componentProps as ContentSectionProps;
+      return (
+        <ContentSection
+          heading={headingText}
+          description={descriptionText}
+          dynamicContent={dynamicContent}
+          htmlId={htmlId}
+        />
+      );
+
+    case typeName === "LogoSliderRecord":
+      const { logos, title: logoSliderTitle } = componentProps as LogoSliderProps;
+      return <LogoSlider logos={logos} title={logoSliderTitle} />;
+
+    case typeName === "TextWithImageRecord":
+      const { image, text: sideText } = componentProps as TextWithImageProps;
+      return <TextWithImage image={image} text={sideText} />;
 
     case typeName === "ContactFormRecord":
       const {
