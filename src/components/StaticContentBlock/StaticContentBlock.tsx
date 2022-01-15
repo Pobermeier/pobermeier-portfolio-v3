@@ -10,11 +10,11 @@ export type StaticContentBlockRecordProps = {
 
 const StaticContentBlock = ({ title, text }: StaticContentBlockRecordProps) => {
   return (
-    <section className="relative pt-12 overflow-hidden" data-aos="fade-up">
+    <section className="relative pt-12 overflow-hidden">
       <BackgroundPatternWrapper>
         <BackgroundPattern positionClassName="top-24 left-full transform translate-x-40 rotate-45" />
       </BackgroundPatternWrapper>
-      <article className="max-w-4xl relative px-4 sm:px-6 lg:px-8 mx-auto">
+      <article className="max-w-4xl relative px-4 sm:px-6 lg:px-8 mx-auto" data-aos="fade-up">
         <h1 className="mt-2 block text-3xl text-left leading-8 font-bold tracking-tight text-primary sm:text-4xl">
           {title}
         </h1>
