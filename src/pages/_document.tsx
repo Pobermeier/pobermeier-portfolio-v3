@@ -19,7 +19,7 @@ class MyDocument extends Document {
 
   render(): JSX.Element {
     return (
-      <Html lang="en" id="htmlRoot">
+      <Html lang="en" id="htmlRoot" className="scroll-smooth">
         <Head>
           {/* <!-- General Meta-Tags & SEO--> */}
           <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
