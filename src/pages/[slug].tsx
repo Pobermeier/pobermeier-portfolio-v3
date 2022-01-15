@@ -89,22 +89,30 @@ const Page = ({ data, isPreview, deactivatePreviewMode }: Props) => {
 export async function getStaticProps(ctx: GetStaticPropsContext) {
   const currentSlug = ctx.params?.slug;
 
-  const data = await request(GET_PAGE_DATA_QUERY, { slug: currentSlug }, isDev);
+  try {
+    const data = await request(GET_PAGE_DATA_QUERY, { slug: currentSlug }, isDev);
 
-  return {
-    props: { data },
-  };
+    return {
+      props: { data },
+    };
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 export async function getStaticPaths() {
-  const cmsData = await request(GET_ALL_PAGE_SLUGS_QUERY, null, isDev);
+  try {
+    const cmsData = await request(GET_ALL_PAGE_SLUGS_QUERY, null, isDev);
 
-  const paths = cmsData.allPages.map((page: PageData) => ({ params: { slug: page.slug } }));
+    const paths = cmsData.allPages.map((page: PageData) => ({ params: { slug: page.slug } }));
 
-  return {
-    fallback: false,
-    paths,
-  };
+    return {
+      fallback: false,
+      paths,
+    };
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 export default Page;
