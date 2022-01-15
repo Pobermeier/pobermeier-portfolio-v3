@@ -110,6 +110,7 @@ const GET_PAGE_DATA_QUERY = gql`
               id
               callToActions {
                 id
+                title
                 icon {
                   url
                 }
