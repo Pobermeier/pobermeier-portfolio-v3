@@ -68,6 +68,8 @@ const Button = ({
     <>
       {iconUrl && isIconVisible && (
         <img
+          width={24}
+          height={24}
           loading="lazy"
           src={iconUrl}
           alt={text}
