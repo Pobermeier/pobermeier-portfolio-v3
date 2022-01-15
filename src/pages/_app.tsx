@@ -20,7 +20,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   useCookieBanner();
   useScrollToHashOnPageLoad();
 
-  const isAosInitiated = useAOS({ delay: 300, disable: "mobile" });
+  const isAosInitiated = useAOS({ once: true, delay: 300, disable: "mobile" });
 
   const deactivatePreviewMode = () => {
     setIsPreview(false);
