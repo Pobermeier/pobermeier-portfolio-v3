@@ -1,6 +1,9 @@
 const siteOwnerName = "Patrick Obermeier";
 
 const config = {
+  flags: {
+    useMockData: true,
+  },
   gtm: {
     id: "GTM-TLPT94R",
   },
