@@ -2,6 +2,7 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-ignore
 const fs = require("fs");
+const path = require("path");
 const { GraphQLClient } = require("graphql-request");
 
 const { GET_PAGE_DATA_QUERY } = require("../graphql/queries/getPageData");
@@ -27,12 +28,16 @@ async function fetchAndStoreMockData() {
 
     const mockPaths = cmsData.allPages.map((page) => ({ params: { slug: page.slug } }));
 
-    fs.writeFile("../mocks/paths.json", JSON.stringify(mockPaths), function (err) {
-      if (err) {
-        return console.log(err);
-      }
-      console.log("mockPaths were saved to file!");
-    });
+    fs.writeFile(
+      path.join(__dirname, "..", "mocks", "paths.json"),
+      JSON.stringify(mockPaths),
+      function (err) {
+        if (err) {
+          return console.log(err);
+        }
+        console.log("mockPaths were saved to file!");
+      },
+    );
 
     const paths = cmsData.allPages.map((page) => page.slug);
 
@@ -41,13 +46,17 @@ async function fetchAndStoreMockData() {
 
       const data = await request(GET_PAGE_DATA_QUERY, { slug: currentSlug });
 
-      fs.writeFile(`../mocks/pages/${currentSlug}.json`, JSON.stringify(data), function (err) {
-        if (err) {
-          return console.log(err);
-        }
+      fs.writeFile(
+        path.join(__dirname, "..", "mocks", "pages", `${currentSlug}.json`),
+        JSON.stringify(data),
+        function (err) {
+          if (err) {
+            return console.log(err);
+          }
 
-        console.log(`page data for slug ${currentSlug} were saved to file`);
-      });
+          console.log(`page data for slug ${currentSlug} were saved to file`);
+        },
+      );
     }
   } catch (error) {
     console.log(error);
