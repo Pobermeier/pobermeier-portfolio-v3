@@ -5,7 +5,8 @@ import ReactMarkdown from "react-markdown";
 import Button from "components/Buttons/Button";
 import BackgroundPatternWrapper from "components/BackgroundPattern/BackgroundPatternWrapper";
 import BackgroundPattern from "components/BackgroundPattern/BackgroundPattern";
-import { CTAContainer, ResponsiveImage } from "models/datoCMS";
+import { ResponsiveImage } from "models/datoCMS";
+import { CTAContainerProps } from "components/Buttons/CTAContainer";
 
 export interface HeroSectionProps {
   heading: string;
@@ -14,7 +15,7 @@ export interface HeroSectionProps {
     url: string;
     responsiveImage: ResponsiveImage;
   };
-  callToActions: CTAContainer[];
+  callToActions: CTAContainerProps[];
 }
 
 const HeroSection = ({ heading, subHeading, backgroundImage, callToActions }: HeroSectionProps) => {
@@ -45,14 +46,14 @@ const HeroSection = ({ heading, subHeading, backgroundImage, callToActions }: He
             dangerouslySetInnerHTML={{ __html: heading }}
           />
           <p
-            className="mt-3 max-w-md mx-auto text-lg text-gray-600 dark:text-gray-300 sm:text-xl md:mt-5 md:max-w-3xl"
+            className="mt-8 max-w-md mx-auto text-lg text-gray-600 dark:text-gray-300 sm:text-xl md:max-w-3xl"
             data-aos="fade-right"
             data-aos-delay="400"
           >
             <ReactMarkdown>{subHeading}</ReactMarkdown>
           </p>
           <div
-            className="mt-8 sm:flex sm:justify-center lg:justify-start space-y-3 sm:space-x-3 sm:space-y-0"
+            className="mt-8 sm:flex sm:justify-center lg:justify-start space-y-6 sm:space-x-6 sm:space-y-0"
             data-aos="fade-right"
             data-aos-delay="500"
           >

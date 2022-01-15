@@ -1,3 +1,4 @@
+import { CTAContainerProps } from "components/Buttons/CTAContainer";
 import { ContactSectionProps } from "components/Contact/ContactSection";
 import { ContentSectionProps } from "components/ContentSection/ContentSection";
 import { FooterProps } from "components/Footer/Footer";
@@ -17,7 +18,8 @@ export type CmsComponentName =
   | "ContactFormRecord"
   | "SectionRecord"
   | "LogoSliderRecord"
-  | "TextWithImageRecord";
+  | "TextWithImageRecord"
+  | "CtaContainerRecord";
 
 type GeneralCmsComponentProps = {
   __typename: CmsComponentName;
@@ -31,8 +33,9 @@ type ContactSection = ContactSectionProps & GeneralCmsComponentProps;
 type ContentSection = ContentSectionProps & GeneralCmsComponentProps;
 type LogoSlider = LogoSliderProps & GeneralCmsComponentProps;
 type TextWithImage = TextWithImageProps & GeneralCmsComponentProps;
+type CTAContainer = CTAContainerProps & GeneralCmsComponentProps;
 
-export type ContentSectionAllowedComponent = LogoSlider | TextWithImage;
+export type ContentSectionAllowedComponent = LogoSlider | TextWithImage | CTAContainer;
 
 export type CmsComponent =
   | StaticContentBlock
@@ -41,7 +44,8 @@ export type CmsComponent =
   | ContactSection
   | ContentSection
   | LogoSlider
-  | TextWithImage;
+  | TextWithImage
+  | CTAContainer;
 
 export type PageData = {
   seo: SeoMetaTag[];
@@ -85,10 +89,6 @@ export type CallToAction = {
   isExternalLink: boolean;
   linkUrl: string;
   title: string;
-};
-
-export type CTAContainer = {
-  callToActions: CallToAction[];
 };
 
 export type ResponsiveImage = {

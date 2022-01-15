@@ -8,13 +8,14 @@ import Button from "components/Buttons/Button";
 import SiteLogo from "components/Logos/SiteLogo";
 import SiteLogoLinked from "components/Logos/SiteLogoLinked";
 import DarkModeToggle from "components/Buttons/DarkModeToggle";
-import { SocialMediaIcon, NavigationLink, CTAContainer } from "models/datoCMS";
+import { SocialMediaIcon, NavigationLink } from "models/datoCMS";
 import { noop } from "utils/utilFns";
+import { CTAContainerProps } from "components/Buttons/CTAContainer";
 
 export interface NavbarProps {
   socialMediaIcons: SocialMediaIcon[];
   navigationLinks: NavigationLink[];
-  callToActions: CTAContainer[];
+  callToActions: CTAContainerProps[];
 }
 
 const SOCIAL_ICON_SIZE_DESKTOP = "md";
