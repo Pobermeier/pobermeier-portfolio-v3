@@ -1,6 +1,7 @@
-import { gql } from "graphql-request";
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { gql } = require("graphql-request");
 
-export const GET_PAGE_DATA_QUERY = gql`
+const GET_PAGE_DATA_QUERY = gql`
   query GetPageData($slug: String!) {
     site: _site {
       favicon: faviconMetaTags {
@@ -100,6 +101,7 @@ export const GET_PAGE_DATA_QUERY = gql`
         }
         ... on SectionRecord {
           id
+          htmlId: htmlid
           heading: headline
           description
           dynamicContent {
@@ -154,7 +156,18 @@ export const GET_PAGE_DATA_QUERY = gql`
               id
               text
               image {
-                title
+                responsiveImage {
+                  srcSet
+                  webpSrcSet
+                  sizes
+                  src
+                  width
+                  height
+                  aspectRatio
+                  alt
+                  title
+                  base64
+                }
                 url
               }
             }
@@ -182,3 +195,5 @@ export const GET_PAGE_DATA_QUERY = gql`
     }
   }
 `;
+
+module.exports = { GET_PAGE_DATA_QUERY };
