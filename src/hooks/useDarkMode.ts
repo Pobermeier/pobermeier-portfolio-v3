@@ -7,12 +7,9 @@ const useDarkMode = (
   rootElementId: string,
   darkmodeClassname: string,
 ): [boolean, Dispatch<SetStateAction<boolean>>] => {
-  const [darkMode, setDarkMode] = useState(DEFAULT_VALUE);
-
-  useEffect(() => {
-    setDarkMode(Boolean(localStorage.getItem(localStorageKey)));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const [darkMode, setDarkMode] = useState<boolean>(
+    Boolean(localStorage.getItem(localStorageKey)) || DEFAULT_VALUE,
+  );
 
   useEffect(() => {
     if (darkMode) {
