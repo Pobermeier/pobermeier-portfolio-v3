@@ -30,6 +30,7 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "netlify:login": "netlify login",
+    "netlify:deploy": "yarn export && netlify deploy",
     "prepare": "husky install",
     "postbuild": "next-sitemap",
     "start": "next start",
