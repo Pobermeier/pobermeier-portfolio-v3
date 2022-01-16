@@ -4,6 +4,11 @@ const { gql } = require("graphql-request");
 const GET_PAGE_DATA_QUERY = gql`
   query GetPageData($slug: String!) {
     site: _site {
+      logo: favicon {
+        url
+        tags
+        customData
+      }
       favicon: faviconMetaTags {
         attributes
         content
@@ -142,6 +147,18 @@ const GET_PAGE_DATA_QUERY = gql`
                 repoLink
                 showcaseImage {
                   url
+                  responsiveImage {
+                    srcSet
+                    webpSrcSet
+                    sizes
+                    src
+                    width
+                    height
+                    aspectRatio
+                    alt
+                    title
+                    base64
+                  }
                 }
                 projectLogo {
                   url
