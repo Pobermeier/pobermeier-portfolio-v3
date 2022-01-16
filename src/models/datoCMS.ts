@@ -6,6 +6,7 @@ import { FullscreenPdfViewerProps } from "components/FullscreenPdfViewer/Fullscr
 import { HeroSectionProps } from "components/Hero/HeroSection";
 import { LogoSliderProps } from "components/LogoSlider/LogoSlider";
 import { NavbarProps } from "components/Navigation/Navbar";
+import { ProjectGridProps } from "components/Project/ProjectGrid";
 import StaticContentBlock, {
   StaticContentBlockRecordProps,
 } from "components/StaticContentBlock/StaticContentBlock";
@@ -19,7 +20,8 @@ export type CmsComponentName =
   | "SectionRecord"
   | "LogoSliderRecord"
   | "TextWithImageRecord"
-  | "CtaContainerRecord";
+  | "CtaContainerRecord"
+  | "ProjectGridRecord";
 
 type GeneralCmsComponentProps = {
   __typename: CmsComponentName;
@@ -34,8 +36,13 @@ type ContentSection = ContentSectionProps & GeneralCmsComponentProps;
 type LogoSlider = LogoSliderProps & GeneralCmsComponentProps;
 type TextWithImage = TextWithImageProps & GeneralCmsComponentProps;
 type CTAContainer = CTAContainerProps & GeneralCmsComponentProps;
+type ProjectGrid = ProjectGridProps & GeneralCmsComponentProps;
 
-export type ContentSectionAllowedComponent = LogoSlider | TextWithImage | CTAContainer;
+export type ContentSectionAllowedComponent =
+  | LogoSlider
+  | TextWithImage
+  | CTAContainer
+  | ProjectGrid;
 
 export type CmsComponent =
   | StaticContentBlock
@@ -45,12 +52,13 @@ export type CmsComponent =
   | ContentSection
   | LogoSlider
   | TextWithImage
-  | CTAContainer;
+  | CTAContainer
+  | ProjectGrid;
 
 export type PageData = {
-  seo: SeoMetaTag[];
   title: string;
   slug: string;
+  seo: SeoMetaTag[];
   navbar: NavbarProps | null;
   sections: CmsComponent[];
   footer: FooterProps | null;
@@ -63,6 +71,7 @@ export type CmsData = {
 
 export type Icon = {
   url: string;
+  responsiveImage?: ResponsiveImage;
 };
 
 export type SocialMediaIconIdentifier = "github" | "linkedin" | "twitter";
@@ -118,4 +127,23 @@ type FaviconMetaTag = {
 
 type SiteData = {
   favicon: FaviconMetaTag[];
+};
+
+type Technology = {
+  id: string;
+  name: string;
+  logo: Icon;
+};
+
+export type Project = {
+  id: string;
+  title: string;
+  subTitle: string;
+  description: string;
+  projectType: "personal" | "professional";
+  liveLink: string;
+  repoLink: string;
+  showcaseImage: Icon;
+  projectLogo: Icon;
+  technologiesUsed: Technology[];
 };
