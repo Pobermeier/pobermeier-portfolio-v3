@@ -26,6 +26,7 @@
     "export": "yarn build && next export",
     "format": "prettier --write ./src",
     "format:check": "prettier --check ./src",
+    "generate:mocks": "node ./src/scripts/fetchMockData.js",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "prepare": "husky install",
