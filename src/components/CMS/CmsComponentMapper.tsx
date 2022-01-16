@@ -9,6 +9,7 @@ import { LogoSliderProps } from "components/LogoSlider/LogoSlider";
 import { ContentSectionProps } from "components/ContentSection/ContentSection";
 import { TextWithImageProps } from "components/TextWithImage/TextWithImage";
 import { CTAContainerProps } from "components/Buttons/CTAContainer";
+import { ProjectGridProps } from "components/Project/ProjectGrid";
 
 const FullscreenPdfViewer = dynamic(
   () => import("components/FullscreenPdfViewer/FullscreenPdfViewer"),
@@ -22,6 +23,7 @@ const ContentSection = dynamic(() => import("components/ContentSection/ContentSe
 const LogoSlider = dynamic(() => import("components/LogoSlider/LogoSlider"));
 const TextWithImage = dynamic(() => import("components/TextWithImage/TextWithImage"));
 const CTAContainer = dynamic(() => import("components/Buttons/CTAContainer"));
+const ProjectGrid = dynamic(() => import("components/Project/ProjectGrid"));
 
 interface Props {
   typeName: CmsComponentName;
@@ -78,6 +80,10 @@ const CmsComponentMapper = ({ typeName, componentProps }: Props) => {
     case typeName === "CtaContainerRecord":
       const { callToActions: ctaCollection } = componentProps as CTAContainerProps;
       return <CTAContainer callToActions={ctaCollection} />;
+
+    case typeName === "ProjectGridRecord":
+      const { projects } = componentProps as ProjectGridProps;
+      return <ProjectGrid projects={projects} />;
 
     case typeName === "ContactFormRecord":
       const {
