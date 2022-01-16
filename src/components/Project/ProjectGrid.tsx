@@ -46,7 +46,13 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
               <div className="flex">
                 <div className="flex-shrink-0">
                   <span className="sr-only">{title}</span>
-                  <img className="h-12 w-12 rounded-lg" src={projectLogo.url} alt={title} />
+                  <img
+                    className="h-12 w-12 rounded-lg"
+                    src={projectLogo.url}
+                    alt={title}
+                    width={48}
+                    height={48}
+                  />
                 </div>
                 <div className="ml-4">
                   <p className="text-sm font-medium text-gray-600 dark:text-gray-100">{subTitle}</p>
