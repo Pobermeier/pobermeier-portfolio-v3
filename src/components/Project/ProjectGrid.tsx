@@ -29,7 +29,7 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
         return (
           <div
             key={id}
-            className="flex flex-col rounded-xl drop-shadow-xl overflow-hidden md:hover:scale-105 transition-all"
+            className="flex flex-col rounded-xl bg-primary drop-shadow-lg overflow-hidden md:hover:drop-shadow-2xl md:hover:scale-105 transition-all"
           >
             <div className="flex-shrink-0">
               <a

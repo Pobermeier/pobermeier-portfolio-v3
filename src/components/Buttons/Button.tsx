@@ -42,6 +42,8 @@ const Button = ({
     "font-medium",
     "rounded-full",
     "transition-all",
+    "drop-shadow-lg",
+    "md:hover:drop-shadow-xl",
     "md:hover:scale-105",
     "focus:outline-none",
     "focus:ring-2",
