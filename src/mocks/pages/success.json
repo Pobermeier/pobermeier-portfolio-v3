@@ -1,5 +1,10 @@
 {
   "site": {
+    "logo": {
+      "url": "https://www.datocms-assets.com/60761/1641478169-logo.svg",
+      "tags": [],
+      "customData": {}
+    },
     "favicon": [
       {
         "attributes": {

@@ -1,5 +1,10 @@
 {
   "site": {
+    "logo": {
+      "url": "https://www.datocms-assets.com/60761/1641478169-logo.svg",
+      "tags": [],
+      "customData": {}
+    },
     "favicon": [
       {
         "attributes": {
@@ -131,7 +136,7 @@
       {
         "tag": "meta",
         "content": null,
-        "attributes": { "property": "article:modified_time", "content": "2022-01-15T13:16:06Z" }
+        "attributes": { "property": "article:modified_time", "content": "2022-01-16T14:33:26Z" }
       },
       {
         "tag": "meta",
@@ -238,8 +243,8 @@
       {
         "__typename": "SectionRecord",
         "id": "94033112",
-        "htmlId": "about",
         "heading": "About Me",
+        "htmlId": "about",
         "description": "",
         "dynamicContent": [
           {
@@ -264,9 +269,11 @@
           },
           {
             "__typename": "CtaContainerRecord",
+            "id": "94033110",
             "callToActions": [
               {
                 "id": "94033108",
+                "title": "View My Work",
                 "icon": { "url": "https://www.datocms-assets.com/60761/1641478159-icon_view.svg" },
                 "ctaType": "primary",
                 "isExternalLink": false,
@@ -274,6 +281,7 @@
               },
               {
                 "id": "94033109",
+                "title": "View Resume",
                 "icon": null,
                 "ctaType": "secondary",
                 "isExternalLink": false,
@@ -283,117 +291,123 @@
           },
           {
             "__typename": "LogoSliderRecord",
+            "id": "94033261",
             "title": "Tools & Technologies I Use",
             "logos": [
               {
                 "id": "93840871",
                 "name": "HTML",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416718-html5.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341254-html5.svg" }
               },
               {
                 "id": "93840874",
                 "name": "CSS",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416710-css3.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341246-css3.svg" }
               },
               {
                 "id": "93840875",
                 "name": "Sass",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416726-sass.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341261-sass.svg" }
               },
               {
                 "id": "93840880",
                 "name": "JavaScript (ES6+)",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416719-javascript.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341255-javascript.svg" }
+              },
+              {
+                "id": "97228619",
+                "name": "TypeScript",
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642343542-typescript.svg" }
               },
               {
                 "id": "93840896",
                 "name": "Node.js",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416722-node-dot-js.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341257-node-dot-js.svg" }
               },
               {
                 "id": "93840881",
                 "name": "React",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416724-react.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341260-react.svg" }
               },
               {
                 "id": "93840893",
                 "name": "Redux",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416725-redux.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341260-redux.svg" }
               },
               {
                 "id": "93840884",
                 "name": "Next.js",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416721-next-dot-js.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341257-next-dot-js.svg" }
               },
               {
                 "id": "93840903",
                 "name": "Bootstrap",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416728-bootstrap.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341241-bootstrap.svg" }
               },
               {
                 "id": "93840904",
                 "name": "Bulma",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416729-bulma.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341243-bulma.svg" }
               },
               {
                 "id": "93840902",
                 "name": "Webpack",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416728-webpack.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341263-webpack.svg" }
               },
               {
                 "id": "93840901",
                 "name": "Gulp",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416717-gulp.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341253-gulp.svg" }
               },
               {
                 "id": "93840900",
                 "name": "Grunt",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416716-grunt.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341251-grunt.svg" }
               },
               {
                 "id": "93840898",
                 "name": "C#",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416709-csharp.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341245-csharp.svg" }
               },
               {
                 "id": "93840899",
                 "name": "PHP",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416723-php.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341259-php.svg" }
               },
               {
                 "id": "93840927",
                 "name": "Git",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416713-git.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341250-git.svg" }
               },
               {
                 "id": "93840911",
                 "name": "GitHub",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416715-github.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341250-github.svg" }
               },
               {
                 "id": "93840912",
                 "name": "Docker",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416711-docker.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341248-docker.svg" }
               },
               {
                 "id": "93840916",
                 "name": "Figma",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416712-figma.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341248-figma.svg" }
               },
               {
                 "id": "93840920",
                 "name": "Unity",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416727-unity.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341262-unity.svg" }
               },
               {
                 "id": "93840917",
                 "name": "JIRA",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416720-jira.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341256-jira.svg" }
               },
               {
                 "id": "93840918",
                 "name": "Confluence",
-                "logo": { "url": "https://www.datocms-assets.com/60761/1641416707-confluence.svg" }
+                "logo": { "url": "https://www.datocms-assets.com/60761/1642341244-confluence.svg" }
               }
             ]
           }
@@ -402,8 +416,8 @@
       {
         "__typename": "SectionRecord",
         "id": "94033339",
-        "htmlId": "portfolio",
         "heading": "Featured Personal Projects",
+        "htmlId": "portfolio",
         "description": "Below you can find a selection of personal projects I've been working on recently. For these you can check out both the code and a live version of the project. If you're interested in my work you're welcome to check out the other public repositories [on my GitHub profile.](https://github.com/Pobermeier) Additionally, you can find an excerpt of my professional work [in the next section](#work-excerpts).",
         "dynamicContent": [
           {
@@ -419,7 +433,19 @@
                 "liveLink": "https://www.vintagepoker.net/",
                 "repoLink": "https://github.com/Pobermeier/vintage-poker",
                 "showcaseImage": {
-                  "url": "https://www.datocms-assets.com/60761/1641478217-project_personal_vintagepoker.jpg"
+                  "url": "https://www.datocms-assets.com/60761/1641478217-project_personal_vintagepoker.jpg",
+                  "responsiveImage": {
+                    "srcSet": "https://www.datocms-assets.com/60761/1641478217-project_personal_vintagepoker.jpg?dpr=0.25 320w,https://www.datocms-assets.com/60761/1641478217-project_personal_vintagepoker.jpg?dpr=0.5 640w,https://www.datocms-assets.com/60761/1641478217-project_personal_vintagepoker.jpg?dpr=0.75 960w,https://www.datocms-assets.com/60761/1641478217-project_personal_vintagepoker.jpg 1280w",
+                    "webpSrcSet": "https://www.datocms-assets.com/60761/1641478217-project_personal_vintagepoker.jpg?dpr=0.25&fm=webp 320w,https://www.datocms-assets.com/60761/1641478217-project_personal_vintagepoker.jpg?dpr=0.5&fm=webp 640w,https://www.datocms-assets.com/60761/1641478217-project_personal_vintagepoker.jpg?dpr=0.75&fm=webp 960w,https://www.datocms-assets.com/60761/1641478217-project_personal_vintagepoker.jpg?fm=webp 1280w",
+                    "sizes": "(max-width: 1280px) 100vw, 1280px",
+                    "src": "https://www.datocms-assets.com/60761/1641478217-project_personal_vintagepoker.jpg",
+                    "width": 1280,
+                    "height": 960,
+                    "aspectRatio": 1.3333333333333333,
+                    "alt": null,
+                    "title": null,
+                    "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHDQoTDw8LBwgNDQ0JBwkODRENDg4NFxMZGBYVFiEaHysjGh0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0NHRAPHS8dGhwvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABIAGAMBIgACEQEDEQH/xAAZAAADAAMAAAAAAAAAAAAAAAAAAwQBAgf/xAAYEAEBAQEBAAAAAAAAAAAAAAAAAwIBEf/EABYBAQEBAAAAAAAAAAAAAAAAAAABA//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8A6bvfOM4txFS3rWe+srF1XbXOhLS3jBhpOjJgLSFXACD/2Q=="
+                  }
                 },
                 "projectLogo": {
                   "url": "https://www.datocms-assets.com/60761/1641478166-logo.png"
@@ -428,36 +454,36 @@
                   {
                     "id": "93840871",
                     "name": "HTML",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416718-html5.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341254-html5.svg" }
                   },
                   {
                     "id": "93840874",
                     "name": "CSS",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416710-css3.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341246-css3.svg" }
                   },
                   {
                     "id": "93840880",
                     "name": "JavaScript (ES6+)",
                     "logo": {
-                      "url": "https://www.datocms-assets.com/60761/1641416719-javascript.svg"
+                      "url": "https://www.datocms-assets.com/60761/1642341255-javascript.svg"
                     }
                   },
                   {
                     "id": "93840881",
                     "name": "React",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416724-react.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341260-react.svg" }
                   },
                   {
                     "id": "93840896",
                     "name": "Node.js",
                     "logo": {
-                      "url": "https://www.datocms-assets.com/60761/1641416722-node-dot-js.svg"
+                      "url": "https://www.datocms-assets.com/60761/1642341257-node-dot-js.svg"
                     }
                   },
                   {
                     "id": "93840902",
                     "name": "Webpack",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416728-webpack.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341263-webpack.svg" }
                   }
                 ]
               },
@@ -470,7 +496,19 @@
                 "liveLink": "https://www.devmeetup.net/",
                 "repoLink": "https://github.com/Pobermeier/devmeetup",
                 "showcaseImage": {
-                  "url": "https://www.datocms-assets.com/60761/1641478184-project_personal_devmeetup.jpg"
+                  "url": "https://www.datocms-assets.com/60761/1641478184-project_personal_devmeetup.jpg",
+                  "responsiveImage": {
+                    "srcSet": "https://www.datocms-assets.com/60761/1641478184-project_personal_devmeetup.jpg?dpr=0.25 320w,https://www.datocms-assets.com/60761/1641478184-project_personal_devmeetup.jpg?dpr=0.5 640w,https://www.datocms-assets.com/60761/1641478184-project_personal_devmeetup.jpg?dpr=0.75 960w,https://www.datocms-assets.com/60761/1641478184-project_personal_devmeetup.jpg 1280w",
+                    "webpSrcSet": "https://www.datocms-assets.com/60761/1641478184-project_personal_devmeetup.jpg?dpr=0.25&fm=webp 320w,https://www.datocms-assets.com/60761/1641478184-project_personal_devmeetup.jpg?dpr=0.5&fm=webp 640w,https://www.datocms-assets.com/60761/1641478184-project_personal_devmeetup.jpg?dpr=0.75&fm=webp 960w,https://www.datocms-assets.com/60761/1641478184-project_personal_devmeetup.jpg?fm=webp 1280w",
+                    "sizes": "(max-width: 1280px) 100vw, 1280px",
+                    "src": "https://www.datocms-assets.com/60761/1641478184-project_personal_devmeetup.jpg",
+                    "width": 1280,
+                    "height": 960,
+                    "aspectRatio": 1.3333333333333333,
+                    "alt": null,
+                    "title": null,
+                    "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoSCAgLEBAVFhgNFQ0VDhIVDRANFxYdGBYVFh0eHyslGh0oHSEWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHBAQHDsoIhw7Ly8vLzs7Ni8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABIAGAMBIgACEQEDEQH/xAAZAAADAAMAAAAAAAAAAAAAAAAABAUBAwb/xAAfEAACAQQCAwAAAAAAAAAAAAAAAQMCBBExBRITMpH/xAAYAQEAAwEAAAAAAAAAAAAAAAACAwQFAP/EABkRAQEAAwEAAAAAAAAAAAAAAAEAAgMyEf/aAAwDAQACEQMRAD8A4qws8soS2DVAhxvJRZ2ipLyMbj2iNX21zEo8sXSoDRfX9Hd4ZkQMXEolu3nbH3VV4/Z/QA6enmQmbAAGVXb1f//Z"
+                  }
                 },
                 "projectLogo": {
                   "url": "https://www.datocms-assets.com/60761/1641478166-logo.png"
@@ -479,41 +517,41 @@
                   {
                     "id": "93840871",
                     "name": "HTML",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416718-html5.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341254-html5.svg" }
                   },
                   {
                     "id": "93840874",
                     "name": "CSS",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416710-css3.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341246-css3.svg" }
                   },
                   {
                     "id": "93840880",
                     "name": "JavaScript (ES6+)",
                     "logo": {
-                      "url": "https://www.datocms-assets.com/60761/1641416719-javascript.svg"
+                      "url": "https://www.datocms-assets.com/60761/1642341255-javascript.svg"
                     }
                   },
                   {
                     "id": "93840881",
                     "name": "React",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416724-react.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341260-react.svg" }
                   },
                   {
                     "id": "93840893",
                     "name": "Redux",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416725-redux.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341260-redux.svg" }
                   },
                   {
                     "id": "93840896",
                     "name": "Node.js",
                     "logo": {
-                      "url": "https://www.datocms-assets.com/60761/1641416722-node-dot-js.svg"
+                      "url": "https://www.datocms-assets.com/60761/1642341257-node-dot-js.svg"
                     }
                   },
                   {
                     "id": "93840902",
                     "name": "Webpack",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416728-webpack.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341263-webpack.svg" }
                   }
                 ]
               },
@@ -526,7 +564,19 @@
                 "liveLink": "https://www.simplysticky.net/",
                 "repoLink": "https://github.com/Pobermeier/simply-sticky",
                 "showcaseImage": {
-                  "url": "https://www.datocms-assets.com/60761/1641478258-simplysticky.png"
+                  "url": "https://www.datocms-assets.com/60761/1641478258-simplysticky.png",
+                  "responsiveImage": {
+                    "srcSet": "https://www.datocms-assets.com/60761/1641478258-simplysticky.png?dpr=0.25 319w,https://www.datocms-assets.com/60761/1641478258-simplysticky.png?dpr=0.5 639w,https://www.datocms-assets.com/60761/1641478258-simplysticky.png?dpr=0.75 959w,https://www.datocms-assets.com/60761/1641478258-simplysticky.png 1279w",
+                    "webpSrcSet": "https://www.datocms-assets.com/60761/1641478258-simplysticky.png?dpr=0.25&fm=webp 319w,https://www.datocms-assets.com/60761/1641478258-simplysticky.png?dpr=0.5&fm=webp 639w,https://www.datocms-assets.com/60761/1641478258-simplysticky.png?dpr=0.75&fm=webp 959w,https://www.datocms-assets.com/60761/1641478258-simplysticky.png?fm=webp 1279w",
+                    "sizes": "(max-width: 1279px) 100vw, 1279px",
+                    "src": "https://www.datocms-assets.com/60761/1641478258-simplysticky.png",
+                    "width": 1279,
+                    "height": 959,
+                    "aspectRatio": 1.3336809176225235,
+                    "alt": null,
+                    "title": null,
+                    "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBw0HBhUODQ0NCg0IEw8JDQkNDRENCw4YFxUZGBYTFhUaHysjGh0oHRUiJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHBAQHC8cHSkvNS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABIAGAMBIgACEQEDEQH/xAAaAAACAgMAAAAAAAAAAAAAAAAABQQHAQID/8QAGxABAAIDAQEAAAAAAAAAAAAAAAIDAREyEgT/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQD/xAAXEQEBAQEAAAAAAAAAAAAAAAABAAIh/9oADAMBAAIRAxEAPwC47cbgWz6Mrc6gXyxuQpPO04XOQa258sqFHbM7uUQBmxRvoACxb//Z"
+                  }
                 },
                 "projectLogo": {
                   "url": "https://www.datocms-assets.com/60761/1641478166-logo.png"
@@ -535,41 +585,41 @@
                   {
                     "id": "93840871",
                     "name": "HTML",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416718-html5.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341254-html5.svg" }
                   },
                   {
                     "id": "93840874",
                     "name": "CSS",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416710-css3.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341246-css3.svg" }
                   },
                   {
                     "id": "93840880",
                     "name": "JavaScript (ES6+)",
                     "logo": {
-                      "url": "https://www.datocms-assets.com/60761/1641416719-javascript.svg"
+                      "url": "https://www.datocms-assets.com/60761/1642341255-javascript.svg"
                     }
                   },
                   {
                     "id": "93840881",
                     "name": "React",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416724-react.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341260-react.svg" }
                   },
                   {
                     "id": "93840893",
                     "name": "Redux",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416725-redux.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341260-redux.svg" }
                   },
                   {
                     "id": "93840896",
                     "name": "Node.js",
                     "logo": {
-                      "url": "https://www.datocms-assets.com/60761/1641416722-node-dot-js.svg"
+                      "url": "https://www.datocms-assets.com/60761/1642341257-node-dot-js.svg"
                     }
                   },
                   {
                     "id": "93840902",
                     "name": "Webpack",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416728-webpack.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341263-webpack.svg" }
                   }
                 ]
               },
@@ -582,7 +632,19 @@
                 "liveLink": "https://snack.expo.io/@git/github.com/Pobermeier/reactnd-mobile-flashcards",
                 "repoLink": "https://github.com/Pobermeier/mobile-flashcards",
                 "showcaseImage": {
-                  "url": "https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg"
+                  "url": "https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg",
+                  "responsiveImage": {
+                    "srcSet": "https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?dpr=0.25 320w,https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?dpr=0.5 640w,https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?dpr=0.75 960w,https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg 1280w",
+                    "webpSrcSet": "https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?dpr=0.25&fm=webp 320w,https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?dpr=0.5&fm=webp 640w,https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?dpr=0.75&fm=webp 960w,https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?fm=webp 1280w",
+                    "sizes": "(max-width: 1280px) 100vw, 1280px",
+                    "src": "https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg",
+                    "width": 1280,
+                    "height": 960,
+                    "aspectRatio": 1.3333333333333333,
+                    "alt": null,
+                    "title": null,
+                    "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBhUOFBQLFhUNDQ4NDg4NEBESDg0NFxUZGBYTIhUaHyslGh0oHSEWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OExAQHC8cHSgyLy8vLy8vLy8vNS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABIAGAMBIgACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAAAAwQFBwH/xAAaEAADAQEBAQAAAAAAAAAAAAAAAgMEATER/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgEA/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oADAMBAAIRAxEAPwDYaWVeC11KJtNvghYt0TJNti84BA0Z3ANWYt6+C5gAhLudAAk//9k="
+                  }
                 },
                 "projectLogo": {
                   "url": "https://www.datocms-assets.com/60761/1641478166-logo.png"
@@ -592,18 +654,18 @@
                     "id": "93840880",
                     "name": "JavaScript (ES6+)",
                     "logo": {
-                      "url": "https://www.datocms-assets.com/60761/1641416719-javascript.svg"
+                      "url": "https://www.datocms-assets.com/60761/1642341255-javascript.svg"
                     }
                   },
                   {
                     "id": "93840874",
                     "name": "CSS",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416710-css3.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341246-css3.svg" }
                   },
                   {
                     "id": "93840881",
                     "name": "React",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416724-react.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341260-react.svg" }
                   }
                 ]
               },
@@ -616,7 +678,19 @@
                 "liveLink": "https://battleship-websockets-game.herokuapp.com/",
                 "repoLink": "https://github.com/Pobermeier/battleship-websockets-game",
                 "showcaseImage": {
-                  "url": "https://www.datocms-assets.com/60761/1641478178-project_personal_battleship.jpg"
+                  "url": "https://www.datocms-assets.com/60761/1641478178-project_personal_battleship.jpg",
+                  "responsiveImage": {
+                    "srcSet": "https://www.datocms-assets.com/60761/1641478178-project_personal_battleship.jpg?dpr=0.25 320w,https://www.datocms-assets.com/60761/1641478178-project_personal_battleship.jpg?dpr=0.5 640w,https://www.datocms-assets.com/60761/1641478178-project_personal_battleship.jpg?dpr=0.75 960w,https://www.datocms-assets.com/60761/1641478178-project_personal_battleship.jpg 1280w",
+                    "webpSrcSet": "https://www.datocms-assets.com/60761/1641478178-project_personal_battleship.jpg?dpr=0.25&fm=webp 320w,https://www.datocms-assets.com/60761/1641478178-project_personal_battleship.jpg?dpr=0.5&fm=webp 640w,https://www.datocms-assets.com/60761/1641478178-project_personal_battleship.jpg?dpr=0.75&fm=webp 960w,https://www.datocms-assets.com/60761/1641478178-project_personal_battleship.jpg?fm=webp 1280w",
+                    "sizes": "(max-width: 1280px) 100vw, 1280px",
+                    "src": "https://www.datocms-assets.com/60761/1641478178-project_personal_battleship.jpg",
+                    "width": 1280,
+                    "height": 960,
+                    "aspectRatio": 1.3333333333333333,
+                    "alt": null,
+                    "title": null,
+                    "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoIEBITDQ4LDg8ODQ0NDRENDg0NFxoZGBYVFiEaHysjGh0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHBAPFS8dFigvNS8vLy8vLy8vLy8vLzUvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABIAGAMBIgACEQEDEQH/xAAYAAEBAAMAAAAAAAAAAAAAAAAABQIEBv/EACAQAAICAQMFAAAAAAAAAAAAAAABAgMEEhMzBREyYXH/xAAZAQABBQAAAAAAAAAAAAAAAAABAAIDBAX/xAAZEQADAQEBAAAAAAAAAAAAAAAAAQIRMgP/2gAMAwEAAhEDEQA/AJGbTpg2Sa5rd7FjqV8dpnOUWOWS37L7rDIiNRdrp1xBlj3KMEBJgw1eo8bI2JzP6ACiTz5LEfEACGH/2Q=="
+                  }
                 },
                 "projectLogo": {
                   "url": "https://www.datocms-assets.com/60761/1641478166-logo.png"
@@ -625,25 +699,25 @@
                   {
                     "id": "93840871",
                     "name": "HTML",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416718-html5.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341254-html5.svg" }
                   },
                   {
                     "id": "93840874",
                     "name": "CSS",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416710-css3.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341246-css3.svg" }
                   },
                   {
                     "id": "93840880",
                     "name": "JavaScript (ES6+)",
                     "logo": {
-                      "url": "https://www.datocms-assets.com/60761/1641416719-javascript.svg"
+                      "url": "https://www.datocms-assets.com/60761/1642341255-javascript.svg"
                     }
                   },
                   {
                     "id": "93840896",
                     "name": "Node.js",
                     "logo": {
-                      "url": "https://www.datocms-assets.com/60761/1641416722-node-dot-js.svg"
+                      "url": "https://www.datocms-assets.com/60761/1642341257-node-dot-js.svg"
                     }
                   }
                 ]
@@ -657,7 +731,19 @@
                 "liveLink": "https://would-you-rather-2020.netlify.app/",
                 "repoLink": "https://github.com/Pobermeier/would-you-rather",
                 "showcaseImage": {
-                  "url": "https://www.datocms-assets.com/60761/1641478226-project_personal_wouldyourather.jpg"
+                  "url": "https://www.datocms-assets.com/60761/1641478226-project_personal_wouldyourather.jpg",
+                  "responsiveImage": {
+                    "srcSet": "https://www.datocms-assets.com/60761/1641478226-project_personal_wouldyourather.jpg?dpr=0.25 320w,https://www.datocms-assets.com/60761/1641478226-project_personal_wouldyourather.jpg?dpr=0.5 640w,https://www.datocms-assets.com/60761/1641478226-project_personal_wouldyourather.jpg?dpr=0.75 960w,https://www.datocms-assets.com/60761/1641478226-project_personal_wouldyourather.jpg 1280w",
+                    "webpSrcSet": "https://www.datocms-assets.com/60761/1641478226-project_personal_wouldyourather.jpg?dpr=0.25&fm=webp 320w,https://www.datocms-assets.com/60761/1641478226-project_personal_wouldyourather.jpg?dpr=0.5&fm=webp 640w,https://www.datocms-assets.com/60761/1641478226-project_personal_wouldyourather.jpg?dpr=0.75&fm=webp 960w,https://www.datocms-assets.com/60761/1641478226-project_personal_wouldyourather.jpg?fm=webp 1280w",
+                    "sizes": "(max-width: 1280px) 100vw, 1280px",
+                    "src": "https://www.datocms-assets.com/60761/1641478226-project_personal_wouldyourather.jpg",
+                    "width": 1280,
+                    "height": 960,
+                    "aspectRatio": 1.3333333333333333,
+                    "alt": null,
+                    "title": null,
+                    "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBhITCAgVDxANDRgNDBYYDh0SDQwNFxUZGBYfFhUaHysjGh0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHQ0PHTscHRwvLy8vLy87Ly8vLy8vLy8vLy8vLy8vNS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABIAGAMBIgACEQEDEQH/xAAZAAADAAMAAAAAAAAAAAAAAAAAAQMEBQf/xAAeEAACAgICAwAAAAAAAAAAAAAAAQMEAhEhMRJBUf/EABYBAAMAAAAAAAAAAAAAAAAAAAACA//EABoRAAICAwAAAAAAAAAAAAAAAAACARIRMUH/2gAMAwEAAhEDEQA/AOs2KfljwyEFF7M2WzHhj2ShuR+2NZsiVUlNQeuALy3I0uGMJaQqpqp29dkcG99gBTpEUrf0YALOwP/Z"
+                  }
                 },
                 "projectLogo": {
                   "url": "https://www.datocms-assets.com/60761/1641478166-logo.png"
@@ -666,41 +752,41 @@
                   {
                     "id": "93840871",
                     "name": "HTML",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416718-html5.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341254-html5.svg" }
                   },
                   {
                     "id": "93840874",
                     "name": "CSS",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416710-css3.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341246-css3.svg" }
                   },
                   {
                     "id": "93840880",
                     "name": "JavaScript (ES6+)",
                     "logo": {
-                      "url": "https://www.datocms-assets.com/60761/1641416719-javascript.svg"
+                      "url": "https://www.datocms-assets.com/60761/1642341255-javascript.svg"
                     }
                   },
                   {
                     "id": "93840881",
                     "name": "React",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416724-react.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341260-react.svg" }
                   },
                   {
                     "id": "93840893",
                     "name": "Redux",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416725-redux.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341260-redux.svg" }
                   },
                   {
                     "id": "93840903",
                     "name": "Bootstrap",
                     "logo": {
-                      "url": "https://www.datocms-assets.com/60761/1641416728-bootstrap.svg"
+                      "url": "https://www.datocms-assets.com/60761/1642341241-bootstrap.svg"
                     }
                   },
                   {
                     "id": "93840902",
                     "name": "Webpack",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416728-webpack.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341263-webpack.svg" }
                   }
                 ]
               }
@@ -708,9 +794,11 @@
           },
           {
             "__typename": "CtaContainerRecord",
+            "id": "94033338",
             "callToActions": [
               {
                 "id": "94033336",
+                "title": "Work Excerpts",
                 "icon": { "url": "https://www.datocms-assets.com/60761/1641478159-icon_view.svg" },
                 "ctaType": "primary",
                 "isExternalLink": false,
@@ -718,6 +806,7 @@
               },
               {
                 "id": "94033337",
+                "title": "View More",
                 "icon": {
                   "url": "https://www.datocms-assets.com/60761/1641478154-icon_github.svg"
                 },
@@ -732,8 +821,8 @@
       {
         "__typename": "SectionRecord",
         "id": "94033394",
-        "htmlId": "",
         "heading": "Professional Work Excerpts",
+        "htmlId": "work-excerpts",
         "description": "In this section you can find some excerpts from my day-to-day professional work. Please note that the source for these projects is private due to confidentiality. ",
         "dynamicContent": [
           {
@@ -749,7 +838,19 @@
                 "liveLink": "https://lp.gametwist.com/landingpages/",
                 "repoLink": "",
                 "showcaseImage": {
-                  "url": "https://www.datocms-assets.com/60761/1641478239-project_work_lpgametwist.jpg"
+                  "url": "https://www.datocms-assets.com/60761/1641478239-project_work_lpgametwist.jpg",
+                  "responsiveImage": {
+                    "srcSet": "https://www.datocms-assets.com/60761/1641478239-project_work_lpgametwist.jpg?dpr=0.25 320w,https://www.datocms-assets.com/60761/1641478239-project_work_lpgametwist.jpg?dpr=0.5 640w,https://www.datocms-assets.com/60761/1641478239-project_work_lpgametwist.jpg?dpr=0.75 960w,https://www.datocms-assets.com/60761/1641478239-project_work_lpgametwist.jpg 1280w",
+                    "webpSrcSet": "https://www.datocms-assets.com/60761/1641478239-project_work_lpgametwist.jpg?dpr=0.25&fm=webp 320w,https://www.datocms-assets.com/60761/1641478239-project_work_lpgametwist.jpg?dpr=0.5&fm=webp 640w,https://www.datocms-assets.com/60761/1641478239-project_work_lpgametwist.jpg?dpr=0.75&fm=webp 960w,https://www.datocms-assets.com/60761/1641478239-project_work_lpgametwist.jpg?fm=webp 1280w",
+                    "sizes": "(max-width: 1280px) 100vw, 1280px",
+                    "src": "https://www.datocms-assets.com/60761/1641478239-project_work_lpgametwist.jpg",
+                    "width": 1280,
+                    "height": 960,
+                    "aspectRatio": 1.3333333333333333,
+                    "alt": null,
+                    "title": null,
+                    "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoIEwgVFg0VEhYOFhkWDh0NFh0PFxUZIhcTIhUmHysvHR0oJhUiJTUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHBAQHDslIig7Oy8vLy87Ly8vLzYvOzs1NS8vLy8vNS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABIAGAMBIgACEQEDEQH/xAAYAAEBAAMAAAAAAAAAAAAAAAAFAAEDBv/EAB4QAAEEAgMBAAAAAAAAAAAAAAABAgMEEjEFESET/8QAGAEAAgMAAAAAAAAAAAAAAAAAAgMAAQT/xAAcEQACAgIDAAAAAAAAAAAAAAAAAgEDETEEEjL/2gAMAwEAAhEDEQA/AOKrxZPQbrw9RgNO23LY1HcajNm7kLmRlb4DOcg+kTkI18teYjV9IdTLKuIF2PPYGoqvexlirhsiJbsGdgvLKuSGSINPJUn/2Q=="
+                  }
                 },
                 "projectLogo": {
                   "url": "https://www.datocms-assets.com/60761/1641484594-greentube-logo.jpg"
@@ -758,41 +859,41 @@
                   {
                     "id": "93840871",
                     "name": "HTML",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416718-html5.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341254-html5.svg" }
                   },
                   {
                     "id": "93840874",
                     "name": "CSS",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416710-css3.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341246-css3.svg" }
                   },
                   {
                     "id": "93840880",
                     "name": "JavaScript (ES6+)",
                     "logo": {
-                      "url": "https://www.datocms-assets.com/60761/1641416719-javascript.svg"
+                      "url": "https://www.datocms-assets.com/60761/1642341255-javascript.svg"
                     }
                   },
                   {
                     "id": "93840899",
                     "name": "PHP",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416723-php.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341259-php.svg" }
                   },
                   {
                     "id": "93840875",
                     "name": "Sass",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416726-sass.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341261-sass.svg" }
                   },
                   {
                     "id": "93840903",
                     "name": "Bootstrap",
                     "logo": {
-                      "url": "https://www.datocms-assets.com/60761/1641416728-bootstrap.svg"
+                      "url": "https://www.datocms-assets.com/60761/1642341241-bootstrap.svg"
                     }
                   },
                   {
                     "id": "93840901",
                     "name": "Gulp",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416717-gulp.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341253-gulp.svg" }
                   }
                 ]
               },
@@ -805,7 +906,19 @@
                 "liveLink": "https://helpcenter.etron.de/",
                 "repoLink": "",
                 "showcaseImage": {
-                  "url": "https://www.datocms-assets.com/60761/1641485360-project_work_etronhelpcenter-c92b6bbd.webp"
+                  "url": "https://www.datocms-assets.com/60761/1641485360-project_work_etronhelpcenter-c92b6bbd.webp",
+                  "responsiveImage": {
+                    "srcSet": "https://www.datocms-assets.com/60761/1641485360-project_work_etronhelpcenter-c92b6bbd.webp?dpr=0.25 271w,https://www.datocms-assets.com/60761/1641485360-project_work_etronhelpcenter-c92b6bbd.webp?dpr=0.5 543w,https://www.datocms-assets.com/60761/1641485360-project_work_etronhelpcenter-c92b6bbd.webp?dpr=0.75 815w,https://www.datocms-assets.com/60761/1641485360-project_work_etronhelpcenter-c92b6bbd.webp 1087w",
+                    "webpSrcSet": "https://www.datocms-assets.com/60761/1641485360-project_work_etronhelpcenter-c92b6bbd.webp?dpr=0.25&fm=webp 271w,https://www.datocms-assets.com/60761/1641485360-project_work_etronhelpcenter-c92b6bbd.webp?dpr=0.5&fm=webp 543w,https://www.datocms-assets.com/60761/1641485360-project_work_etronhelpcenter-c92b6bbd.webp?dpr=0.75&fm=webp 815w,https://www.datocms-assets.com/60761/1641485360-project_work_etronhelpcenter-c92b6bbd.webp?fm=webp 1087w",
+                    "sizes": "(max-width: 1087px) 100vw, 1087px",
+                    "src": "https://www.datocms-assets.com/60761/1641485360-project_work_etronhelpcenter-c92b6bbd.webp",
+                    "width": 1087,
+                    "height": 815,
+                    "aspectRatio": 1.3337423312883436,
+                    "alt": null,
+                    "title": null,
+                    "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBhUIEQgLChUXDhIWDhUNDikVFh0UFxYeHRwTIiQkJjcjJikoIhUiKjU2KjIvMjIyIi44STcwPCsxPi8BCgsLDg0OHBAQHDsoIiUvLzsvOzs7Ozs7LzsvNS81NTQyOzs7Lzs7Oy82Ly8vNTsvLy87Ly8vLy81Oy8vLzUvL//AABEIABIAGAMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAAABQcCBAH/xAAfEAABBAICAwAAAAAAAAAAAAAAAQIDBBExBpEFITL/xAAYAQACAwAAAAAAAAAAAAAAAAACBAADBf/EAB4RAAIBBAMBAAAAAAAAAAAAAAABEQIEMZEUIUED/9oADAMBAAIRAxEAPwBLd4E6RNr0ZocBWN+cqpULKxNTSGqLYnrpDQd79G8itNuko72yb2uCue3HvoCrTV40bpDwrd5XOQeLT5O2I7qrg6PE7ABEdG1j5AAAZD//2Q=="
+                  }
                 },
                 "projectLogo": {
                   "url": "https://www.datocms-assets.com/60761/1641484600-etron-logo.jpg"
@@ -814,42 +927,42 @@
                   {
                     "id": "93840871",
                     "name": "HTML",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416718-html5.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341254-html5.svg" }
                   },
                   {
                     "id": "93840874",
                     "name": "CSS",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416710-css3.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341246-css3.svg" }
                   },
                   {
-                    "id": "93840880",
-                    "name": "JavaScript (ES6+)",
+                    "id": "97228619",
+                    "name": "TypeScript",
                     "logo": {
-                      "url": "https://www.datocms-assets.com/60761/1641416719-javascript.svg"
+                      "url": "https://www.datocms-assets.com/60761/1642343542-typescript.svg"
                     }
                   },
                   {
                     "id": "93840881",
                     "name": "React",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416724-react.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341260-react.svg" }
                   },
                   {
                     "id": "93840884",
                     "name": "Next.js",
                     "logo": {
-                      "url": "https://www.datocms-assets.com/60761/1641416721-next-dot-js.svg"
+                      "url": "https://www.datocms-assets.com/60761/1642341257-next-dot-js.svg"
                     }
                   },
                   {
                     "id": "93840875",
                     "name": "Sass",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416726-sass.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341261-sass.svg" }
                   },
                   {
                     "id": "93840903",
                     "name": "Bootstrap",
                     "logo": {
-                      "url": "https://www.datocms-assets.com/60761/1641416728-bootstrap.svg"
+                      "url": "https://www.datocms-assets.com/60761/1642341241-bootstrap.svg"
                     }
                   }
                 ]
@@ -863,7 +976,19 @@
                 "liveLink": "https://hamsterrat.com/",
                 "repoLink": "",
                 "showcaseImage": {
-                  "url": "https://www.datocms-assets.com/60761/1641478233-project_work_hamsterrat.jpg"
+                  "url": "https://www.datocms-assets.com/60761/1641478233-project_work_hamsterrat.jpg",
+                  "responsiveImage": {
+                    "srcSet": "https://www.datocms-assets.com/60761/1641478233-project_work_hamsterrat.jpg?dpr=0.25 320w,https://www.datocms-assets.com/60761/1641478233-project_work_hamsterrat.jpg?dpr=0.5 640w,https://www.datocms-assets.com/60761/1641478233-project_work_hamsterrat.jpg?dpr=0.75 960w,https://www.datocms-assets.com/60761/1641478233-project_work_hamsterrat.jpg 1280w",
+                    "webpSrcSet": "https://www.datocms-assets.com/60761/1641478233-project_work_hamsterrat.jpg?dpr=0.25&fm=webp 320w,https://www.datocms-assets.com/60761/1641478233-project_work_hamsterrat.jpg?dpr=0.5&fm=webp 640w,https://www.datocms-assets.com/60761/1641478233-project_work_hamsterrat.jpg?dpr=0.75&fm=webp 960w,https://www.datocms-assets.com/60761/1641478233-project_work_hamsterrat.jpg?fm=webp 1280w",
+                    "sizes": "(max-width: 1280px) 100vw, 1280px",
+                    "src": "https://www.datocms-assets.com/60761/1641478233-project_work_hamsterrat.jpg",
+                    "width": 1280,
+                    "height": 960,
+                    "aspectRatio": 1.3333333333333333,
+                    "alt": null,
+                    "title": null,
+                    "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoXDhUcDg0YDiUVIRgjFxYfHSAWLi0mHysyKy40LyEfPDU9KC0yMj4+IiI4SU8wPCsxPi8BCgsLDg0OHBAQHDsoIig7NTs1OzsvOy87Oy81LzAvLy87NTUvLy8vLy8vLy8vLzU1Ly8vLy81Ly8vLy8vLy8vL//AABEIABIAGAMBIgACEQEDEQH/xAAaAAACAgMAAAAAAAAAAAAAAAAABAEGAwUH/8QAHxAAAgICAgMBAAAAAAAAAAAAAAECAwQFEVEhMTIG/8QAFwEBAQEBAAAAAAAAAAAAAAAAAgEDAP/EABoRAAIDAQEAAAAAAAAAAAAAAAABAhEhMRL/2gAMAwEAAhEDEQA/AGLN5Sn9IcxNnXbHlNHK9hXsW4uqbXZvtJkX10JWN88eTRxyyZ6ot2x2ldK5bQFJ/STyb8aUaZNSAUY2gyaTGLkujJjABESXSMv0SAHAZ//Z"
+                  }
                 },
                 "projectLogo": {
                   "url": "https://www.datocms-assets.com/60761/1641484598-hamsterrat_icon.jpg"
@@ -872,24 +997,24 @@
                   {
                     "id": "93840871",
                     "name": "HTML",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416718-html5.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341254-html5.svg" }
                   },
                   {
                     "id": "93840874",
                     "name": "CSS",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416710-css3.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341246-css3.svg" }
                   },
                   {
                     "id": "93840880",
                     "name": "JavaScript (ES6+)",
                     "logo": {
-                      "url": "https://www.datocms-assets.com/60761/1641416719-javascript.svg"
+                      "url": "https://www.datocms-assets.com/60761/1642341255-javascript.svg"
                     }
                   },
                   {
                     "id": "93840875",
                     "name": "Sass",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1641416726-sass.svg" }
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341261-sass.svg" }
                   }
                 ]
               }
@@ -897,9 +1022,11 @@
           },
           {
             "__typename": "CtaContainerRecord",
+            "id": "94033393",
             "callToActions": [
               {
                 "id": "94033392",
+                "title": "Contact Me",
                 "icon": null,
                 "ctaType": "primary",
                 "isExternalLink": false,
