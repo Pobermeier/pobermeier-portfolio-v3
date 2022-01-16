@@ -47,36 +47,38 @@
   font-size: 1.5rem;
 }
 
-.technologies .logo-carousel {
-  height: 5rem;
-  margin: 1rem auto;
-}
+@media screen and (min-width: 750px) {
+  .technologies .logo-carousel {
+    height: 5rem;
+    margin: 1rem auto;
+  }
 
-.technologies .logo-carousel .logo-carousel__inner {
-  display: block;
-  width: 200%;
-  animation: scroll-left 40s linear infinite;
-  animation-fill-mode: forwards;
-}
+  .technologies .logo-carousel .logo-carousel__inner {
+    display: block;
+    width: 200%;
+    animation: scroll-left 40s linear infinite;
+    animation-fill-mode: forwards;
+  }
 
-.technologies .logo-carousel .logo-carousel__inner:hover {
-  animation-play-state: paused;
-}
+  .technologies .logo-carousel .logo-carousel__inner:hover {
+    animation-play-state: paused;
+  }
 
-.technologies .logo-carousel .logo-carousel__inner .logo-carousel__item {
-  width: 4rem;
-  height: 4rem;
-  display: inline-block;
-  margin: 0 1rem;
-  transition: all 0.2s ease-out;
-}
+  .technologies .logo-carousel .logo-carousel__inner .logo-carousel__item {
+    width: 4rem;
+    height: 4rem;
+    display: inline-block;
+    margin: 0 1rem;
+    transition: all 0.2s ease-out;
+  }
 
-.technologies .logo-carousel .logo-carousel__inner .logo-carousel__item:hover {
-  transform: scale(1.2);
-  cursor: pointer;
-}
+  .technologies .logo-carousel .logo-carousel__inner .logo-carousel__item:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
 
-.technologies .logo-carousel .logo-carousel__inner ul {
-  float: left;
-  width: 50%;
+  .technologies .logo-carousel .logo-carousel__inner ul {
+    float: left;
+    width: 50%;
+  }
 }
