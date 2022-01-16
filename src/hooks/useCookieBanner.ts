@@ -15,7 +15,7 @@ const useCookieBanner = (): void => {
           </div>
           <div class="px-3 items-center">
             <button
-              class="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-full shadow-sm text-white bg-primary hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800 hover:scale-105 transition-all" id="accept-cookies"
+              class="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-full shadow-sm text-white bg-primary md:hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800 md:hover:scale-105 transition-all" id="accept-cookies"
             >
               Accept Cookies
             </button>

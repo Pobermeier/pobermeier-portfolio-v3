@@ -52,7 +52,7 @@ const LogoSlider = ({ logos, title }: LogoSliderProps) => {
         {logosToRender?.map(({ id, logo, name }) => (
           <li
             key={id}
-            className="cursor-pointer hover:scale-125 text-primary flex flex-col justify-center items-center space-y-3"
+            className="cursor-pointer md:hover:scale-125 text-primary flex flex-col justify-center items-center space-y-3"
           >
             <TechnologyLogo technologyName={name} imgSrc={logo.url} height={48} width={48} />
             <span className="text-center">{name}</span>

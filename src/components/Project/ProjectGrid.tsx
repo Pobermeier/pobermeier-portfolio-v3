@@ -29,7 +29,7 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
         return (
           <div
             key={id}
-            className="flex flex-col rounded-xl drop-shadow-xl overflow-hidden hover:scale-105 transition-all"
+            className="flex flex-col rounded-xl drop-shadow-xl overflow-hidden md:hover:scale-105 transition-all"
           >
             <div className="flex-shrink-0">
               <a
@@ -77,7 +77,7 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
                   {technologiesUsed?.map(({ id, logo, name }) => (
                     <li
                       key={id}
-                      className="cursor-pointer bg-transparent drop-shadow-sm hover:scale-125"
+                      className="cursor-pointer bg-transparent drop-shadow-sm md:hover:scale-125"
                     >
                       <TechnologyLogo
                         technologyName={name}

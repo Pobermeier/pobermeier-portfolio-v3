@@ -16,7 +16,7 @@ const DarkModeToggle = () => {
 
   return (
     <button
-      className="flex justify-center text-gray-800 dark:text-gray-400 hover:text-primary dark:hover:text-primary hover:scale-110 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800"
+      className="flex justify-center text-gray-800 dark:text-gray-400 md:hover:text-primary dark:md:hover:text-primary md:hover:scale-110 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800"
       title="Toggle dark mode"
       onClick={() => setDarkMode(!darkMode)}
     >

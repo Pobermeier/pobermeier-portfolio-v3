@@ -42,7 +42,7 @@ const Button = ({
     "font-medium",
     "rounded-full",
     "transition-all",
-    "hover:scale-105",
+    "md:hover:scale-105",
     "focus:outline-none",
     "focus:ring-2",
     "focus:ring-offset-2",
@@ -51,7 +51,7 @@ const Button = ({
     type === "primary" ? "border-transparent" : "border-primary",
     type === "primary" ? "text-white" : "text-black",
     type === "primary" ? "bg-primary" : "bg-white",
-    type === "primary" ? "hover:bg-green-800" : "hover:bg-gray-100",
+    type === "primary" ? "md:hover:bg-green-800" : "md:hover:bg-gray-100",
     {
       "px-3": size === "xs",
       "py-2": size === "xs" || size === "sm" || size === "md",
