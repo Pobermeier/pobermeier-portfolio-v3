@@ -1,4 +1,3 @@
-//@ts-ignore
 const fs = require("fs");
 const path = require("path");
 const { GraphQLClient } = require("graphql-request");
