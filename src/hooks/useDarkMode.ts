@@ -11,7 +11,8 @@ const useDarkMode = (
 
   useEffect(() => {
     setDarkMode(Boolean(localStorage.getItem(localStorageKey)));
-  }, [localStorageKey]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     if (darkMode) {
