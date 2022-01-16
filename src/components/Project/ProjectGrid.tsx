@@ -32,7 +32,13 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
             className="flex flex-col rounded-xl drop-shadow-xl overflow-hidden hover:scale-105 transition-all"
           >
             <div className="flex-shrink-0">
-              <a href={liveLink} target="_blank" rel="noreferrer noopener" className="block mt-2">
+              <a
+                href={liveLink}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="block mt-2"
+                title={title}
+              >
                 {/* eslint-disable-next-line jsx-a11y/alt-text */}
                 <Image
                   layout="responsive"
@@ -40,6 +46,7 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
                   pictureClassName="rounded-t-xl"
                   data={showcaseImage.responsiveImage as ResponsiveImageType}
                 />
+                <span className="sr-only">{title}</span>
               </a>
             </div>
             <div className="flex-1 bg-gray-100 dark:bg-gray-700 p-6 flex flex-col justify-between">
