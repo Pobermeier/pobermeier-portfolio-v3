@@ -36,20 +36,22 @@
   }
 }
 
-.fade-in-left {
-  transform: translate3d(-100%, 0, 0);
-  opacity: 0;
-  animation: fade-in-left 0.3s ease-in;
-  animation-fill-mode: forwards;
-  animation-delay: 0ms;
-}
+@media screen and (min-width: 750px) {
+  .fade-in-left {
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+    animation: fade-in-left 0.3s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 0ms;
+  }
 
-.fade-in-left.offset-1 {
-  animation-delay: 200ms;
-}
+  .fade-in-left.offset-1 {
+    animation-delay: 200ms;
+  }
 
-.fade-in-left.offset-2 {
-  animation-delay: 400ms;
+  .fade-in-left.offset-2 {
+    animation-delay: 400ms;
+  }
 }
 
 .skip-to-content-link {
