@@ -11,7 +11,7 @@ const useCookieBanner = (): void => {
       <div class="w-10/12 max-w-7xl p-4 backdrop-blur-sm bg-gray-900/80 dark:bg-white/70 mb-4 mx-auto rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="600" data-aos-offset="0">
         <div class="md:flex items-center -mx-3">
           <div class="md:flex-1 px-5 mb-5 md:mb-0">
-            <p class="text-center md:text-left text-gray-300 dark:text-gray-900 text-sm leading-tight md:pr-12">This website uses cookies. If you continue to use the website, we assume your consent. You can check out our privacy policy by clicking <a href="privacy-notice" title="Privacy Policy" class="text-gray-300 dark:text-gray-900 underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800">here</a>.</p>
+            <p class="text-center md:text-left text-gray-300 dark:text-gray-900 text-sm leading-tight md:pr-12">This website uses cookies. If you continue to use the website, we assume your consent. <a href="privacy-notice" class="text-gray-300 dark:text-gray-900 underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800">You can learn more about our privacy policy here</a>.</p>
           </div>
           <div class="px-3 items-center">
             <button
@@ -43,13 +43,7 @@ const useCookieBanner = (): void => {
         (document.querySelector("#cookie-info") as HTMLElement).style.display = "none";
       }
     });
-
-    document.addEventListener("click", (event) => {
-      if ((event.target as HTMLButtonElement).id === "open-privacy-notice") {
-        router.push("/privacy-notice", undefined, { shallow: true });
-      }
-    });
-  }, [router]);
+  }, []);
 
   useEffect(() => {
     window.addEventListener("load", () => checkCookie("cookies-accepted", showCookieAlert));
