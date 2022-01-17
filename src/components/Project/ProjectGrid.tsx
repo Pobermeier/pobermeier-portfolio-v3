@@ -27,27 +27,18 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
         } = project;
 
         return (
-          <div
+          <article
             key={id}
             className="flex flex-col rounded-xl bg-primary drop-shadow-lg overflow-hidden md:hover:drop-shadow-2xl md:hover:scale-105 transition-all"
           >
             <div className="flex-shrink-0">
-              <a
-                href={liveLink}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="block mt-2"
-                title={title}
-              >
-                {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                <Image
-                  layout="responsive"
-                  objectFit="cover"
-                  pictureClassName="rounded-t-xl"
-                  data={showcaseImage.responsiveImage as ResponsiveImageType}
-                />
-                <span className="sr-only">{title}</span>
-              </a>
+              {/* eslint-disable-next-line jsx-a11y/alt-text */}
+              <Image
+                layout="responsive"
+                objectFit="cover"
+                pictureClassName="rounded-t-xl"
+                data={showcaseImage.responsiveImage as ResponsiveImageType}
+              />
             </div>
             <div className="flex-1 bg-gray-100 dark:bg-gray-700 p-6 flex flex-col justify-between">
               <div className="flex">
@@ -63,7 +54,7 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
                   />
                 </div>
                 <div className="ml-4">
-                  <p className="text-sm font-medium text-gray-600 dark:text-gray-100">{subTitle}</p>
+                  <p className="text-sm font-medium text-gray-800 dark:text-gray-200">{subTitle}</p>
 
                   <h3 className="text-xl font-semibold text-primary">{title}</h3>
                 </div>
@@ -72,7 +63,7 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
                 <p className="mt-3 text-base text-gray-600 dark:text-gray-300">{description}</p>
               </div>
               <div className="my-4 flex flex-col justify-center items-center">
-                <h3 className="text-md font-semibold text-primary mb-4">Technologies Used</h3>
+                <h4 className="text-md font-semibold text-primary mb-4">Technologies Used</h4>
                 <ul className="grid gap-4 grid-flow-col">
                   {technologiesUsed?.map(({ id, logo, name }) => (
                     <li
@@ -94,29 +85,25 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
                   <div className="flex justify-center items-center space-x-8 mx-auto">
                     {liveLink && (
                       <Button
-                        as="a"
-                        isExternalLink
+                        onClick={() => window.open(liveLink, "_blank")?.focus()}
                         size="lg"
                         text="Live Link"
                         type="primary"
-                        url={liveLink}
                       />
                     )}
                     {repoLink && (
                       <Button
-                        as="a"
-                        isExternalLink
+                        onClick={() => window.open(repoLink, "_blank")?.focus()}
                         size="lg"
                         text="Code"
                         type="secondary"
-                        url={repoLink}
                       />
                     )}
                   </div>
                 </div>
               )}
             </div>
-          </div>
+          </article>
         );
       })}
     </div>

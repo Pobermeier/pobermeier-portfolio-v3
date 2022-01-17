@@ -16,7 +16,7 @@ export interface TextWithImageProps {
 
 const TextWithImage = ({ image, text }: TextWithImageProps) => {
   return (
-    <section className="lg:overflow-hidden">
+    <div className="lg:overflow-hidden">
       <div className="relative max-w-7xl mx-auto mt-12 mb-12 px-4 sm:px-6 lg:px-8">
         <BackgroundPatternWrapper>
           <BackgroundPattern positionClassName="hidden lg:block absolute left-full top-1/2 transform -translate-x-8 -translate-y-1/2" />
@@ -53,7 +53,7 @@ const TextWithImage = ({ image, text }: TextWithImageProps) => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -8,17 +8,14 @@ interface Props {
 
 const TechnologyLogo: React.FC<Props> = ({ width, height, imgSrc, technologyName }) => {
   return (
-    <>
-      <img
-        loading="lazy"
-        width={width}
-        height={height}
-        src={imgSrc}
-        alt={technologyName}
-        title={technologyName}
-      />
-      <span className="sr-only">{technologyName}</span>
-    </>
+    <img
+      loading="lazy"
+      width={width}
+      height={height}
+      src={imgSrc}
+      alt={technologyName}
+      title={technologyName}
+    />
   );
 };
 

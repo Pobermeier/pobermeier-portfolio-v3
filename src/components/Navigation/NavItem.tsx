@@ -15,7 +15,7 @@ const linkClassName =
 
 const NavItem = ({ isExternalLink, name, onClick = noop, url }: Props) => {
   return (
-    <>
+    <li>
       {isExternalLink ? (
         <a
           href={url}
@@ -33,7 +33,7 @@ const NavItem = ({ isExternalLink, name, onClick = noop, url }: Props) => {
           </a>
         </Link>
       )}
-    </>
+    </li>
   );
 };
 

@@ -76,11 +76,15 @@ const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProp
             </Popover.Button>
           </div>
           <div className="hidden md:flex items-center justify-end md:flex-1 space-x-10">
-            <div className="flex justify-center items-center space-x-5">
-              <DarkModeToggle />
+            <ul className="flex justify-center items-center space-x-5">
+              <li>
+                <DarkModeToggle />
+              </li>
               {renderSocialMediaIcons(SOCIAL_ICON_SIZE_DESKTOP)}
-            </div>
-            <nav className="space-x-10">{renderNavItems()}</nav>
+            </ul>
+            <nav>
+              <ul className="flex space-x-10">{renderNavItems()}</ul>
+            </nav>
             <div className="flex justify-center space-x-5">{renderCallToActions()}</div>
           </div>
         </div>
@@ -115,11 +119,14 @@ const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProp
                 </div>
               </div>
               <div className="py-6 px-5 space-y-6">
-                <div className="grid grid-cols-1 gap-y-4 text-right">{renderNavItems(close)}</div>
+                <ul className="grid grid-cols-1 gap-y-6 text-right">{renderNavItems(close)}</ul>
                 <div className="flex flex-col space-y-3">{renderCallToActions(close, true)}</div>
-                <div className="flex justify-end space-x-5">
+                <ul className="flex justify-end space-x-5">
+                  <li>
+                    <DarkModeToggle />
+                  </li>
                   {renderSocialMediaIcons(SOCIAL_ICON_SIZE_MOBILE)}
-                </div>
+                </ul>
               </div>
             </div>
           )}

@@ -55,7 +55,9 @@ const LogoSlider = ({ logos, title }: LogoSliderProps) => {
             className="cursor-pointer md:hover:scale-125 text-primary flex flex-col justify-center items-center space-y-3"
           >
             <TechnologyLogo technologyName={name} imgSrc={logo.url} height={48} width={48} />
-            <span className="text-center">{name}</span>
+            <span className="text-center" aria-hidden="true">
+              {name}
+            </span>
           </li>
         ))}
       </ul>

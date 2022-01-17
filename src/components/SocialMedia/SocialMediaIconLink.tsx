@@ -41,16 +41,18 @@ const SocialMediaIconLink = ({ name, url, size = "lg", reactIconIdentifier }: Pr
   };
 
   return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noreferrer noopener"
-      className="text-gray-800 dark:text-gray-400 md:hover:text-primary dark:md:hover:text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800 md:hover:scale-110 transition-all"
-      title={name}
-    >
-      <span className="sr-only">{name}</span>
-      {iconMap[reactIconIdentifier]}
-    </a>
+    <li>
+      <a
+        href={url}
+        target="_blank"
+        rel="noreferrer noopener"
+        className="text-gray-800 dark:text-gray-400 md:hover:text-primary dark:md:hover:text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800 md:hover:scale-110 transition-all"
+        title={name}
+      >
+        <span className="sr-only">{name}</span>
+        {iconMap[reactIconIdentifier]}
+      </a>
+    </li>
   );
 };
 

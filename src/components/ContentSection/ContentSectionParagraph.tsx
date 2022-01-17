@@ -7,9 +7,9 @@ interface Props {
 
 const ContentSectionParagraph = ({ text }: Props) => {
   return (
-    <p className="mt-4 leading-6 text-lg text-gray-600 dark:text-gray-300 sm:text-xl">
+    <div className="mt-4 leading-6 text-lg text-gray-600 dark:text-gray-300 sm:text-xl">
       <ReactMarkdown>{text}</ReactMarkdown>
-    </p>
+    </div>
   );
 };
 
