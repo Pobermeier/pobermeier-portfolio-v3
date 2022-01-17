@@ -1,3 +1,4 @@
+// types
 import { CTAContainerProps } from "components/Buttons/CTAContainer";
 import { ContactSectionProps } from "components/Contact/ContactSection";
 import { ContentSectionProps } from "components/ContentSection/ContentSection";

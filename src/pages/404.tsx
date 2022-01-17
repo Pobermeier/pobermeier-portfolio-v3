@@ -1,7 +1,9 @@
+// components
 import Button from "components/Buttons/Button";
 import SiteLogoLinked from "components/Logos/SiteLogoLinked";
 import Navbar, { NavbarProps } from "components/Navigation/Navbar";
 import SEO from "components/SEO/SEO";
+// config
 import config from "config";
 
 const navbarProps: NavbarProps = {
