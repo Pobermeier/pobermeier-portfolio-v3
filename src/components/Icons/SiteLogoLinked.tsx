@@ -1,6 +1,6 @@
 import Link from "next/link";
 // components
-import SiteLogo from "components/Logos/SiteLogo";
+import SiteLogo from "components/Icons/SiteLogo";
 // config
 import config from "config";
 

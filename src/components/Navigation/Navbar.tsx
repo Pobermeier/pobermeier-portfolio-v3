@@ -4,11 +4,11 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 // types
 import { SocialMediaIcon, NavigationLink } from "models/datoCMS";
 // components
-import SocialMediaIconLink, { IconSize } from "components/Logos/SocialMediaIconLink";
+import SocialMediaIconLink, { IconSize } from "components/Icons/SocialMediaIconLink";
 import NavItem from "components/Navigation/NavItem";
 import Button from "components/Buttons/Button";
-import SiteLogo from "components/Logos/SiteLogo";
-import SiteLogoLinked from "components/Logos/SiteLogoLinked";
+import SiteLogo from "components/Icons/SiteLogo";
+import SiteLogoLinked from "components/Icons/SiteLogoLinked";
 import DarkModeToggle from "components/Buttons/DarkModeToggle";
 import { CTAContainerProps } from "components/Buttons/CTAContainer";
 // utils

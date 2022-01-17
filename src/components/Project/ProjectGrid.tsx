@@ -5,7 +5,7 @@ import { Image, ResponsiveImageType } from "react-datocms";
 import { Project } from "models/datoCMS";
 // components
 import Button from "components/Buttons/Button";
-import TechnologyLogo from "components/Logos/TechnologyLogo";
+import TechnologyLogo from "components/Icons/TechnologyLogo";
 
 export interface ProjectGridProps {
   projects: Project[];

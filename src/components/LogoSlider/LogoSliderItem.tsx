@@ -1,5 +1,5 @@
 // components
-import TechnologyLogo from "components/Logos/TechnologyLogo";
+import TechnologyLogo from "components/Icons/TechnologyLogo";
 
 interface Props {
   technologyName: string;
