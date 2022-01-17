@@ -1,3 +1,4 @@
+// components
 import TechnologyLogo from "components/Logos/TechnologyLogo";
 
 interface Props {

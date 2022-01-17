@@ -1,15 +1,17 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-
-import SocialMediaIconLink, { IconSize } from "components/SocialMedia/SocialMediaIconLink";
+// types
+import { SocialMediaIcon, NavigationLink } from "models/datoCMS";
+// components
+import SocialMediaIconLink, { IconSize } from "components/Logos/SocialMediaIconLink";
 import NavItem from "components/Navigation/NavItem";
 import Button from "components/Buttons/Button";
 import SiteLogo from "components/Logos/SiteLogo";
 import SiteLogoLinked from "components/Logos/SiteLogoLinked";
 import DarkModeToggle from "components/Buttons/DarkModeToggle";
 import { CTAContainerProps } from "components/Buttons/CTAContainer";
-import { SocialMediaIcon, NavigationLink } from "models/datoCMS";
+// utils
 import { noop } from "utils/utilFns";
 
 export interface NavbarProps {

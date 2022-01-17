@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import { Image, ResponsiveImageType } from "react-datocms";
 
+import { Image, ResponsiveImageType } from "react-datocms";
+// types
+import { Project } from "models/datoCMS";
+// components
 import Button from "components/Buttons/Button";
 import TechnologyLogo from "components/Logos/TechnologyLogo";
-import { Project } from "models/datoCMS";
 
 export interface ProjectGridProps {
   projects: Project[];

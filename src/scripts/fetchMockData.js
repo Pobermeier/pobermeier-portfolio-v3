@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const { GraphQLClient } = require("graphql-request");
-
+// graphql
 const { GET_PAGE_DATA_QUERY } = require("../graphql/queries/getPageData");
 const { GET_ALL_PAGE_SLUGS_QUERY } = require("../graphql/queries/getAllPageSlugs");
 

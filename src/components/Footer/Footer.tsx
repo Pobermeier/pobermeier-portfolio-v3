@@ -1,6 +1,7 @@
+// types
 import { NavigationLink, SocialMediaIcon } from "models/datoCMS";
-
-import SocialMediaIconLink from "components/SocialMedia/SocialMediaIconLink";
+// components
+import SocialMediaIconLink from "components/Logos/SocialMediaIconLink";
 import FooterNavItem from "components/Footer/FooterNavItem";
 
 export interface FooterProps {

@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 import { SocialMediaIconIdentifier } from "models/datoCMS";
-
+// components
 import TwitterIcon from "components/Logos/TwitterIcon";
 import GitHubIcon from "components/Logos/GitHubIcon";
 import LinkedinIcon from "components/Logos/LinkedinIcon";

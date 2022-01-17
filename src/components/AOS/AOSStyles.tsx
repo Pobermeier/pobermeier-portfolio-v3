@@ -1,8 +1,7 @@
-import React from "react";
 import "aos/dist/aos.css";
 
 const AOSStyles = () => {
-  return <></>;
+  return null;
 };
 
 export default AOSStyles;

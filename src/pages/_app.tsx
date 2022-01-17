@@ -3,6 +3,8 @@ import type { AppProps } from "next/app";
 import Script from "next/script";
 // constants
 import { isProd } from "Constants";
+// components
+const AOSStyles = dynamic(() => import("components/AOS/AOSStyles"));
 // hooks
 import useCookieBanner from "hooks/useCookieBanner";
 import useGoogleTagManager from "hooks/useGoogleTagManager";
@@ -15,8 +17,6 @@ import "styles/globals.css";
 import "styles/inter.css";
 // config
 import config from "config";
-
-const AOSStyles = dynamic(() => import("components/AOS/AOSStyles"));
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const [isPreview, setIsPreview] = usePreviewMode();

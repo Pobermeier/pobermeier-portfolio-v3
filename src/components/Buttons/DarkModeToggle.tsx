@@ -1,7 +1,8 @@
-import React from "react";
-import useDarkMode from "hooks/useDarkMode";
+// components
 import DarkIcon from "components/Icons/DarkIcon";
 import LightIcon from "components/Icons/LightIcon";
+// hooks
+import useDarkMode from "hooks/useDarkMode";
 
 const LOCAL_STORAGE_DARKMODE_KEY = "darkMode";
 const DARKMODE_CLASSNAME = "dark";

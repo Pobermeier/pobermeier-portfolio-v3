@@ -10,5 +10,6 @@ export function request(query: string, variables: null | object = null, isPrevie
       authorization: `Bearer ${process.env.NEXT_PUBLIC_DATOCMS_API_TOKEN}`,
     },
   });
+
   return client.request(query, variables);
 }

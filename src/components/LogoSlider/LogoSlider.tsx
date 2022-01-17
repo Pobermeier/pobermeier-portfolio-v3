@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+// components
 import TechnologyLogo from "components/Logos/TechnologyLogo";
 import LogoSliderItem from "components/LogoSlider/LogoSliderItem";
 import Button from "components/Buttons/Button";

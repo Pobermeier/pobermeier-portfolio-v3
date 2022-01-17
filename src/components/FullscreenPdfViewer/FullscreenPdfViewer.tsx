@@ -1,5 +1,3 @@
-import React from "react";
-
 export type FullscreenPdfViewerProps = {
   pdfFile: {
     url: string;

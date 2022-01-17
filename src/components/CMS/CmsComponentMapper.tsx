@@ -1,16 +1,16 @@
 import dynamic from "next/dynamic";
-
+// types
+import { CmsComponent, CmsComponentName } from "models/datoCMS";
 import { ContactSectionProps } from "components/Contact/ContactSection";
 import { FullscreenPdfViewerProps } from "components/FullscreenPdfViewer/FullscreenPdfViewer";
 import { HeroSectionProps } from "components/Hero/HeroSection";
 import { StaticContentBlockRecordProps } from "components/StaticContentBlock/StaticContentBlock";
-import { CmsComponent, CmsComponentName } from "models/datoCMS";
 import { LogoSliderProps } from "components/LogoSlider/LogoSlider";
 import { ContentSectionProps } from "components/ContentSection/ContentSection";
 import { TextWithImageProps } from "components/TextWithImage/TextWithImage";
 import { CTAContainerProps } from "components/Buttons/CTAContainer";
 import { ProjectGridProps } from "components/Project/ProjectGrid";
-
+// components
 const FullscreenPdfViewer = dynamic(
   () => import("components/FullscreenPdfViewer/FullscreenPdfViewer"),
 );

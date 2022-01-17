@@ -1,8 +1,10 @@
 import { useEffect } from "react";
+// utils
+import { noop } from "utils/utilFns";
 
 const useQueryCheck = (
   queryParamName: string,
-  cb: (isSearchParamSet: boolean) => void = () => {},
+  cb: (isSearchParamSet: boolean) => void = noop,
 ): void => {
   useEffect(() => {
     const searchParams = new URLSearchParams(window.location.search);

@@ -1,5 +1,5 @@
-import { useRouter } from "next/dist/client/router";
 import { useEffect } from "react";
+import { useRouter } from "next/dist/client/router";
 
 const useScrollToHashOnPageLoad = (): void => {
   const router = useRouter();

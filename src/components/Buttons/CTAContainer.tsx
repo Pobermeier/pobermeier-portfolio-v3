@@ -1,7 +1,7 @@
-import React from "react";
-
-import Button from "components/Buttons/Button";
+// types
 import { CallToAction } from "models/datoCMS";
+// components
+import Button from "components/Buttons/Button";
 
 export interface CTAContainerProps {
   callToActions: CallToAction[];

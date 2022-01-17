@@ -1,7 +1,7 @@
+import ReactMarkdown from "react-markdown";
+// components
 import BackgroundPattern from "components/BackgroundPattern/BackgroundPattern";
 import BackgroundPatternWrapper from "components/BackgroundPattern/BackgroundPatternWrapper";
-import React from "react";
-import ReactMarkdown from "react-markdown";
 
 export type StaticContentBlockRecordProps = {
   title: string;

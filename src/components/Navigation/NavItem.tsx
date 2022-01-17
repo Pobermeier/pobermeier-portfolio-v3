@@ -1,6 +1,5 @@
-import React from "react";
 import Link from "next/link";
-
+// utils
 import { noop } from "utils/utilFns";
 
 interface Props {

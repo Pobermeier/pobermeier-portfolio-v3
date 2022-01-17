@@ -1,6 +1,6 @@
-import React from "react";
+// components
 import Button from "components/Buttons/Button";
-import Banner from "./Banner";
+import Banner from "components/Banner/Banner";
 
 interface Props {
   onLeavePreviewBtnClick: () => void;

@@ -1,11 +1,11 @@
-import React from "react";
 import { Image } from "react-datocms";
 import ReactMarkdown from "react-markdown";
-
+// types
+import { ResponsiveImage } from "models/datoCMS";
+// components
 import Button from "components/Buttons/Button";
 import BackgroundPatternWrapper from "components/BackgroundPattern/BackgroundPatternWrapper";
 import BackgroundPattern from "components/BackgroundPattern/BackgroundPattern";
-import { ResponsiveImage } from "models/datoCMS";
 import { CTAContainerProps } from "components/Buttons/CTAContainer";
 
 export interface HeroSectionProps {

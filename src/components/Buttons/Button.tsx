@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+
 import Link from "next/link";
 import classNames from "classnames";
-
+// utils
 import { noop } from "utils/utilFns";
 
 interface Props {

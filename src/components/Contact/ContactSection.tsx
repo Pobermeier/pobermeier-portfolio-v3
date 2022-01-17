@@ -1,6 +1,7 @@
+// components
 import BackgroundPatternWrapper from "components/BackgroundPattern/BackgroundPatternWrapper";
 import BackgroundPattern from "components/BackgroundPattern/BackgroundPattern";
-import ContactForm from "./ContactForm";
+import ContactForm from "components/Contact/ContactForm";
 import ContentSection from "components/ContentSection/ContentSection";
 
 export interface ContactSectionProps {

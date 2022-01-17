@@ -1,5 +1,3 @@
-import React from "react";
-
 const BackgroundPatternWrapper: React.FC = ({ children }) => {
   return (
     <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full -z pointer-events-none">

@@ -1,6 +1,7 @@
-import React from "react";
 import Link from "next/link";
+// components
 import SiteLogo from "components/Logos/SiteLogo";
+// config
 import config from "config";
 
 interface Props {

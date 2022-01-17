@@ -1,10 +1,10 @@
-import React from "react";
 import { Image } from "react-datocms";
 import ReactMarkdown from "react-markdown";
-
+// types
+import { ResponsiveImage } from "models/datoCMS";
+// components
 import BackgroundPattern from "components/BackgroundPattern/BackgroundPattern";
 import BackgroundPatternWrapper from "components/BackgroundPattern/BackgroundPatternWrapper";
-import { ResponsiveImage } from "models/datoCMS";
 
 export interface TextWithImageProps {
   text: string;

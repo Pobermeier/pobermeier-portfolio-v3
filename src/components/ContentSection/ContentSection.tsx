@@ -1,9 +1,10 @@
 import React, { ReactElement } from "react";
-
+// types
+import { ContentSectionAllowedComponent } from "models/datoCMS";
+// components
 import CmsComponentMapper from "components/CMS/CmsComponentMapper";
 import ContentSectionHeading from "components/ContentSection/ContentSectionHeading";
 import ContentSectionParagraph from "components/ContentSection//ContentSectionParagraph";
-import { ContentSectionAllowedComponent } from "models/datoCMS";
 
 export interface ContentSectionProps {
   decorationElements?: ReactElement | ReactElement[];
