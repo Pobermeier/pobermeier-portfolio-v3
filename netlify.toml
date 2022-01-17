@@ -1,3 +1,9 @@
 [build]
   publish = "out/"
   command = "yarn build:netlify"
+
+[[redirects]]
+  from = "/admin"
+  to = "https://admin.patrickobermeier.dev"
+  status = 301
+  force = true
