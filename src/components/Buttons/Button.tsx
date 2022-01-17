@@ -93,17 +93,22 @@ const Button = ({
     );
   }
 
-  return (
-    <Tag
-      href={url}
-      onClick={onClick}
-      className={computedClassName}
-      target="_blank"
-      rel="noreferrer noopener"
-    >
-      {buttonContent}
-    </Tag>
-  );
+  const buttonProps = {
+    onClick: onClick,
+    className: computedClassName,
+  };
+
+  const anchorProps = {
+    href: url,
+    onClick: onClick,
+    className: computedClassName,
+    target: "_blank",
+    rel: "noreferrer noopener",
+  };
+
+  const propsToRender = as === "a" ? anchorProps : buttonProps;
+
+  return <Tag {...propsToRender}>{buttonContent}</Tag>;
 };
 
 export default Button;
