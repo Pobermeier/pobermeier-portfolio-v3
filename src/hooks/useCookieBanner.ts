@@ -1,11 +1,8 @@
 import { useCallback, useEffect } from "react";
-import { useRouter } from "next/dist/client/router";
-
+// utils
 import { checkCookie, setCookie } from "utils/cookies";
 
 const useCookieBanner = (): void => {
-  const router = useRouter();
-
   const showCookieAlert = useCallback((): void => {
     const template = `
       <div class="w-10/12 max-w-7xl p-4 backdrop-blur-sm bg-gray-900/80 dark:bg-white/70 mb-4 mx-auto rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="600" data-aos-offset="0">
