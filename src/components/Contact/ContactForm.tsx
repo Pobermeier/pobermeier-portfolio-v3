@@ -16,13 +16,13 @@ const classNames = {
 const ContactForm = ({ ctaButtonText, id }: Props) => {
   return (
     <form
-      action="/success"
       data-netlify="true"
-      id={`contact-form-${id}`}
+      action="/success"
       name={`contact-form-${id}`}
       method="POST"
       className={classNames.form}
     >
+      <input type="hidden" name="form-name" value={`contact-form-${id}`} />
       <div>
         <label htmlFor="first-name" className={classNames.label}>
           First Name
