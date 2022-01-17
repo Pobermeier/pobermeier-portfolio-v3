@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { gql } = require("graphql-request");
 
 const GET_PAGE_DATA_QUERY = gql`
