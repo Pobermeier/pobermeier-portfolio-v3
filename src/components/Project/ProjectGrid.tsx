@@ -85,7 +85,10 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
                   <div className="flex justify-center items-center space-x-8 mx-auto">
                     {liveLink && (
                       <Button
-                        onClick={() => window.open(liveLink, "_blank")?.focus()}
+                        as="a"
+                        isExternalLink
+                        url={liveLink}
+                        ariaLabel={`${title} Live Link`}
                         size="lg"
                         text="Live Link"
                         type="primary"
@@ -93,7 +96,10 @@ const ProjectGrid = ({ projects }: ProjectGridProps) => {
                     )}
                     {repoLink && (
                       <Button
-                        onClick={() => window.open(repoLink, "_blank")?.focus()}
+                        as="a"
+                        isExternalLink
+                        url={repoLink}
+                        ariaLabel={`${title} Code`}
                         size="lg"
                         text="Code"
                         type="secondary"

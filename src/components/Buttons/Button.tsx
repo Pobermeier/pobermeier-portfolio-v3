@@ -6,6 +6,7 @@ import classNames from "classnames";
 import { noop } from "utils/utilFns";
 
 interface Props {
+  ariaLabel?: string;
   as?: "button" | "a";
   className?: string;
   iconUrl?: string;
@@ -20,6 +21,7 @@ interface Props {
 }
 
 const Button = ({
+  ariaLabel,
   as = "button",
   className = "",
   iconUrl,
@@ -86,29 +88,26 @@ const Button = ({
   if (as === "a" && !isExternalLink) {
     return (
       <Link href={url as string}>
-        <a className={computedClassName} onClick={onClick}>
+        <a className={computedClassName} onClick={onClick} aria-label={ariaLabel}>
           {buttonContent}
         </a>
       </Link>
     );
   }
 
-  const buttonProps = {
-    onClick: onClick,
-    className: computedClassName,
-  };
-
   const anchorProps = {
     href: url,
-    onClick: onClick,
-    className: computedClassName,
     target: "_blank",
     rel: "noreferrer noopener",
   };
 
-  const propsToRender = as === "a" ? anchorProps : buttonProps;
+  const propsToRender = as === "a" ? anchorProps : undefined;
 
-  return <Tag {...propsToRender}>{buttonContent}</Tag>;
+  return (
+    <Tag {...propsToRender} aria-label={ariaLabel} onClick={onClick} className={computedClassName}>
+      {buttonContent}
+    </Tag>
+  );
 };
 
 export default Button;
