@@ -19,7 +19,7 @@ import { request } from "clients/datocms";
 import { GET_PAGE_DATA_QUERY } from "graphql/queries/getPageData";
 import { GET_ALL_PAGE_SLUGS_QUERY } from "graphql/queries/getAllPageSlugs";
 // config
-import config from "config";
+import globalConfig from "config";
 
 type InternalProps = {
   data: CmsData;
@@ -94,7 +94,7 @@ const Page = ({ data, isPreview, deactivatePreviewMode }: Props) => {
 export async function getStaticProps(ctx: GetStaticPropsContext) {
   const currentSlug = ctx.params?.slug;
 
-  if (config.flags.useMockData) {
+  if (globalConfig.flags.useMockData) {
     const fs = require("fs");
     const path = require("path");
 
@@ -122,7 +122,7 @@ export async function getStaticProps(ctx: GetStaticPropsContext) {
 }
 
 export async function getStaticPaths() {
-  if (config.flags.useMockData) {
+  if (globalConfig.flags.useMockData) {
     const fs = require("fs");
     const path = require("path");
 
