@@ -136,7 +136,7 @@
       {
         "tag": "meta",
         "content": null,
-        "attributes": { "property": "article:modified_time", "content": "2022-01-16T14:33:26Z" }
+        "attributes": { "property": "article:modified_time", "content": "2022-01-17T22:30:48Z" }
       },
       {
         "tag": "meta",
@@ -184,7 +184,7 @@
           "callToActions": [
             {
               "id": "94458334",
-              "icon": { "url": "https://www.datocms-assets.com/60761/1641478159-icon_view.svg" },
+              "icon": { "url": "https://www.datocms-assets.com/60761/1642415316-icon_view.svg" },
               "ctaType": "primary",
               "isExternalLink": false,
               "linkUrl": "#portfolio",
@@ -220,7 +220,7 @@
             "callToActions": [
               {
                 "id": "94032826",
-                "icon": { "url": "https://www.datocms-assets.com/60761/1641478159-icon_view.svg" },
+                "icon": { "url": "https://www.datocms-assets.com/60761/1642415316-icon_view.svg" },
                 "ctaType": "primary",
                 "isExternalLink": false,
                 "linkUrl": "#portfolio",
@@ -274,7 +274,7 @@
               {
                 "id": "94033108",
                 "title": "View My Work",
-                "icon": { "url": "https://www.datocms-assets.com/60761/1641478159-icon_view.svg" },
+                "icon": { "url": "https://www.datocms-assets.com/60761/1642415316-icon_view.svg" },
                 "ctaType": "primary",
                 "isExternalLink": false,
                 "linkUrl": "#portfolio"
@@ -442,8 +442,8 @@
                     "width": 1280,
                     "height": 960,
                     "aspectRatio": 1.3333333333333333,
-                    "alt": null,
-                    "title": null,
+                    "alt": "Vintage Poker",
+                    "title": "Vintage Poker",
                     "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHDQoTDw8LBwgNDQ0JBwkODRENDg4NFxMZGBYVFiEaHysjGh0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0NHRAPHS8dGhwvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABIAGAMBIgACEQEDEQH/xAAZAAADAAMAAAAAAAAAAAAAAAAAAwQBAgf/xAAYEAEBAQEBAAAAAAAAAAAAAAAAAwIBEf/EABYBAQEBAAAAAAAAAAAAAAAAAAABA//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8A6bvfOM4txFS3rWe+srF1XbXOhLS3jBhpOjJgLSFXACD/2Q=="
                   }
                 },
@@ -505,8 +505,8 @@
                     "width": 1280,
                     "height": 960,
                     "aspectRatio": 1.3333333333333333,
-                    "alt": null,
-                    "title": null,
+                    "alt": "DevMeetup",
+                    "title": "DevMeetup",
                     "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoSCAgLEBAVFhgNFQ0VDhIVDRANFxYdGBYVFh0eHyslGh0oHSEWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHBAQHDsoIhw7Ly8vLzs7Ni8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABIAGAMBIgACEQEDEQH/xAAZAAADAAMAAAAAAAAAAAAAAAAABAUBAwb/xAAfEAACAQQCAwAAAAAAAAAAAAAAAQMCBBExBRITMpH/xAAYAQEAAwEAAAAAAAAAAAAAAAACAwQFAP/EABkRAQEAAwEAAAAAAAAAAAAAAAEAAgMyEf/aAAwDAQACEQMRAD8A4qws8soS2DVAhxvJRZ2ipLyMbj2iNX21zEo8sXSoDRfX9Hd4ZkQMXEolu3nbH3VV4/Z/QA6enmQmbAAGVXb1f//Z"
                   }
                 },
@@ -573,8 +573,8 @@
                     "width": 1279,
                     "height": 959,
                     "aspectRatio": 1.3336809176225235,
-                    "alt": null,
-                    "title": null,
+                    "alt": "Simply Sticky",
+                    "title": "Simply Sticky",
                     "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBw0HBhUODQ0NCg0IEw8JDQkNDRENCw4YFxUZGBYTFhUaHysjGh0oHRUiJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHBAQHC8cHSkvNS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABIAGAMBIgACEQEDEQH/xAAaAAACAgMAAAAAAAAAAAAAAAAABQQHAQID/8QAGxABAAIDAQEAAAAAAAAAAAAAAAIDAREyEgT/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQD/xAAXEQEBAQEAAAAAAAAAAAAAAAABAAIh/9oADAMBAAIRAxEAPwC47cbgWz6Mrc6gXyxuQpPO04XOQa258sqFHbM7uUQBmxRvoACxb//Z"
                   }
                 },
@@ -624,52 +624,6 @@
                 ]
               },
               {
-                "id": "94035358",
-                "title": "Flashcards",
-                "subTitle": "Productivity App",
-                "description": "This is a productivity app created using React Native. Users can create virtual decks of flashcards, build a library of questions and answers for a specific topic and challenge themselves by taking quizzes and documenting their learning progress.",
-                "projectType": "personal",
-                "liveLink": "https://snack.expo.io/@git/github.com/Pobermeier/reactnd-mobile-flashcards",
-                "repoLink": "https://github.com/Pobermeier/mobile-flashcards",
-                "showcaseImage": {
-                  "url": "https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg",
-                  "responsiveImage": {
-                    "srcSet": "https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?dpr=0.25 320w,https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?dpr=0.5 640w,https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?dpr=0.75 960w,https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg 1280w",
-                    "webpSrcSet": "https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?dpr=0.25&fm=webp 320w,https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?dpr=0.5&fm=webp 640w,https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?dpr=0.75&fm=webp 960w,https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?fm=webp 1280w",
-                    "sizes": "(max-width: 1280px) 100vw, 1280px",
-                    "src": "https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg",
-                    "width": 1280,
-                    "height": 960,
-                    "aspectRatio": 1.3333333333333333,
-                    "alt": null,
-                    "title": null,
-                    "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBhUOFBQLFhUNDQ4NDg4NEBESDg0NFxUZGBYTIhUaHyslGh0oHSEWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OExAQHC8cHSgyLy8vLy8vLy8vNS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABIAGAMBIgACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAAAAwQFBwH/xAAaEAADAQEBAQAAAAAAAAAAAAAAAgMEATER/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgEA/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oADAMBAAIRAxEAPwDYaWVeC11KJtNvghYt0TJNti84BA0Z3ANWYt6+C5gAhLudAAk//9k="
-                  }
-                },
-                "projectLogo": {
-                  "url": "https://www.datocms-assets.com/60761/1641478166-logo.png"
-                },
-                "technologiesUsed": [
-                  {
-                    "id": "93840880",
-                    "name": "JavaScript (ES6+)",
-                    "logo": {
-                      "url": "https://www.datocms-assets.com/60761/1642341255-javascript.svg"
-                    }
-                  },
-                  {
-                    "id": "93840874",
-                    "name": "CSS",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341246-css3.svg" }
-                  },
-                  {
-                    "id": "93840881",
-                    "name": "React",
-                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341260-react.svg" }
-                  }
-                ]
-              },
-              {
                 "id": "94035352",
                 "title": "Battleship!",
                 "subTitle": "Multiplayer Game",
@@ -687,8 +641,8 @@
                     "width": 1280,
                     "height": 960,
                     "aspectRatio": 1.3333333333333333,
-                    "alt": null,
-                    "title": null,
+                    "alt": "Battleship!",
+                    "title": "Battleship!",
                     "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoIEBITDQ4LDg8ODQ0NDRENDg0NFxoZGBYVFiEaHysjGh0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHBAPFS8dFigvNS8vLy8vLy8vLy8vLzUvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABIAGAMBIgACEQEDEQH/xAAYAAEBAAMAAAAAAAAAAAAAAAAABQIEBv/EACAQAAICAQMFAAAAAAAAAAAAAAABAgMEEhMzBREyYXH/xAAZAQABBQAAAAAAAAAAAAAAAAABAAIDBAX/xAAZEQADAQEBAAAAAAAAAAAAAAAAAQIRMgP/2gAMAwEAAhEDEQA/AJGbTpg2Sa5rd7FjqV8dpnOUWOWS37L7rDIiNRdrp1xBlj3KMEBJgw1eo8bI2JzP6ACiTz5LEfEACGH/2Q=="
                   }
                 },
@@ -723,6 +677,52 @@
                 ]
               },
               {
+                "id": "94035358",
+                "title": "Flashcards",
+                "subTitle": "Productivity App",
+                "description": "This is a productivity app created using React Native. Users can create virtual decks of flashcards, build a library of questions and answers for a specific topic and challenge themselves by taking quizzes and documenting their learning progress.",
+                "projectType": "personal",
+                "liveLink": "https://snack.expo.io/@git/github.com/Pobermeier/reactnd-mobile-flashcards",
+                "repoLink": "https://github.com/Pobermeier/mobile-flashcards",
+                "showcaseImage": {
+                  "url": "https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg",
+                  "responsiveImage": {
+                    "srcSet": "https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?dpr=0.25 320w,https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?dpr=0.5 640w,https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?dpr=0.75 960w,https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg 1280w",
+                    "webpSrcSet": "https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?dpr=0.25&fm=webp 320w,https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?dpr=0.5&fm=webp 640w,https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?dpr=0.75&fm=webp 960w,https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg?fm=webp 1280w",
+                    "sizes": "(max-width: 1280px) 100vw, 1280px",
+                    "src": "https://www.datocms-assets.com/60761/1641478203-project_personal_flashcards.jpg",
+                    "width": 1280,
+                    "height": 960,
+                    "aspectRatio": 1.3333333333333333,
+                    "alt": "Flashcards",
+                    "title": "Flashcards",
+                    "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBhUOFBQLFhUNDQ4NDg4NEBESDg0NFxUZGBYTIhUaHyslGh0oHSEWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OExAQHC8cHSgyLy8vLy8vLy8vNS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABIAGAMBIgACEQEDEQH/xAAZAAACAwEAAAAAAAAAAAAAAAAAAwQFBwH/xAAaEAADAQEBAQAAAAAAAAAAAAAAAgMEATER/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgEA/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oADAMBAAIRAxEAPwDYaWVeC11KJtNvghYt0TJNti84BA0Z3ANWYt6+C5gAhLudAAk//9k="
+                  }
+                },
+                "projectLogo": {
+                  "url": "https://www.datocms-assets.com/60761/1641478166-logo.png"
+                },
+                "technologiesUsed": [
+                  {
+                    "id": "93840880",
+                    "name": "JavaScript (ES6+)",
+                    "logo": {
+                      "url": "https://www.datocms-assets.com/60761/1642341255-javascript.svg"
+                    }
+                  },
+                  {
+                    "id": "93840874",
+                    "name": "CSS",
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341246-css3.svg" }
+                  },
+                  {
+                    "id": "93840881",
+                    "name": "React",
+                    "logo": { "url": "https://www.datocms-assets.com/60761/1642341260-react.svg" }
+                  }
+                ]
+              },
+              {
                 "id": "94035412",
                 "title": "Would you rather...?",
                 "subTitle": "Quiz App",
@@ -740,8 +740,8 @@
                     "width": 1280,
                     "height": 960,
                     "aspectRatio": 1.3333333333333333,
-                    "alt": null,
-                    "title": null,
+                    "alt": "Would you rather?",
+                    "title": "Would you rather?",
                     "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBhITCAgVDxANDRgNDBYYDh0SDQwNFxUZGBYfFhUaHysjGh0oHRUWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHQ0PHTscHRwvLy8vLy87Ly8vLy8vLy8vLy8vLy8vNS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABIAGAMBIgACEQEDEQH/xAAZAAADAAMAAAAAAAAAAAAAAAAAAQMEBQf/xAAeEAACAgICAwAAAAAAAAAAAAAAAQMEAhEhMRJBUf/EABYBAAMAAAAAAAAAAAAAAAAAAAACA//EABoRAAICAwAAAAAAAAAAAAAAAAACARIRMUH/2gAMAwEAAhEDEQA/AOs2KfljwyEFF7M2WzHhj2ShuR+2NZsiVUlNQeuALy3I0uGMJaQqpqp29dkcG99gBTpEUrf0YALOwP/Z"
                   }
                 },
@@ -799,7 +799,7 @@
               {
                 "id": "94033336",
                 "title": "Work Excerpts",
-                "icon": { "url": "https://www.datocms-assets.com/60761/1641478159-icon_view.svg" },
+                "icon": { "url": "https://www.datocms-assets.com/60761/1642415316-icon_view.svg" },
                 "ctaType": "primary",
                 "isExternalLink": false,
                 "linkUrl": "#work-excerpts"
@@ -847,8 +847,8 @@
                     "width": 1280,
                     "height": 960,
                     "aspectRatio": 1.3333333333333333,
-                    "alt": null,
-                    "title": null,
+                    "alt": "GameTwist Landingpage",
+                    "title": "GameTwist Landingpage",
                     "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoIEwgVFg0VEhYOFhkWDh0NFh0PFxUZIhcTIhUmHysvHR0oJhUiJTUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHBAQHDslIig7Oy8vLy87Ly8vLzYvOzs1NS8vLy8vNS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABIAGAMBIgACEQEDEQH/xAAYAAEBAAMAAAAAAAAAAAAAAAAFAAEDBv/EAB4QAAEEAgMBAAAAAAAAAAAAAAABAgMEEjEFESET/8QAGAEAAgMAAAAAAAAAAAAAAAAAAgMAAQT/xAAcEQACAgIDAAAAAAAAAAAAAAAAAgEDETEEEjL/2gAMAwEAAhEDEQA/AOKrxZPQbrw9RgNO23LY1HcajNm7kLmRlb4DOcg+kTkI18teYjV9IdTLKuIF2PPYGoqvexlirhsiJbsGdgvLKuSGSINPJUn/2Q=="
                   }
                 },
@@ -915,8 +915,8 @@
                     "width": 1087,
                     "height": 815,
                     "aspectRatio": 1.3337423312883436,
-                    "alt": null,
-                    "title": null,
+                    "alt": "ETRON Help Center",
+                    "title": "ETRON Help Center",
                     "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBhUIEQgLChUXDhIWDhUNDikVFh0UFxYeHRwTIiQkJjcjJikoIhUiKjU2KjIvMjIyIi44STcwPCsxPi8BCgsLDg0OHBAQHDsoIiUvLzsvOzs7Ozs7LzsvNS81NTQyOzs7Lzs7Oy82Ly8vNTsvLy87Ly8vLy81Oy8vLzUvL//AABEIABIAGAMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAAABQcCBAH/xAAfEAABBAICAwAAAAAAAAAAAAAAAQIDBBExBpEFITL/xAAYAQACAwAAAAAAAAAAAAAAAAACBAADBf/EAB4RAAIBBAMBAAAAAAAAAAAAAAABEQIEMZEUIUED/9oADAMBAAIRAxEAPwBLd4E6RNr0ZocBWN+cqpULKxNTSGqLYnrpDQd79G8itNuko72yb2uCue3HvoCrTV40bpDwrd5XOQeLT5O2I7qrg6PE7ABEdG1j5AAAZD//2Q=="
                   }
                 },
@@ -985,8 +985,8 @@
                     "width": 1280,
                     "height": 960,
                     "aspectRatio": 1.3333333333333333,
-                    "alt": null,
-                    "title": null,
+                    "alt": "HamsterRat",
+                    "title": "HamsterRat",
                     "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoXDhUcDg0YDiUVIRgjFxYfHSAWLi0mHysyKy40LyEfPDU9KC0yMj4+IiI4SU8wPCsxPi8BCgsLDg0OHBAQHDsoIig7NTs1OzsvOy87Oy81LzAvLy87NTUvLy8vLy8vLy8vLzU1Ly8vLy81Ly8vLy8vLy8vL//AABEIABIAGAMBIgACEQEDEQH/xAAaAAACAgMAAAAAAAAAAAAAAAAABAEGAwUH/8QAHxAAAgICAgMBAAAAAAAAAAAAAAECAwQFEVEhMTIG/8QAFwEBAQEBAAAAAAAAAAAAAAAAAgEDAP/EABoRAAIDAQEAAAAAAAAAAAAAAAABAhEhMRL/2gAMAwEAAhEDEQA/AGLN5Sn9IcxNnXbHlNHK9hXsW4uqbXZvtJkX10JWN88eTRxyyZ6ot2x2ldK5bQFJ/STyb8aUaZNSAUY2gyaTGLkujJjABESXSMv0SAHAZ//Z"
                   }
                 },
