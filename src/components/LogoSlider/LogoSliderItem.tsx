@@ -12,6 +12,9 @@ const LogoSliderItem: React.FC<Props> = (props) => {
   return (
     <li className="logo-carousel__item">
       <TechnologyLogo {...props} />
+      <h4 className="sr-only" aria-hidden>
+        {props.technologyName}
+      </h4>
     </li>
   );
 };

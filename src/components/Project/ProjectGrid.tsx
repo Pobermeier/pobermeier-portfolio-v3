@@ -9,11 +9,13 @@ export interface ProjectGridProps {
 
 const ProjectGrid = ({ projects }: ProjectGridProps) => {
   return (
-    <div className="mt-12 max-w-lg mx-auto grid gap-12 lg:grid-cols-3 lg:max-w-none">
+    <ul className="mt-12 max-w-lg mx-auto grid gap-12 lg:grid-cols-3 lg:max-w-none">
       {projects.map((project) => (
-        <ProjectComponent project={project} key={project.id} />
+        <li key={project.id}>
+          <ProjectComponent project={project} />
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 

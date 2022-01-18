@@ -25,7 +25,7 @@ const Project = ({
   return (
     <article
       key={id}
-      className="flex flex-col rounded-xl bg-primary drop-shadow-lg overflow-hidden md:hover:drop-shadow-2xl md:hover:scale-105 transition-all"
+      className="flex flex-col rounded-xl drop-shadow-lg overflow-hidden md:hover:drop-shadow-2xl md:hover:scale-105 transition-all"
     >
       <div className="flex-shrink-0">
         {/* eslint-disable-next-line jsx-a11y/alt-text */}
@@ -68,6 +68,9 @@ const Project = ({
                 className="cursor-pointer bg-transparent drop-shadow-sm md:hover:scale-125"
               >
                 <TechnologyLogo technologyName={name} imgSrc={logo.url} height={32} width={32} />
+                <h5 className="sr-only" aria-hidden>
+                  {name}
+                </h5>
               </li>
             ))}
           </ul>
