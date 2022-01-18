@@ -25,6 +25,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
   return (
     <section
       id={htmlId}
+      aria-label={heading}
       className="bg-gray-50 dark:bg-gray-900 py-10 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-12 relative"
     >
       <div className="max-w-7xl mx-auto" data-aos="fade-up">
