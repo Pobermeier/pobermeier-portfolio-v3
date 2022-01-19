@@ -8,7 +8,7 @@ interface Props {
   url?: string;
 }
 
-const SiteLogoLinked = ({ url = "/" }: Props) => {
+const SiteLogoLinked = ({ url = "/home" }: Props) => {
   return (
     <Link href={url}>
       <a

@@ -12,7 +12,7 @@ const navbarProps: NavbarProps = {
       callToActions: [
         {
           id: "0",
-          linkUrl: "/",
+          linkUrl: "/home",
           title: "Back to Homepage",
           ctaType: "primary",
           isExternalLink: false,
@@ -53,7 +53,7 @@ const NotFoundPage = () => {
           </h2>
           <p className="mt-2 text-base text-gray-600 dark:text-gray-400">{subHeading}</p>
           <div className="mt-6">
-            <Button text="Back to Homepage" as="a" size="lg" url="/" />
+            <Button text="Back to Homepage" as="a" size="lg" url="/home" />
           </div>
         </div>
       </main>
