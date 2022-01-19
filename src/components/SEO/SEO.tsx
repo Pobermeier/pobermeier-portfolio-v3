@@ -20,10 +20,7 @@ const SEO: React.FC<Props> = ({ children, keywords }) => {
 
       {/* <!-- DNS Prefetch / Preconnect to GA & Google Fonts --> */}
       <link rel="preconnect" href="https://www.google-analytics.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-      <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 
       {/* <!-- Icons --> */}
       <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
