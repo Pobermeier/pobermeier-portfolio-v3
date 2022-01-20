@@ -1,7 +1,5 @@
 import "aos/dist/aos.css";
 
-const AOSStyles = () => {
-  return null;
-};
+const AOSStyles = () => null;
 
 export default AOSStyles;

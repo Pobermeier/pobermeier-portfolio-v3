@@ -6,8 +6,10 @@ interface Props {
   positionClassName: string;
 }
 
+const uuid = generateUUID();
+
 const BackgroundPattern = ({ positionClassName }: Props) => {
-  const uniqueIdRef = useRef(generateUUID());
+  const uniqueIdRef = useRef(uuid);
 
   const uniqueId = uniqueIdRef.current;
 
