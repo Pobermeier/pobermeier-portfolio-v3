@@ -1,6 +1,11 @@
-import { GraphQLClient } from "graphql-request";
+import { GraphQLClient, RequestDocument } from "graphql-request";
 
-export function request(query: string, variables: null | object = null, isPreview = false) {
+export function request(
+  query: RequestDocument,
+  variables: null | object | undefined = null,
+  isPreview = false,
+  requestHeaders?: HeadersInit,
+) {
   const endpoint = isPreview
     ? `https://graphql.datocms.com/preview`
     : `https://graphql.datocms.com/`;
@@ -11,5 +16,5 @@ export function request(query: string, variables: null | object = null, isPrevie
     },
   });
 
-  return client.request(query, variables);
+  return client.request(query, variables, requestHeaders);
 }
