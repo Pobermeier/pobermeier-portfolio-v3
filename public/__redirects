@@ -1,1 +1,5 @@
 / /home 200
+http://www.patrickobermeier.dev/* https://www.patrickobermeier.at/:splat 301!
+http://patrickobermeier.dev/* https://www.patrickobermeier.at/:splat 301!
+https://www.patrickobermeier.dev/* https://www.patrickobermeier.at/:splat 301!
+https://patrickobermeier.dev/* https://www.patrickobermeier.at/:splat 301!
