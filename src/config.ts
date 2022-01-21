@@ -9,7 +9,7 @@ const config = {
   },
   meta: {
     bingValidationId: "D5238646980530643F5FC0FFBF63FB97",
-    canonicalRootUrl: "https://www.patrickobermeier.dev",
+    canonicalRootUrl: "https://www.patrickobermeier.at",
     defaultTitle: `${siteOwnerName} | Frontend Developer & Online-Marketing Expert`,
     defaultDescription: `${siteOwnerName} is an experienced front-end developer and online-marketing expert from Vienna, Austria. Creating web apps and websites using latest technologies like React & the MERN-Stack with passion!`,
     defaultKeywords:
