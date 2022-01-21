@@ -2,14 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes mover {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(0, -10px, 0);
-  }
-}
+/* animations */
 
 @keyframes scroll-left {
   0% {
@@ -54,6 +47,8 @@
   }
 }
 
+/* "skip to content"-link */
+
 .skip-to-content-link {
   background: #fff;
   color: #4a4a4a;
@@ -71,6 +66,8 @@
 .skip-to-content-link:focus {
   transform: translateY(0%);
 }
+
+/* technology logo carousel */
 
 .technologies {
   overflow: hidden;
