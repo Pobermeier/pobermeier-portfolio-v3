@@ -3,6 +3,30 @@
   command = "yarn build:netlify"
 
 [[redirects]]
+  from = "http://patrickobermeier.dev/*"
+  to = "https://www.patrickobermeier.at/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.patrickobermeier.dev/*"
+  to = "https://www.patrickobermeier.at/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.patrickobermeier.dev/*"
+  to = "https://www.patrickobermeier.at/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://patrickobermeier.dev/*"
+  to = "https://www.patrickobermeier.at/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/admin"
   to = "https://admin.patrickobermeier.dev"
   status = 301
