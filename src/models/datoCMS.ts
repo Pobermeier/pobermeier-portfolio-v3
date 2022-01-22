@@ -1,4 +1,5 @@
 // types
+import { BlogSectionProps } from "components/Blog/BlogSection";
 import { CTAContainerProps } from "components/Buttons/CTAContainer";
 import { ContactSectionProps } from "components/Contact/ContactSection";
 import { ContentSectionProps } from "components/ContentSection/ContentSection";
@@ -22,6 +23,7 @@ export type CmsComponentName =
   | "LogoSliderRecord"
   | "TextWithImageRecord"
   | "CtaContainerRecord"
+  | "BlogSectionRecord"
   | "ProjectGridRecord";
 
 type GeneralCmsComponentProps = {
@@ -38,6 +40,7 @@ type LogoSlider = LogoSliderProps & GeneralCmsComponentProps;
 type TextWithImage = TextWithImageProps & GeneralCmsComponentProps;
 type CTAContainer = CTAContainerProps & GeneralCmsComponentProps;
 type ProjectGrid = ProjectGridProps & GeneralCmsComponentProps;
+type BlogSection = BlogSectionProps & GeneralCmsComponentProps;
 
 export type ContentSectionAllowedComponent =
   | LogoSlider
@@ -54,6 +57,7 @@ export type CmsComponent =
   | LogoSlider
   | TextWithImage
   | CTAContainer
+  | BlogSection
   | ProjectGrid;
 
 export type PageData = {
@@ -147,4 +151,30 @@ export type Project = {
   showcaseImage: Icon;
   projectLogo: Icon;
   technologiesUsed: Technology[];
+};
+
+type Image = {
+  responsiveImage: ResponsiveImage;
+};
+
+type Author = {
+  name: string;
+  photo: Image;
+};
+
+type Category = {
+  title: string;
+};
+
+export type BlogPost = {
+  author: Author;
+  category: Category;
+  content: string;
+  id: string;
+  createdAt: string;
+  isfeatured: boolean;
+  shortDescription: string;
+  slug: string;
+  title: string;
+  image: Image;
 };
