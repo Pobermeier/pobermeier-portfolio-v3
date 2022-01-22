@@ -98,6 +98,11 @@ const GET_PAGE_DATA_QUERY = gql`
           description
           ctaButtonText
         }
+        ... on BlogSectionRecord {
+          id
+          heading
+          description
+        }
         ... on StaticContentBlockRecord {
           id
           title
