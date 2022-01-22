@@ -10,6 +10,7 @@ import { ContentSectionProps } from "components/ContentSection/ContentSection";
 import { TextWithImageProps } from "components/TextWithImage/TextWithImage";
 import { CTAContainerProps } from "components/Buttons/CTAContainer";
 import { ProjectGridProps } from "components/Project/ProjectGrid";
+import { BlogSectionProps } from "components/Blog/BlogSection";
 // components
 const FullscreenPdfViewer = dynamic(
   () => import("components/FullscreenPdfViewer/FullscreenPdfViewer"),
@@ -24,6 +25,7 @@ const LogoSlider = dynamic(() => import("components/LogoSlider/LogoSlider"));
 const TextWithImage = dynamic(() => import("components/TextWithImage/TextWithImage"));
 const CTAContainer = dynamic(() => import("components/Buttons/CTAContainer"));
 const ProjectGrid = dynamic(() => import("components/Project/ProjectGrid"));
+const BlogSection = dynamic(() => import("components/Blog/BlogSection"));
 
 interface Props {
   typeName: CmsComponentName;
@@ -84,6 +86,20 @@ const CmsComponentMapper = ({ typeName, componentProps }: Props) => {
     case typeName === "ProjectGridRecord":
       const { projects } = componentProps as ProjectGridProps;
       return <ProjectGrid projects={projects} />;
+
+    case typeName === "BlogSectionRecord":
+      const {
+        posts,
+        description: blogSectionDescription,
+        heading: blogSectionHeading,
+      } = componentProps as BlogSectionProps;
+      return (
+        <BlogSection
+          posts={posts}
+          description={blogSectionDescription}
+          heading={blogSectionHeading}
+        />
+      );
 
     case typeName === "ContactFormRecord":
       const {
