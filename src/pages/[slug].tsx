@@ -3,7 +3,7 @@ import { GetStaticPropsContext } from "next";
 import dynamic from "next/dynamic";
 import { useQuerySubscription, renderMetaTags } from "react-datocms";
 // types
-import { CmsData, PageData } from "models/datoCMS";
+import { BlogPost, CmsData, PageData } from "models/datoCMS";
 import { NavbarProps } from "components/Navigation/Navbar";
 import { FooterProps } from "components/Footer/Footer";
 // constants
@@ -18,11 +18,13 @@ import SEO from "components/SEO/SEO";
 import { request } from "clients/datocms";
 import { GET_PAGE_DATA_QUERY } from "graphql/queries/getPageData";
 import { GET_ALL_PAGE_SLUGS_QUERY } from "graphql/queries/getAllPageSlugs";
+import { GET_ALL_BLOG_POSTS_QUERY } from "graphql/queries/getAllBlogPosts";
 // config
 import globalConfig from "config";
 
 type InternalProps = {
   data: CmsData;
+  posts: BlogPost[];
 };
 
 type ExternalProps = {
@@ -32,7 +34,7 @@ type ExternalProps = {
 
 type Props = InternalProps & ExternalProps;
 
-const Page = ({ data, isPreview, deactivatePreviewMode }: Props) => {
+const Page = ({ data, isPreview, deactivatePreviewMode, posts }: Props) => {
   const { data: cmsData } = useQuerySubscription({
     enabled:
       typeof window !== "undefined" && Boolean(localStorage.getItem(PREVIEW_STORAGE_ITEM_NAME)),
@@ -82,7 +84,7 @@ const Page = ({ data, isPreview, deactivatePreviewMode }: Props) => {
           <CmsComponentMapper
             key={section.id}
             typeName={section.__typename}
-            componentProps={section}
+            componentProps={{ ...section, posts }}
           />
         ))}
       </main>
@@ -106,6 +108,7 @@ export async function getStaticProps(ctx: GetStaticPropsContext) {
     return {
       props: {
         data: JSON.parse(mockData),
+        posts: [],
       },
     };
   }
@@ -113,8 +116,10 @@ export async function getStaticProps(ctx: GetStaticPropsContext) {
   try {
     const data = await request(GET_PAGE_DATA_QUERY, { slug: currentSlug }, isDev);
 
+    const blogPostsData = await request(GET_ALL_BLOG_POSTS_QUERY, null, isDev);
+
     return {
-      props: { data },
+      props: { data, posts: blogPostsData.allBlogPosts },
     };
   } catch (error) {
     console.log(error);
