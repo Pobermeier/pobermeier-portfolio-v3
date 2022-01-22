@@ -1,9 +1,10 @@
-import React, { ReactElement } from "react";
+import { ReactElement } from "react";
 import { SocialMediaIconIdentifier } from "models/datoCMS";
 // components
 import TwitterIcon from "components/Icons/TwitterIcon";
 import GitHubIcon from "components/Icons/GitHubIcon";
 import LinkedinIcon from "components/Icons/LinkedinIcon";
+import EmailIcon from "./EmailIcon";
 
 export type IconSize = "xs" | "sm" | "md" | "lg" | "xl" | "xxl" | "xxxl";
 
@@ -38,6 +39,7 @@ const SocialMediaIconLink = ({ name, url, size = "lg", reactIconIdentifier }: Pr
     twitter: <TwitterIcon {...iconProps} />,
     github: <GitHubIcon {...iconProps} />,
     linkedin: <LinkedinIcon {...iconProps} />,
+    email: <EmailIcon {...iconProps} />,
   };
 
   return (

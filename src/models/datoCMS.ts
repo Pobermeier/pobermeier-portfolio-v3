@@ -75,7 +75,7 @@ export type Icon = {
   responsiveImage?: ResponsiveImage;
 };
 
-export type SocialMediaIconIdentifier = "github" | "linkedin" | "twitter";
+export type SocialMediaIconIdentifier = "github" | "linkedin" | "twitter" | "email";
 
 export type SocialMediaIcon = {
   id: string;
