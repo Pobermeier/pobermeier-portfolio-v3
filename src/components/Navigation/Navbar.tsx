@@ -103,7 +103,7 @@ const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProp
       >
         <Popover.Panel
           focus
-          className="absolute top-0 inset-x-0 z-10 p-2 transition transform origin-top-right md:hidden"
+          className="absolute top-0 inset-x-0 z-50 p-2 transition transform origin-top-right md:hidden"
         >
           {({ close }) => (
             <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white dark:bg-gray-700">
