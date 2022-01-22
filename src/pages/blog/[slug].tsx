@@ -122,21 +122,6 @@ export async function getStaticProps(ctx: GetStaticPropsContext) {
 }
 
 export async function getStaticPaths() {
-  if (globalConfig.flags.useMockData) {
-    const fs = require("fs");
-    const path = require("path");
-
-    const mockPaths = fs.readFileSync(
-      path.resolve(process.cwd(), "src", "mocks", "paths.json"),
-      "utf8",
-    );
-
-    return {
-      fallback: false,
-      paths: JSON.parse(mockPaths),
-    };
-  }
-
   try {
     const cmsData = await request(GET_ALL_PAGE_SLUGS_QUERY, null, isDev);
 
