@@ -1,5 +1,3 @@
-import React from "react";
-
 type Props = {
   tag?: "div" | "section" | "article" | "aside" | "ul" | "ol";
   className?: string;
