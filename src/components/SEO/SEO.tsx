@@ -16,7 +16,7 @@ const SEO: React.FC<Props> = ({ children, keywords }) => {
       <meta name="theme-color" content={config.meta.themeColor} />
       <link rel="canonical" href={`${config.meta.canonicalRootUrl}${router.asPath}`} />
       <meta name="msvalidate.01" content={config.meta.bingValidationId} />
-      <link rel="manifest" href="manifest.json" />
+      <link rel="manifest" href="/manifest.json" />
 
       {/* <!-- DNS Prefetch / Preconnect to GA & Google Fonts --> */}
       <link rel="preconnect" href="https://www.google-analytics.com" />
