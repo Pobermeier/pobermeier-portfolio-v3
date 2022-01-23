@@ -12,8 +12,7 @@ import { isDev, PREVIEW_STORAGE_ITEM_NAME } from "Constants";
 const Navbar = dynamic(() => import("components/Navigation/Navbar"));
 const CmsComponentMapper = dynamic(() => import("components/CMS/CmsComponentMapper"));
 const Footer = dynamic(() => import("components/Footer/Footer"));
-const PreviewBanner = dynamic(() => import("components/Banner/PreviewBanner"));
-import SEO from "components/SEO/SEO";
+const Layout = dynamic(() => import("components/Layout/Layout"));
 // graphql
 import { request } from "clients/datocms";
 import { GET_PAGE_DATA_QUERY } from "graphql/queries/getPageData";
@@ -50,6 +49,8 @@ const Page = ({ data, isPreview, deactivatePreviewMode, posts }: Props) => {
     page: { seo, navbar, footer, sections },
   } = cmsData as CmsData;
 
+  const metaTags = renderMetaTags([...seo, ...favicon]);
+
   const renderNavbar = () => {
     const { socialMediaIcons, navigationLinks, callToActions } = navbar as NavbarProps;
 
@@ -75,21 +76,21 @@ const Page = ({ data, isPreview, deactivatePreviewMode, posts }: Props) => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <SEO>{renderMetaTags([...seo, ...favicon])}</SEO>
-      {isPreview && <PreviewBanner onLeavePreviewBtnClick={deactivatePreviewMode} />}
-      {navbar && renderNavbar()}
-      <main id="main" className="flex flex-col flex-grow justify-center h-full w-full mx-auto">
-        {sections?.map((section) => (
-          <CmsComponentMapper
-            key={section.id}
-            typeName={section.__typename}
-            componentProps={{ ...section, posts }}
-          />
-        ))}
-      </main>
-      {footer && renderFooter()}
-    </div>
+    <Layout
+      deactivatePreviewMode={deactivatePreviewMode}
+      isPreview={isPreview}
+      metaTags={metaTags}
+      header={navbar && renderNavbar()}
+      footer={footer && renderFooter()}
+    >
+      {sections?.map((section) => (
+        <CmsComponentMapper
+          key={section.id}
+          typeName={section.__typename}
+          componentProps={{ ...section, posts }}
+        />
+      ))}
+    </Layout>
   );
 };
 

@@ -1,8 +1,8 @@
 // components
 import Button from "components/Buttons/Button";
 import SiteLogoLinked from "components/Icons/SiteLogoLinked";
+import Layout from "components/Layout/Layout";
 import Navbar, { NavbarProps } from "components/Navigation/Navbar";
-import SEO from "components/SEO/SEO";
 // config
 import config from "config";
 
@@ -30,34 +30,27 @@ const content = {
   subHeading: "This is not the page you're looking for...",
 };
 
+const metaTags = <title>{`404 Page Not Found | ${config.meta.siteOwnerName}`}</title>;
+
 const NotFoundPage = () => {
   const { title, heading, subHeading } = content;
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <SEO>
-        <title>{`404 Page Not Found | ${config.meta.siteOwnerName}`}</title>
-      </SEO>
-      <Navbar {...navbarProps} />
-      <main
-        id="main"
-        className="flex flex-col flex-grow bg-gray-50 dark:bg-gray-900 justify-center h-full max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8"
-      >
-        <div className="flex-shrink-0 flex justify-center">
-          <SiteLogoLinked />
+    <Layout metaTags={metaTags} header={<Navbar {...navbarProps} />}>
+      <div className="flex-shrink-0 flex justify-center">
+        <SiteLogoLinked />
+      </div>
+      <div className="py-16 text-center">
+        <p className="text-sm font-semibold text-primary uppercase tracking-wide">{title}</p>
+        <h2 className="mt-2 text-4xl font-extrabold text-gray-900 dark:text-gray-300 tracking-tight sm:text-5xl">
+          {heading}
+        </h2>
+        <p className="mt-2 text-base text-gray-600 dark:text-gray-400">{subHeading}</p>
+        <div className="mt-6">
+          <Button text="Back to Homepage" as="a" size="lg" url="/home" />
         </div>
-        <div className="py-16 text-center">
-          <p className="text-sm font-semibold text-primary uppercase tracking-wide">{title}</p>
-          <h2 className="mt-2 text-4xl font-extrabold text-gray-900 dark:text-gray-300 tracking-tight sm:text-5xl">
-            {heading}
-          </h2>
-          <p className="mt-2 text-base text-gray-600 dark:text-gray-400">{subHeading}</p>
-          <div className="mt-6">
-            <Button text="Back to Homepage" as="a" size="lg" url="/home" />
-          </div>
-        </div>
-      </main>
-    </div>
+      </div>
+    </Layout>
   );
 };
 
