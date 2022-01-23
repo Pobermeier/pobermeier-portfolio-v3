@@ -130,7 +130,7 @@ type FaviconMetaTag = {
   attributes: { sizes: string; type: string; rel: string; href: string } | null;
 };
 
-type SiteData = {
+export type SiteData = {
   favicon: FaviconMetaTag[];
 };
 
@@ -167,6 +167,7 @@ type Category = {
 };
 
 export type BlogPost = {
+  seo: SeoMetaTag[];
   author: Author;
   category: Category;
   content: string;
