@@ -35,7 +35,7 @@ const BlogPostCard = ({ post }: Props) => {
             </div>
           </header>
           <p className="mt-3 text-base text-gray-600 dark:text-gray-300">{shortDescription}</p>
-          <footer className="mt-6 flex items-center">
+          <footer className="mt-6">
             <BlogPostMetaData
               isShowingTimeToRead
               authorName={name}

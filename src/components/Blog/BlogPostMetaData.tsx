@@ -29,7 +29,7 @@ const BlogPostMetaData = ({
   const formattedDate = getFormattedLocaleString(createdAtDate);
 
   return (
-    <>
+    <div className="flex items-center">
       <div className="flex-shrink-0">
         <span className="sr-only">{authorName}</span>
         {/* eslint-disable-next-line jsx-a11y/alt-text */}
@@ -52,7 +52,7 @@ const BlogPostMetaData = ({
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
