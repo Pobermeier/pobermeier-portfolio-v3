@@ -34,29 +34,20 @@ const BlogPostCard = ({ post }: Props) => {
   return (
     <Link href={`/blog/${post.slug}`}>
       <a>
-        <article className="flex flex-col rounded-xl drop-shadow-lg overflow-hidden md:hover:drop-shadow-2xl bg-gray-100 dark:bg-gray-700 md:hover:scale-105 transition-all">
-          <div className="flex-shrink-0">
-            {/* eslint-disable-next-line jsx-a11y/alt-text */}
-            <Image
-              layout="responsive"
-              objectFit="cover"
-              pictureClassName="rounded-t-xl h-48 w-full object-cover"
-              data={post.image.responsiveImage as ResponsiveImageType}
-            />
-          </div>
-          <div className="flex-1 p-6 flex flex-col justify-between">
-            <div className="flex-1">
+        <article className="flex flex-col rounded-xl drop-shadow-lg overflow-hidden md:hover:drop-shadow-2xl md:hover:scale-105 transition-all">
+          <div className="flex-1 bg-gray-100 dark:bg-gray-700 p-6 flex flex-col justify-between">
+            <header className="flex-1">
               <p className="text-sm font-medium text-gray-800 dark:text-gray-200">
                 {post.category.title}
               </p>
               <div className="block mt-2">
                 <p className="text-xl font-semibold text-primary">{post.title}</p>
-                <p className="mt-3 text-base text-gray-600 dark:text-gray-300">
-                  {post.shortDescription}
-                </p>
               </div>
-            </div>
-            <div className="mt-6 flex items-center">
+            </header>
+            <p className="mt-3 text-base text-gray-600 dark:text-gray-300">
+              {post.shortDescription}
+            </p>
+            <footer className="mt-6 flex items-center">
               <div className="flex-shrink-0">
                 <span className="sr-only">{post.author.name}</span>
                 {/* eslint-disable-next-line jsx-a11y/alt-text */}
@@ -77,7 +68,16 @@ const BlogPostCard = ({ post }: Props) => {
                   <span>{timeToRead} min read</span>
                 </div>
               </div>
-            </div>
+            </footer>
+          </div>
+          <div className="flex-shrink-0 -order-1">
+            {/* eslint-disable-next-line jsx-a11y/alt-text */}
+            <Image
+              layout="responsive"
+              objectFit="cover"
+              pictureClassName="rounded-t-xl h-48 w-full object-cover"
+              data={post.image.responsiveImage as ResponsiveImageType}
+            />
           </div>
         </article>
       </a>

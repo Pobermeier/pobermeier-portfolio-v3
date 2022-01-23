@@ -23,17 +23,8 @@ const Project = ({
 }: Props) => {
   return (
     <article className="flex flex-col rounded-xl drop-shadow-lg overflow-hidden md:hover:drop-shadow-2xl md:hover:scale-105 transition-all">
-      <div className="flex-shrink-0">
-        {/* eslint-disable-next-line jsx-a11y/alt-text */}
-        <Image
-          layout="responsive"
-          objectFit="cover"
-          pictureClassName="rounded-t-xl"
-          data={showcaseImage.responsiveImage as ResponsiveImageType}
-        />
-      </div>
       <div className="flex-1 bg-gray-100 dark:bg-gray-700 p-6 flex flex-col justify-between">
-        <div className="flex">
+        <header className="flex">
           <div className="flex-shrink-0">
             <span className="sr-only">{title}</span>
             {/* eslint-disable @next/next/no-img-element */}
@@ -51,7 +42,7 @@ const Project = ({
 
             <h3 className="text-xl font-semibold text-primary">{title}</h3>
           </div>
-        </div>
+        </header>
         <div className="flex-1">
           <p className="mt-3 text-base text-gray-600 dark:text-gray-300">{description}</p>
         </div>
@@ -72,7 +63,7 @@ const Project = ({
           </ul>
         </div>
         {(liveLink || repoLink) && (
-          <div className="mt-4 flex items-center">
+          <footer className="mt-4 flex items-center">
             <div className="flex justify-center items-center space-x-8 mx-auto">
               {liveLink && (
                 <Button
@@ -97,8 +88,17 @@ const Project = ({
                 />
               )}
             </div>
-          </div>
+          </footer>
         )}
+      </div>
+      <div className="flex-shrink-0 -order-1">
+        {/* eslint-disable-next-line jsx-a11y/alt-text */}
+        <Image
+          layout="responsive"
+          objectFit="cover"
+          pictureClassName="rounded-t-xl"
+          data={showcaseImage.responsiveImage as ResponsiveImageType}
+        />
       </div>
     </article>
   );
