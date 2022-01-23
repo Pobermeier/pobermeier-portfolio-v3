@@ -4,7 +4,8 @@ import { BlogPost } from "models/datoCMS";
 import BackgroundPatternWrapper from "components/BackgroundPattern/BackgroundPatternWrapper";
 import BackgroundPattern from "components/BackgroundPattern/BackgroundPattern";
 import ContentSection from "components/ContentSection/ContentSection";
-import BlogPostCard from "./BlogPostCard";
+import BlogPostCard from "components/Blog/BlogPostCard";
+import Grid from "components/Layout/Grid";
 
 export interface BlogSectionProps {
   posts: BlogPost[];
@@ -29,13 +30,13 @@ const BlogSection = ({ description, heading, posts }: BlogSectionProps) => {
         </>
       }
     >
-      <ul className="mt-12 max-w-lg mx-auto grid gap-12 lg:grid-cols-3 lg:max-w-none relative z-10">
+      <Grid>
         {posts?.map((post) => (
           <li key={post.id}>
             <BlogPostCard post={post} key={post.id} />
           </li>
         ))}
-      </ul>
+      </Grid>
     </ContentSection>
   );
 };
