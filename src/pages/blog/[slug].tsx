@@ -8,6 +8,8 @@ import { isDev, PREVIEW_STORAGE_ITEM_NAME } from "Constants";
 // components
 import Layout from "components/Layout/Layout";
 import StaticContentBlock from "components/StaticContentBlock/StaticContentBlock";
+import Button from "components/Buttons/Button";
+import BlogPostMetaData from "components/Blog/BlogPostMetaData";
 const Navbar = dynamic(() => import("components/Navigation/Navbar"));
 const Footer = dynamic(() => import("components/Footer/Footer"));
 // graphql
@@ -17,7 +19,6 @@ import { GET_BLOG_POST } from "graphql/queries/getBlogPost";
 import navbarContent from "content/navbar";
 // content
 import footerContent from "content/footer";
-import Button from "components/Buttons/Button";
 
 type PostData = {
   site: SiteData;
@@ -48,7 +49,7 @@ const BlogPost = ({ data, isPreview, deactivatePreviewMode }: Props) => {
 
   const {
     site: { favicon },
-    blogPost: { title, content, seo },
+    blogPost: { title, content, seo, createdAt, author },
   } = postData as PostData;
 
   const metaTags = renderMetaTags([...seo, ...favicon]);
@@ -61,10 +62,19 @@ const BlogPost = ({ data, isPreview, deactivatePreviewMode }: Props) => {
       header={<Navbar {...navbarContent} />}
       footer={<Footer {...footerContent} />}
     >
-      <div className="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex justify-between mt-12">
         <Button as="a" text="Back to Blog Posts" type="secondary" url="/blog" />
       </div>
       <StaticContentBlock text={content} title={title} />
+      <div className="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex justify-end mt-12">
+        <BlogPostMetaData
+          isShowingTimeToRead={false}
+          authorName={author.name}
+          imageData={author.photo.responsiveImage}
+          content={content}
+          postCreatedAtDate={createdAt}
+        />
+      </div>
     </Layout>
   );
 };
