@@ -94,25 +94,25 @@
         "content": null,
         "attributes": {
           "property": "og:image",
-          "content": "https://www.datocms-assets.com/60761/1641397966-large_image.png?fit=max&fm=jpg&w=1000"
+          "content": "https://www.datocms-assets.com/60761/1642858513-siteshot.png?fit=max&fm=jpg&w=1000"
         }
       },
       {
         "tag": "meta",
         "content": null,
-        "attributes": { "property": "og:image:width", "content": "1280" }
+        "attributes": { "property": "og:image:width", "content": "1152" }
       },
       {
         "tag": "meta",
         "content": null,
-        "attributes": { "property": "og:image:height", "content": "858" }
+        "attributes": { "property": "og:image:height", "content": "773" }
       },
       {
         "tag": "meta",
         "content": null,
         "attributes": {
           "name": "twitter:image",
-          "content": "https://www.datocms-assets.com/60761/1641397966-large_image.png?fit=max&fm=jpg&w=1000"
+          "content": "https://www.datocms-assets.com/60761/1642858513-siteshot.png?fit=max&fm=jpg&w=1000"
         }
       },
       {
@@ -448,7 +448,7 @@
                   }
                 },
                 "projectLogo": {
-                  "url": "https://www.datocms-assets.com/60761/1641478166-logo.png"
+                  "url": "https://www.datocms-assets.com/60761/1642856910-vintage-poker-logo.png"
                 },
                 "technologiesUsed": [
                   {
@@ -511,7 +511,7 @@
                   }
                 },
                 "projectLogo": {
-                  "url": "https://www.datocms-assets.com/60761/1641478166-logo.png"
+                  "url": "https://www.datocms-assets.com/60761/1642856902-devmeetup-logo.png"
                 },
                 "technologiesUsed": [
                   {
@@ -579,7 +579,7 @@
                   }
                 },
                 "projectLogo": {
-                  "url": "https://www.datocms-assets.com/60761/1641478166-logo.png"
+                  "url": "https://www.datocms-assets.com/60761/1642856905-simplysticky-logo.png"
                 },
                 "technologiesUsed": [
                   {
@@ -647,7 +647,7 @@
                   }
                 },
                 "projectLogo": {
-                  "url": "https://www.datocms-assets.com/60761/1641478166-logo.png"
+                  "url": "https://www.datocms-assets.com/60761/1642856908-battleship-logo.png"
                 },
                 "technologiesUsed": [
                   {
@@ -716,8 +716,8 @@
                     "logo": { "url": "https://www.datocms-assets.com/60761/1642341246-css3.svg" }
                   },
                   {
-                    "id": "93840881",
-                    "name": "React",
+                    "id": "99869012",
+                    "name": "React Native",
                     "logo": { "url": "https://www.datocms-assets.com/60761/1642341260-react.svg" }
                   }
                 ]
@@ -746,7 +746,7 @@
                   }
                 },
                 "projectLogo": {
-                  "url": "https://www.datocms-assets.com/60761/1641478166-logo.png"
+                  "url": "https://www.datocms-assets.com/60761/1642856899-wouldyourather-logo.png"
                 },
                 "technologiesUsed": [
                   {
