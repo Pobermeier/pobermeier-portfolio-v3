@@ -10,7 +10,7 @@ export interface ProjectGridProps {
 
 const ProjectGrid = ({ projects }: ProjectGridProps) => {
   return (
-    <Grid>
+    <Grid tag="ul">
       {projects.map((project) => (
         <li key={project.id}>
           <ProjectComponent project={project} />

@@ -30,7 +30,7 @@ const BlogSection = ({ description, heading, posts }: BlogSectionProps) => {
         </>
       }
     >
-      <Grid>
+      <Grid tag="ul">
         {posts?.map((post) => (
           <li key={post.id}>
             <BlogPostCard post={post} key={post.id} />
