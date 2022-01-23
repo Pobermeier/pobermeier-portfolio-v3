@@ -3,33 +3,20 @@ import Link from "next/link";
 import { Image, ResponsiveImageType } from "react-datocms";
 // types
 import { BlogPost } from "models/datoCMS";
+// utils
+import { computeReadingTime } from "utils/words";
+import { getDateTimeString, getFormattedLocaleString } from "utils/dateFns";
 
 type Props = {
   post: BlogPost;
-};
-
-const AVG_WORDS_PER_MIN = 250;
-
-const getWordCount = (text: string) => text.match(/\w+/g)?.length ?? 0;
-
-const computeReadingTime = (text: string) => {
-  const count = getWordCount(text);
-
-  const timetoReadMin = Math.ceil(count / AVG_WORDS_PER_MIN);
-
-  return timetoReadMin;
 };
 
 const BlogPostCard = ({ post }: Props) => {
   const timeToRead = useMemo(() => computeReadingTime(post.content), [post.content]);
 
   const createdAtDate = new Date(post.createdAt);
-  const dateTime = `${createdAtDate.getFullYear()}-${createdAtDate.getMonth()}-${createdAtDate.getDate()}`;
-  const formattedDate = createdAtDate.toLocaleString(undefined, {
-    day: "2-digit",
-    month: "long",
-    year: "numeric",
-  });
+  const dateTime = getDateTimeString(createdAtDate);
+  const formattedDate = getFormattedLocaleString(createdAtDate);
 
   return (
     <Link href={`/blog/${post.slug}`}>
