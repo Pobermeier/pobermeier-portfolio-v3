@@ -2,29 +2,15 @@
 import Button from "components/Buttons/Button";
 import SiteLogoLinked from "components/Icons/SiteLogoLinked";
 import Layout from "components/Layout/Layout";
-import Navbar, { NavbarProps } from "components/Navigation/Navbar";
+import Navbar from "components/Navigation/Navbar";
+import Footer from "components/Footer/Footer";
 // config
 import config from "config";
+// content
+import navbarContent from "content/navbar";
+import footerContent from "content/footer";
 
-const navbarProps: NavbarProps = {
-  callToActions: [
-    {
-      callToActions: [
-        {
-          id: "0",
-          linkUrl: "/home",
-          title: "Back to Homepage",
-          ctaType: "primary",
-          isExternalLink: false,
-        },
-      ],
-    },
-  ],
-  navigationLinks: [],
-  socialMediaIcons: [],
-};
-
-const content = {
+const textContent = {
   title: "404 Page Not Found",
   heading: "Oh noes! A big ol' 404!",
   subHeading: "This is not the page you're looking for...",
@@ -33,10 +19,14 @@ const content = {
 const metaTags = <title>{`404 Page Not Found | ${config.meta.siteOwnerName}`}</title>;
 
 const NotFoundPage = () => {
-  const { title, heading, subHeading } = content;
+  const { title, heading, subHeading } = textContent;
 
   return (
-    <Layout metaTags={metaTags} header={<Navbar {...navbarProps} />}>
+    <Layout
+      metaTags={metaTags}
+      header={<Navbar {...navbarContent} />}
+      footer={<Footer {...footerContent} />}
+    >
       <div className="flex-shrink-0 flex justify-center">
         <SiteLogoLinked />
       </div>
