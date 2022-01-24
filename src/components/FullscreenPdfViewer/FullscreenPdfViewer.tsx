@@ -1,7 +1,9 @@
+type PdfFile = {
+  url: string;
+};
+
 export type FullscreenPdfViewerProps = {
-  pdfFile: {
-    url: string;
-  };
+  pdfFile: PdfFile;
   pdfTitle: string;
 };
 
