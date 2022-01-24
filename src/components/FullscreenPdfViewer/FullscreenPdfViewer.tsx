@@ -1,6 +1,5 @@
-type PdfFile = {
-  url: string;
-};
+// types
+import { PdfFile } from "models/datoCMS";
 
 export type FullscreenPdfViewerProps = {
   pdfFile: PdfFile;

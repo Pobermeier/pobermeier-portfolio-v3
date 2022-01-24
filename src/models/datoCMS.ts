@@ -153,6 +153,10 @@ export type Project = {
   technologiesUsed: Technology[];
 };
 
+export type PdfFile = {
+  url: string;
+};
+
 type Image = {
   responsiveImage: ResponsiveImage;
 };
