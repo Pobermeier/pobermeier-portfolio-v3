@@ -4,7 +4,7 @@ import { SocialMediaIconIdentifier } from "models/datoCMS";
 import TwitterIcon from "components/Icons/TwitterIcon";
 import GitHubIcon from "components/Icons/GitHubIcon";
 import LinkedinIcon from "components/Icons/LinkedinIcon";
-import EmailIcon from "./EmailIcon";
+import EmailIcon from "components/Icons/EmailIcon";
 
 export type IconSize = "xs" | "sm" | "md" | "lg" | "xl" | "xxl" | "xxxl";
 
