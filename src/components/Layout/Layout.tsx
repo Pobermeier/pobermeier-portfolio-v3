@@ -21,7 +21,7 @@ const Layout: React.FC<Props> = ({
   metaTags,
 }) => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col relative">
       <SEO>{metaTags}</SEO>
       {isPreview && <PreviewBanner onLeavePreviewBtnClick={deactivatePreviewMode} />}
       {header}
