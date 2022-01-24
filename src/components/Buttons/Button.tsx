@@ -37,21 +37,7 @@ const Button = ({
   const Tag = as;
 
   const computedClassName = classNames(
-    "inline-flex",
-    "items-center",
-    "border",
-    "shadow-sm",
-    "font-medium",
-    "rounded-full",
-    "transition-all",
-    "drop-shadow-lg",
-    "md:hover:drop-shadow-xl",
-    "md:hover:scale-105",
-    "focus:outline-none",
-    "focus:ring-2",
-    "focus:ring-offset-2",
-    "focus:ring-green-800",
-    "cursor-pointer",
+    "inline-flex items-center border shadow-sm font-medium rounded-full transition-all drop-shadow-lg md:hover:drop-shadow-xl md:hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-800 cursor-pointer",
     type === "primary" ? "border-transparent" : "border-primary",
     type === "primary" ? "text-white" : "text-black",
     type === "primary" ? "bg-primary" : "bg-white",
