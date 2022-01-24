@@ -21,9 +21,13 @@ import { GET_ALL_BLOG_POSTS_QUERY } from "graphql/queries/getAllBlogPosts";
 // config
 import globalConfig from "config";
 
+type AllBlogPostsData = {
+  allBlogPosts: BlogPost[];
+};
+
 type InternalProps = {
   data: CmsData;
-  posts: BlogPost[];
+  posts: AllBlogPostsData;
 };
 
 type ExternalProps = {
@@ -44,10 +48,21 @@ const Page = ({ data, isPreview, deactivatePreviewMode, posts }: Props) => {
     token: process.env.NEXT_PUBLIC_DATOCMS_API_TOKEN as string,
   });
 
+  const { data: cmsPosts } = useQuerySubscription({
+    enabled:
+      typeof window !== "undefined" && Boolean(localStorage.getItem(PREVIEW_STORAGE_ITEM_NAME)),
+    query: GET_ALL_BLOG_POSTS_QUERY,
+    initialData: posts,
+    preview: true,
+    token: process.env.NEXT_PUBLIC_DATOCMS_API_TOKEN as string,
+  });
+
   const {
     site: { favicon },
     page: { seo, navbar, footer, sections },
   } = cmsData as CmsData;
+
+  const { allBlogPosts } = cmsPosts as AllBlogPostsData;
 
   const metaTags = renderMetaTags([...seo, ...favicon]);
 
@@ -87,7 +102,7 @@ const Page = ({ data, isPreview, deactivatePreviewMode, posts }: Props) => {
         <CmsComponentMapper
           key={section.id}
           typeName={section.__typename}
-          componentProps={{ ...section, posts }}
+          componentProps={{ ...section, posts: allBlogPosts }}
         />
       ))}
     </Layout>
@@ -120,7 +135,7 @@ export async function getStaticProps(ctx: GetStaticPropsContext) {
     const blogPostsData = await request(GET_ALL_BLOG_POSTS_QUERY, null, isDev);
 
     return {
-      props: { data, posts: blogPostsData.allBlogPosts },
+      props: { data, posts: blogPostsData },
     };
   } catch (error) {
     console.log(error);
