@@ -9,6 +9,7 @@ interface Props {
 const PreviewBanner = ({ onLeavePreviewBtnClick }: Props) => {
   return (
     <Banner
+      className="bg-primary sticky top-0 z-50"
       text="Live Preview Mode is currently active!"
       ctaButtons={
         <Button
