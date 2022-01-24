@@ -20,7 +20,7 @@ const StaticContentBlock = ({ title, text }: StaticContentBlockRecordProps) => {
             {title}
           </h2>
         )}
-        <div className="mt-6 prose prose-indigo prose-lg text-gray-600 dark:text-gray-100 mx-auto max-w-4xl prose-a:text-primary dark:prose-strong:text-gray-400 prose-headings:text-primary">
+        <div className="mt-6 prose prose-indigo prose-lg text-gray-600 dark:text-gray-100 mx-auto max-w-4xl prose-a:text-primary dark:prose-strong:text-gray-400 prose-headings:text-primary prose-blockquote:text-gray-700 prose-blockquote:dark:text-gray-400">
           <ReactMarkdown>{text}</ReactMarkdown>
         </div>
       </div>
