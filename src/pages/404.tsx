@@ -22,11 +22,7 @@ const NotFoundPage = () => {
   const { title, heading, subHeading } = textContent;
 
   return (
-    <Layout
-      metaTags={metaTags}
-      header={<Navbar {...navbarContent} />}
-      footer={<Footer {...footerContent} />}
-    >
+    <Layout metaTags={metaTags} footer={<Footer {...footerContent} />}>
       <div className="flex-shrink-0 flex justify-center">
         <SiteLogoLinked />
       </div>
