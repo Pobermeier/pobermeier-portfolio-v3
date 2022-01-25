@@ -3,6 +3,7 @@ import { NavigationLink, SocialMediaIcon } from "models/datoCMS";
 // components
 import SocialMediaIconLink from "components/Icons/SocialMediaIconLink";
 import FooterNavItem from "components/Footer/FooterNavItem";
+import NoSSR from "components/NoSSR/NoSSR";
 
 export interface FooterProps {
   copyrightText: string;
@@ -22,15 +23,21 @@ const Footer = ({ copyrightText, socialMediaIcons, navigationLinks }: FooterProp
           </ul>
         </nav>
         <ul className="mt-8 flex justify-center space-x-6">
-          {socialMediaIcons.map(({ id, name, url, reactIconIdentifier }) => (
-            <SocialMediaIconLink
-              key={id}
-              name={name}
-              url={url}
-              size="xl"
-              reactIconIdentifier={reactIconIdentifier}
-            />
-          ))}
+          {socialMediaIcons.map(({ id, name, url, reactIconIdentifier }) => {
+            const icon = (
+              <SocialMediaIconLink
+                key={id}
+                name={name}
+                url={url}
+                size="xl"
+                reactIconIdentifier={reactIconIdentifier}
+              />
+            );
+
+            if (reactIconIdentifier === "email") return <NoSSR>{icon}</NoSSR>;
+
+            return icon;
+          })}
         </ul>
         <p className="mt-8 text-center text-base text-gray-400">{copyrightText}</p>
       </div>
