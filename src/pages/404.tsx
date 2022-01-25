@@ -2,12 +2,10 @@
 import Button from "components/Buttons/Button";
 import SiteLogoLinked from "components/Icons/SiteLogoLinked";
 import Layout from "components/Layout/Layout";
-import Navbar from "components/Navigation/Navbar";
 import Footer from "components/Footer/Footer";
 // config
 import config from "config";
 // content
-import navbarContent from "content/navbar";
 import footerContent from "content/footer";
 
 const textContent = {

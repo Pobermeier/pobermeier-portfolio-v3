@@ -13,6 +13,8 @@ const Navbar = dynamic(() => import("components/Navigation/Navbar"));
 const CmsComponentMapper = dynamic(() => import("components/CMS/CmsComponentMapper"));
 const Footer = dynamic(() => import("components/Footer/Footer"));
 const Layout = dynamic(() => import("components/Layout/Layout"));
+// hooks
+import useReplaceHrefInAllMatchedLinks from "hooks/useReplaceHrefInLink";
 // graphql
 import { request } from "clients/datocms";
 import { GET_PAGE_DATA_QUERY } from "graphql/queries/getPageData";
@@ -38,6 +40,10 @@ type ExternalProps = {
 type Props = InternalProps & ExternalProps;
 
 const Page = ({ data, isPreview, deactivatePreviewMode, posts }: Props) => {
+  const { email, fakeEmail } = globalConfig.urls;
+
+  useReplaceHrefInAllMatchedLinks(fakeEmail, email);
+
   const { data: cmsData } = useQuerySubscription({
     enabled:
       typeof window !== "undefined" && Boolean(localStorage.getItem(PREVIEW_STORAGE_ITEM_NAME)),

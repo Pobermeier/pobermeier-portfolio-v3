@@ -10,6 +10,7 @@ import Layout from "components/Layout/Layout";
 import StaticContentBlock from "components/StaticContentBlock/StaticContentBlock";
 import Button from "components/Buttons/Button";
 import BlogPostMetaData from "components/Blog/BlogPostMetaData";
+import BlogPostHeaderImage from "components/Blog/BlogPostHeaderImage";
 const Navbar = dynamic(() => import("components/Navigation/Navbar"));
 const Footer = dynamic(() => import("components/Footer/Footer"));
 // graphql
@@ -49,7 +50,7 @@ const BlogPost = ({ data, isPreview, deactivatePreviewMode }: Props) => {
 
   const {
     site: { favicon },
-    blogPost: { title, content, seo, createdAt, author },
+    blogPost: { title, content, seo, createdAt, author, headerImage },
   } = postData as PostData;
 
   const metaTags = renderMetaTags([...seo, ...favicon]);
@@ -62,9 +63,10 @@ const BlogPost = ({ data, isPreview, deactivatePreviewMode }: Props) => {
       header={<Navbar {...navbarContent} />}
       footer={<Footer {...footerContent} />}
     >
-      <div className="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex justify-between mt-12">
-        <Button as="a" text="Back to Blog Posts" type="secondary" url="/blog" />
+      <div className="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex justify-between mt-8">
+        <Button as="a" text="Back to Blog Posts" type="secondary" size="xs" url="/blog" />
       </div>
+      <BlogPostHeaderImage imageData={headerImage.responsiveImage} />
       <StaticContentBlock text={content} title={title} />
       <div className="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex justify-end mt-12">
         <BlogPostMetaData

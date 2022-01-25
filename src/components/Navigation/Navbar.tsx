@@ -11,8 +11,10 @@ import SiteLogo from "components/Icons/SiteLogo";
 import SiteLogoLinked from "components/Icons/SiteLogoLinked";
 import DarkModeToggle from "components/Buttons/DarkModeToggle";
 import { CTAContainerProps } from "components/Buttons/CTAContainer";
+import NoSSR from "components/NoSSR/NoSSR";
 // utils
 import { noop } from "utils/utilFns";
+import config from "config";
 
 export interface NavbarProps {
   socialMediaIcons: SocialMediaIcon[];
@@ -36,15 +38,21 @@ const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProp
     ));
 
   const renderSocialMediaIcons = (size?: IconSize | undefined) =>
-    socialMediaIcons.map(({ id, name, url, reactIconIdentifier }) => (
-      <SocialMediaIconLink
-        key={id}
-        name={name}
-        url={url}
-        size={size}
-        reactIconIdentifier={reactIconIdentifier}
-      />
-    ));
+    socialMediaIcons.map(({ id, name, url, reactIconIdentifier }) => {
+      const icon = (
+        <SocialMediaIconLink
+          key={id}
+          name={name}
+          url={reactIconIdentifier === "email" ? config.urls.email : url}
+          size={size}
+          reactIconIdentifier={reactIconIdentifier}
+        />
+      );
+
+      if (reactIconIdentifier === "email") return <NoSSR>{icon}</NoSSR>;
+
+      return icon;
+    });
 
   const renderCallToActions = (onCloseCallback = noop, isFullWidth?: boolean) =>
     callToActions?.[0]?.callToActions?.map(

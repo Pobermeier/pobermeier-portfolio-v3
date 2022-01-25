@@ -48,6 +48,21 @@ const GET_BLOG_POST = gql`
       shortDescription
       slug
       title
+      headerImage {
+        responsiveImage {
+          alt
+          aspectRatio
+          base64
+          bgColor
+          height
+          sizes
+          src
+          srcSet
+          title
+          webpSrcSet
+          width
+        }
+      }
       image {
         responsiveImage {
           alt
