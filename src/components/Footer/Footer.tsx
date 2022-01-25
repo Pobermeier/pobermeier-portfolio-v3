@@ -11,6 +11,8 @@ export interface FooterProps {
   navigationLinks: NavigationLink[];
 }
 
+const currentYear = new Date().getFullYear();
+
 const Footer = ({ copyrightText, socialMediaIcons, navigationLinks }: FooterProps) => {
   return (
     <footer className="bg-gray-50 dark:bg-gray-900">
@@ -39,7 +41,9 @@ const Footer = ({ copyrightText, socialMediaIcons, navigationLinks }: FooterProp
             return icon;
           })}
         </ul>
-        <p className="mt-8 text-center text-base text-gray-400">{copyrightText}</p>
+        <p className="mt-8 text-center text-base text-gray-400">
+          ©{currentYear} {copyrightText}
+        </p>
       </div>
     </footer>
   );
