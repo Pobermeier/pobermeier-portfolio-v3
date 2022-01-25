@@ -1,6 +1,6 @@
 import { GetStaticPropsContext } from "next";
 import dynamic from "next/dynamic";
-import { useQuerySubscription, renderMetaTags, Image } from "react-datocms";
+import { useQuerySubscription, renderMetaTags } from "react-datocms";
 // types
 import { BlogPost as BlogPostType, SiteData } from "models/datoCMS";
 // constants
@@ -10,6 +10,7 @@ import Layout from "components/Layout/Layout";
 import StaticContentBlock from "components/StaticContentBlock/StaticContentBlock";
 import Button from "components/Buttons/Button";
 import BlogPostMetaData from "components/Blog/BlogPostMetaData";
+import BlogPostHeaderImage from "components/Blog/BlogPostHeaderImage";
 const Navbar = dynamic(() => import("components/Navigation/Navbar"));
 const Footer = dynamic(() => import("components/Footer/Footer"));
 // graphql
@@ -65,15 +66,7 @@ const BlogPost = ({ data, isPreview, deactivatePreviewMode }: Props) => {
       <div className="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex justify-between mt-8">
         <Button as="a" text="Back to Blog Posts" type="secondary" size="xs" url="/blog" />
       </div>
-      <div className="relative max-w-4xl w-full px-4 sm:px-6 lg:px-8 mx-auto mt-8">
-        {/* eslint-disable-next-line jsx-a11y/alt-text */}
-        <Image
-          layout="responsive"
-          objectFit="cover"
-          pictureClassName="w-full h-full object-cover rounded-xl"
-          data={headerImage.responsiveImage}
-        />
-      </div>
+      <BlogPostHeaderImage imageData={headerImage.responsiveImage} />
       <StaticContentBlock text={content} title={title} />
       <div className="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex justify-end mt-12">
         <BlogPostMetaData
