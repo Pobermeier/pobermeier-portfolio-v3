@@ -74,14 +74,7 @@ const ContactForm = ({ ctaButtonText, id }: Props) => {
           Phone Number
         </label>
         <div className="mt-1">
-          <input
-            id="tel"
-            name="tel"
-            type="tel"
-            autoComplete="off"
-            required
-            className={classNames.input}
-          />
+          <input id="tel" name="tel" type="tel" autoComplete="off" className={classNames.input} />
         </div>
       </div>
       <div className="sm:col-span-2">
