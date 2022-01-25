@@ -20,6 +20,7 @@ import { GET_ALL_PAGE_SLUGS_QUERY } from "graphql/queries/getAllPageSlugs";
 import { GET_ALL_BLOG_POSTS_QUERY } from "graphql/queries/getAllBlogPosts";
 // config
 import globalConfig from "config";
+import { useEffect } from "react";
 
 type AllBlogPostsData = {
   allBlogPosts: BlogPost[];
@@ -38,6 +39,16 @@ type ExternalProps = {
 type Props = InternalProps & ExternalProps;
 
 const Page = ({ data, isPreview, deactivatePreviewMode, posts }: Props) => {
+  useEffect(() => {
+    const allLinks = document.querySelectorAll("a");
+
+    allLinks.forEach((link) => {
+      if (link.href === globalConfig.urls.fakeEmail) {
+        link.href = globalConfig.urls.email;
+      }
+    });
+  }, []);
+
   const { data: cmsData } = useQuerySubscription({
     enabled:
       typeof window !== "undefined" && Boolean(localStorage.getItem(PREVIEW_STORAGE_ITEM_NAME)),
