@@ -182,4 +182,5 @@ export type BlogPost = {
   slug: string;
   title: string;
   image: Image;
+  headerImage: Image;
 };
