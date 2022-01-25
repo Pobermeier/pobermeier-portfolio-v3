@@ -13,6 +13,8 @@ const Navbar = dynamic(() => import("components/Navigation/Navbar"));
 const CmsComponentMapper = dynamic(() => import("components/CMS/CmsComponentMapper"));
 const Footer = dynamic(() => import("components/Footer/Footer"));
 const Layout = dynamic(() => import("components/Layout/Layout"));
+// hooks
+import useReplaceHrefInAllMatchedLinks from "hooks/useReplaceHrefInLink";
 // graphql
 import { request } from "clients/datocms";
 import { GET_PAGE_DATA_QUERY } from "graphql/queries/getPageData";
@@ -20,7 +22,6 @@ import { GET_ALL_PAGE_SLUGS_QUERY } from "graphql/queries/getAllPageSlugs";
 import { GET_ALL_BLOG_POSTS_QUERY } from "graphql/queries/getAllBlogPosts";
 // config
 import globalConfig from "config";
-import { useEffect } from "react";
 
 type AllBlogPostsData = {
   allBlogPosts: BlogPost[];
@@ -39,15 +40,9 @@ type ExternalProps = {
 type Props = InternalProps & ExternalProps;
 
 const Page = ({ data, isPreview, deactivatePreviewMode, posts }: Props) => {
-  useEffect(() => {
-    const allLinks = document.querySelectorAll("a");
+  const { email, fakeEmail } = globalConfig.urls;
 
-    allLinks.forEach((link) => {
-      if (link.href === globalConfig.urls.fakeEmail) {
-        link.href = globalConfig.urls.email;
-      }
-    });
-  }, []);
+  useReplaceHrefInAllMatchedLinks(fakeEmail, email);
 
   const { data: cmsData } = useQuerySubscription({
     enabled:
