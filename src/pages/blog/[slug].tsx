@@ -1,6 +1,6 @@
 import { GetStaticPropsContext } from "next";
 import dynamic from "next/dynamic";
-import { useQuerySubscription, renderMetaTags } from "react-datocms";
+import { useQuerySubscription, renderMetaTags, Image } from "react-datocms";
 // types
 import { BlogPost as BlogPostType, SiteData } from "models/datoCMS";
 // constants
@@ -49,7 +49,7 @@ const BlogPost = ({ data, isPreview, deactivatePreviewMode }: Props) => {
 
   const {
     site: { favicon },
-    blogPost: { title, content, seo, createdAt, author },
+    blogPost: { title, content, seo, createdAt, author, headerImage },
   } = postData as PostData;
 
   const metaTags = renderMetaTags([...seo, ...favicon]);
@@ -62,8 +62,17 @@ const BlogPost = ({ data, isPreview, deactivatePreviewMode }: Props) => {
       header={<Navbar {...navbarContent} />}
       footer={<Footer {...footerContent} />}
     >
-      <div className="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex justify-between mt-12">
-        <Button as="a" text="Back to Blog Posts" type="secondary" url="/blog" />
+      <div className="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex justify-between mt-8">
+        <Button as="a" text="Back to Blog Posts" type="secondary" size="xs" url="/blog" />
+      </div>
+      <div className="relative max-w-4xl w-full px-4 sm:px-6 lg:px-8 mx-auto mt-8">
+        {/* eslint-disable-next-line jsx-a11y/alt-text */}
+        <Image
+          layout="responsive"
+          objectFit="cover"
+          pictureClassName="w-full h-full object-cover rounded-xl"
+          data={headerImage.responsiveImage}
+        />
       </div>
       <StaticContentBlock text={content} title={title} />
       <div className="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex justify-end mt-12">
