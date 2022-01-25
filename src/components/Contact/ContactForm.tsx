@@ -19,6 +19,7 @@ const ContactForm = ({ ctaButtonText, id }: Props) => {
       data-netlify="true"
       action="/success"
       name={`contact-form-${id}`}
+      netlify-honeypot="tel"
       method="POST"
       className={classNames.form}
     >
@@ -63,6 +64,21 @@ const ContactForm = ({ ctaButtonText, id }: Props) => {
             name="email"
             type="email"
             autoComplete="email"
+            required
+            className={classNames.input}
+          />
+        </div>
+      </div>
+      <div className="sm:col-span-2 hidden">
+        <label htmlFor="tel" className={classNames.label}>
+          Phone Number
+        </label>
+        <div className="mt-1">
+          <input
+            id="tel"
+            name="tel"
+            type="tel"
+            autoComplete="off"
             required
             className={classNames.input}
           />
