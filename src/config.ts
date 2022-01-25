@@ -20,7 +20,8 @@ const config = {
     themeColor: "#111827",
   },
   urls: {
-    email: "office@patrickobermeier.at",
+    email: "mailto:office@patrickobermeier.at",
+    fakeEmail: "mailto:contact@patrickobermeier.dev",
     linkedIn: "https://www.linkedin.com/in/patrickobermeier/",
     github: "https://github.com/Pobermeier",
     twitter: "https://twitter.com/pobermeier87",
