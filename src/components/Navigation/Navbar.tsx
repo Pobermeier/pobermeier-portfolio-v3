@@ -49,7 +49,7 @@ const Navbar = ({ callToActions, navigationLinks, socialMediaIcons }: NavbarProp
         />
       );
 
-      if (reactIconIdentifier === "email") return <NoSSR>{icon}</NoSSR>;
+      if (reactIconIdentifier === "email") return <NoSSR key={id}>{icon}</NoSSR>;
 
       return icon;
     });
