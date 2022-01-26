@@ -38,7 +38,7 @@ const Footer = ({ copyrightText, socialMediaIcons, navigationLinks }: FooterProp
               />
             );
 
-            if (reactIconIdentifier === "email") return <NoSSR>{icon}</NoSSR>;
+            if (reactIconIdentifier === "email") return <NoSSR key={id}>{icon}</NoSSR>;
 
             return icon;
           })}
