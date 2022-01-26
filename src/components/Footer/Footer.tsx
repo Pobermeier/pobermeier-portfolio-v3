@@ -4,6 +4,8 @@ import { NavigationLink, SocialMediaIcon } from "models/datoCMS";
 import SocialMediaIconLink from "components/Icons/SocialMediaIconLink";
 import FooterNavItem from "components/Footer/FooterNavItem";
 import NoSSR from "components/NoSSR/NoSSR";
+// config
+import config from "config";
 
 export interface FooterProps {
   copyrightText: string;
@@ -30,7 +32,7 @@ const Footer = ({ copyrightText, socialMediaIcons, navigationLinks }: FooterProp
               <SocialMediaIconLink
                 key={id}
                 name={name}
-                url={url}
+                url={reactIconIdentifier === "email" ? config.urls.email : url}
                 size="xl"
                 reactIconIdentifier={reactIconIdentifier}
               />
