@@ -136,7 +136,7 @@
       {
         "tag": "meta",
         "content": null,
-        "attributes": { "property": "article:modified_time", "content": "2022-01-17T22:30:48Z" }
+        "attributes": { "property": "article:modified_time", "content": "2022-01-24T11:21:55Z" }
       },
       {
         "tag": "meta",
@@ -153,6 +153,13 @@
     "slug": "home",
     "navbar": {
       "socialMediaIcons": [
+        {
+          "id": "99884427",
+          "url": "mailto:contact@patrickobermeier.dev",
+          "name": "Email",
+          "reactIconIdentifier": "email",
+          "icon": { "url": "https://www.datocms-assets.com/60761/1641478157-icon_mail.svg" }
+        },
         {
           "id": "94031955",
           "url": "https://www.linkedin.com/in/patrickobermeier/",
@@ -177,7 +184,7 @@
       ],
       "navigationLinks": [
         { "id": "94458330", "isExternalLink": false, "title": "About", "url": "#about" },
-        { "id": "94458332", "isExternalLink": false, "title": "Contact", "url": "#contact" }
+        { "id": "99902435", "isExternalLink": false, "title": "Blog", "url": "/blog" }
       ],
       "callToActions": [
         {
@@ -189,6 +196,14 @@
               "isExternalLink": false,
               "linkUrl": "#portfolio",
               "title": "Portfolio"
+            },
+            {
+              "id": "99902438",
+              "icon": null,
+              "ctaType": "secondary",
+              "isExternalLink": false,
+              "linkUrl": "#contact",
+              "title": "Contact"
             }
           ]
         }
@@ -228,13 +243,11 @@
               },
               {
                 "id": "94032827",
-                "icon": {
-                  "url": "https://www.datocms-assets.com/60761/1641478154-icon_github.svg"
-                },
+                "icon": { "url": "https://www.datocms-assets.com/60761/1641478157-icon_mail.svg" },
                 "ctaType": "secondary",
-                "isExternalLink": true,
-                "linkUrl": "https://github.com/Pobermeier",
-                "title": "GitHub Profile"
+                "isExternalLink": false,
+                "linkUrl": "#contact",
+                "title": "Get In Touch"
               }
             ]
           }
@@ -1045,9 +1058,10 @@
       }
     ],
     "footer": {
-      "copyrightText": "© 2022 Patrick Obermeier. All rights reserved.",
+      "copyrightText": "Patrick Obermeier. All rights reserved.",
       "navigationLinks": [
         { "id": "94064251", "title": "/uses", "isExternalLink": false, "url": "/uses" },
+        { "id": "99902435", "title": "Blog", "isExternalLink": false, "url": "/blog" },
         {
           "id": "94064257",
           "title": "Privacy Notice",
@@ -1057,6 +1071,13 @@
         { "id": "94064259", "title": "Imprint", "isExternalLink": false, "url": "/imprint" }
       ],
       "socialMediaIcons": [
+        {
+          "id": "99884427",
+          "url": "mailto:contact@patrickobermeier.dev",
+          "name": "Email",
+          "reactIconIdentifier": "email",
+          "icon": { "url": "https://www.datocms-assets.com/60761/1641478157-icon_mail.svg" }
+        },
         {
           "id": "94031955",
           "url": "https://www.linkedin.com/in/patrickobermeier/",
