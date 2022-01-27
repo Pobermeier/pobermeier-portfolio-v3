@@ -2,11 +2,8 @@
 import Button from "components/Buttons/Button";
 import SiteLogoLinked from "components/Icons/SiteLogoLinked";
 import Layout from "components/Layout/Layout";
-import Footer from "components/Footer/Footer";
 // config
 import config from "config";
-// content
-import footerContent from "content/footer";
 
 const textContent = {
   title: "404 Page Not Found",
@@ -20,7 +17,7 @@ const NotFoundPage = () => {
   const { title, heading, subHeading } = textContent;
 
   return (
-    <Layout metaTags={metaTags} footer={<Footer {...footerContent} />}>
+    <Layout metaTags={metaTags}>
       <div className="flex-shrink-0 flex justify-center">
         <SiteLogoLinked />
       </div>

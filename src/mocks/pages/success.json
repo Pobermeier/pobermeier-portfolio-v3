@@ -150,6 +150,13 @@
     "navbar": {
       "socialMediaIcons": [
         {
+          "id": "99884427",
+          "url": "mailto:contact@patrickobermeier.dev",
+          "name": "Email",
+          "reactIconIdentifier": "email",
+          "icon": { "url": "https://www.datocms-assets.com/60761/1641478157-icon_mail.svg" }
+        },
+        {
           "id": "94031955",
           "url": "https://www.linkedin.com/in/patrickobermeier/",
           "name": "LinkedIn",
@@ -171,8 +178,32 @@
           "icon": { "url": "https://www.datocms-assets.com/60761/1641478154-icon_github.svg" }
         }
       ],
-      "navigationLinks": [],
-      "callToActions": []
+      "navigationLinks": [
+        { "id": "99902436", "isExternalLink": false, "title": "Home", "url": "/home" },
+        { "id": "99902435", "isExternalLink": false, "title": "Blog", "url": "/blog" }
+      ],
+      "callToActions": [
+        {
+          "callToActions": [
+            {
+              "id": "99903408",
+              "icon": { "url": "https://www.datocms-assets.com/60761/1642415316-icon_view.svg" },
+              "ctaType": "primary",
+              "isExternalLink": false,
+              "linkUrl": "/home#portfolio",
+              "title": "Portfolio"
+            },
+            {
+              "id": "100030637",
+              "icon": null,
+              "ctaType": "secondary",
+              "isExternalLink": false,
+              "linkUrl": "/#contact",
+              "title": "Contact"
+            }
+          ]
+        }
+      ]
     },
     "sections": [
       {
@@ -212,9 +243,10 @@
       }
     ],
     "footer": {
-      "copyrightText": "© 2022 Patrick Obermeier. All rights reserved.",
+      "copyrightText": "Patrick Obermeier. All rights reserved.",
       "navigationLinks": [
         { "id": "94064251", "title": "/uses", "isExternalLink": false, "url": "/uses" },
+        { "id": "99902435", "title": "Blog", "isExternalLink": false, "url": "/blog" },
         {
           "id": "94064257",
           "title": "Privacy Notice",
@@ -224,6 +256,13 @@
         { "id": "94064259", "title": "Imprint", "isExternalLink": false, "url": "/imprint" }
       ],
       "socialMediaIcons": [
+        {
+          "id": "99884427",
+          "url": "mailto:contact@patrickobermeier.dev",
+          "name": "Email",
+          "reactIconIdentifier": "email",
+          "icon": { "url": "https://www.datocms-assets.com/60761/1641478157-icon_mail.svg" }
+        },
         {
           "id": "94031955",
           "url": "https://www.linkedin.com/in/patrickobermeier/",

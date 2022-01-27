@@ -2,7 +2,7 @@ import { GetStaticPropsContext } from "next";
 import dynamic from "next/dynamic";
 import { useQuerySubscription, renderMetaTags } from "react-datocms";
 // types
-import { BlogPost as BlogPostType, SiteData } from "models/datoCMS";
+import { BlogPost as BlogPostType, PageData, SiteData } from "models/datoCMS";
 // constants
 import { isDev, PREVIEW_STORAGE_ITEM_NAME } from "Constants";
 // components
@@ -17,12 +17,10 @@ const Footer = dynamic(() => import("components/Footer/Footer"));
 import { request } from "clients/datocms";
 import { GET_ALL_BLOG_PAGES_SLUGS } from "graphql/queries/getAllBlogSlugs";
 import { GET_BLOG_POST } from "graphql/queries/getBlogPost";
-import navbarContent from "content/navbar";
-// content
-import footerContent from "content/footer";
 
 type PostData = {
   site: SiteData;
+  page: Pick<PageData, "footer" | "navbar">;
   blogPost: BlogPostType;
 };
 
@@ -50,6 +48,7 @@ const BlogPost = ({ data, isPreview, deactivatePreviewMode }: Props) => {
 
   const {
     site: { favicon },
+    page: { footer, navbar },
     blogPost: { title, content, seo, createdAt, author, headerImage },
   } = postData as PostData;
 
@@ -60,8 +59,8 @@ const BlogPost = ({ data, isPreview, deactivatePreviewMode }: Props) => {
       metaTags={metaTags}
       isPreview={isPreview}
       deactivatePreviewMode={deactivatePreviewMode}
-      header={<Navbar {...navbarContent} />}
-      footer={<Footer {...footerContent} />}
+      header={navbar && <Navbar {...navbar} />}
+      footer={footer && <Footer {...footer} />}
     >
       <div className="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex justify-between mt-8">
         <Button as="a" text="Back to Blog Posts" type="secondary" size="xs" url="/blog" />

@@ -14,6 +14,55 @@ const GET_BLOG_POST = gql`
         tag
       }
     }
+    page(filter: { slug: { eq: "blog" } }) {
+      navbar {
+        socialMediaIcons {
+          id
+          url
+          name
+          reactIconIdentifier
+          icon {
+            url
+          }
+        }
+        navigationLinks {
+          id
+          isExternalLink
+          title
+          url
+        }
+        callToActions {
+          callToActions {
+            id
+            icon {
+              url
+            }
+            ctaType
+            isExternalLink
+            linkUrl
+            title
+          }
+        }
+      }
+      footer {
+        copyrightText
+        navigationLinks {
+          id
+          title
+          isExternalLink
+          url
+        }
+        socialMediaIcons {
+          id
+          url
+          name
+          reactIconIdentifier
+          icon {
+            url
+          }
+        }
+      }
+    }
     blogPost(filter: { slug: { eq: $slug } }) {
       seo: _seoMetaTags {
         attributes
