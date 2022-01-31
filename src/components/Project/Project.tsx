@@ -7,6 +7,9 @@ import TechnologyLogo from "components/Icons/TechnologyLogo";
 import CardWithTopImage from "components/Card/CardWithTopImage";
 
 interface Props {
+  /**
+   * A single portfolio project
+   */
   project: ProjectType;
 }
 

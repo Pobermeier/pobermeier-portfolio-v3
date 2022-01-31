@@ -7,9 +7,14 @@ import BackgroundPattern from "components/BackgroundPattern/BackgroundPattern";
 import BackgroundPatternWrapper from "components/BackgroundPattern/BackgroundPatternWrapper";
 
 export interface TextWithImageProps {
+  /**
+   * Any kind of text string
+   */
   text: string;
+  /**
+   * An image that is rendered on the right side of the text
+   */
   image: {
-    url: string;
     responsiveImage: ResponsiveImage;
   };
 }

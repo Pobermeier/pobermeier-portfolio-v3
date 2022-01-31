@@ -8,8 +8,17 @@ import BlogPostCard from "components/Blog/BlogPostCard";
 import Grid from "components/Layout/Grid";
 
 export interface BlogSectionProps {
+  /**
+   * A collection of blog posts
+   */
   posts: BlogPost[];
+  /**
+   * Optional description
+   */
   description?: string;
+  /**
+   * Optional heading
+   */
   heading?: string;
 }
 

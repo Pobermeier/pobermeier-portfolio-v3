@@ -116,12 +116,13 @@ export type ResponsiveImage = {
   alt?: string;
   title?: string;
   base64: string;
+  bgColor?: string;
 };
 
 type SeoMetaTag = {
   tag: string;
   content: string | null;
-  attributes: { property?: string; content?: string } | null;
+  attributes: { property?: string; content?: string; name?: string } | null;
 };
 
 type FaviconMetaTag = {

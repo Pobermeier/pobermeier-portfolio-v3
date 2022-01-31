@@ -136,7 +136,7 @@
       {
         "tag": "meta",
         "content": null,
-        "attributes": { "property": "article:modified_time", "content": "2022-01-24T11:21:55Z" }
+        "attributes": { "property": "article:modified_time", "content": "2022-01-31T16:46:50Z" }
       },
       {
         "tag": "meta",
@@ -346,6 +346,11 @@
                 "id": "93840893",
                 "name": "Redux",
                 "logo": { "url": "https://www.datocms-assets.com/60761/1642341260-redux.svg" }
+              },
+              {
+                "id": "102449308",
+                "name": "GraphQL",
+                "logo": { "url": "https://www.datocms-assets.com/60761/1643647501-graphql.svg" }
               },
               {
                 "id": "93840884",
