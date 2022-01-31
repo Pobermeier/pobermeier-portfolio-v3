@@ -1,7 +1,8 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { noop } from "utils/utilFns";
-
+// components
 import PreviewBanner from "components/Banner/PreviewBanner";
+// utils
+import { noop } from "utils/utilFns";
 
 export default {
   title: "PreviewBanner",

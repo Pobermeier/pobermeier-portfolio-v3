@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-
+// components
 import Banner from "components/Banner/Banner";
 
 export default {
