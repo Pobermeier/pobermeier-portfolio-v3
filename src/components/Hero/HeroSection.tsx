@@ -2,19 +2,31 @@ import { Image } from "react-datocms";
 import ReactMarkdown from "react-markdown";
 // types
 import { ResponsiveImage } from "models/datoCMS";
+import { CTAContainerProps } from "components/Buttons/CTAContainer";
 // components
 import Button from "components/Buttons/Button";
 import BackgroundPatternWrapper from "components/BackgroundPattern/BackgroundPatternWrapper";
 import BackgroundPattern from "components/BackgroundPattern/BackgroundPattern";
-import { CTAContainerProps } from "components/Buttons/CTAContainer";
 
 export interface HeroSectionProps {
+  /**
+   * The main heading
+   */
   heading: string;
+  /**
+   * The sub-headline
+   */
   subHeading: string;
+  /**
+   * A background image which is rendered on the right-hand side
+   */
   backgroundImage: {
     url: string;
     responsiveImage: ResponsiveImage;
   };
+  /**
+   * A collection of CTA-buttons
+   */
   callToActions: CTAContainerProps[];
 }
 
