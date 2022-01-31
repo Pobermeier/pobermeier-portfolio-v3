@@ -14,6 +14,5 @@ const Template: ComponentStory<typeof TextWithImage> = (args) => <TextWithImage 
 export const Default = Template.bind({});
 
 Default.args = {
-  image: mockData.image,
-  text: mockData.text,
+  ...mockData,
 };

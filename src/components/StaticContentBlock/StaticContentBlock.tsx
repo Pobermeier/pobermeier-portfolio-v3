@@ -4,7 +4,13 @@ import BackgroundPattern from "components/BackgroundPattern/BackgroundPattern";
 import BackgroundPatternWrapper from "components/BackgroundPattern/BackgroundPatternWrapper";
 
 export type StaticContentBlockRecordProps = {
+  /**
+   * Optional heading
+   */
   title?: string;
+  /**
+   * Main text content - a string of text or markdown
+   */
   text: string;
 };
 
