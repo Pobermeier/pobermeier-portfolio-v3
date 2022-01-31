@@ -5,6 +5,9 @@ import ProjectComponent from "components/Project/Project";
 import Grid from "components/Layout/Grid";
 
 export interface ProjectGridProps {
+  /**
+   * A collection of portfolio projects
+   */
   projects: Project[];
 }
 
