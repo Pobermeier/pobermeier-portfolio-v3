@@ -6,6 +6,7 @@ import CardWithTopImage from "components/Card/CardWithTopImage";
 import BlogPostMetaData from "components/Blog/BlogPostMetaData";
 
 type Props = {
+  /** All data related to a blog post */
   post: BlogPost;
 };
 
