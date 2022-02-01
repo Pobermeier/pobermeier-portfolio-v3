@@ -5,7 +5,7 @@ import mockData from "components/TextWithImage/TextWithImage.mock";
 import TextWithImage from "components/TextWithImage/TextWithImage";
 
 export default {
-  title: "TextWithImage",
+  title: "Content/TextWithImage",
   component: TextWithImage,
 } as ComponentMeta<typeof TextWithImage>;
 
