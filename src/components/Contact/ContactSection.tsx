@@ -5,8 +5,17 @@ import ContactForm from "components/Contact/ContactForm";
 import ContentSection from "components/ContentSection/ContentSection";
 
 export interface ContactSectionProps {
+  /**
+   * The text that will be shown on the form submit button
+   */
   ctaButtonText?: string;
+  /**
+   * A short description rendered below the headline and before the form
+   */
   description?: string;
+  /**
+   * The heading that will be rendered above the form
+   */
   heading?: string;
   id: string;
 }
