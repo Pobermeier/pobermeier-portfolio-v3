@@ -3,6 +3,9 @@ import { Image, ResponsiveImageType } from "react-datocms";
 import Card from "components/Card/Card";
 
 type Props = {
+  /**
+   * Responsive image data
+   */
   imageData: ResponsiveImageType;
 };
 
