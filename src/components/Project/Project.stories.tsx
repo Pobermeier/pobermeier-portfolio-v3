@@ -5,7 +5,7 @@ import mockProjects from "components/Project/Project.mock";
 import Project from "components/Project/Project";
 
 export default {
-  title: "Project",
+  title: "Project/Project",
   component: Project,
 } as ComponentMeta<typeof Project>;
 
