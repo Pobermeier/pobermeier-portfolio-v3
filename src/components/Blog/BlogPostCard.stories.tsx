@@ -5,7 +5,7 @@ import mockData from "components/Blog/BlogPosts.mock";
 import BlogPostCard from "components/Blog/BlogPostCard";
 
 export default {
-  title: "BlogPostCard",
+  title: "Blog/BlogPostCard",
   component: BlogPostCard,
 } as ComponentMeta<typeof BlogPostCard>;
 
