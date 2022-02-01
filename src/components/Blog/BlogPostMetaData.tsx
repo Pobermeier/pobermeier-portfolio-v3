@@ -5,10 +5,25 @@ import { computeReadingTime } from "utils/words";
 import { getDateTimeString, getFormattedLocaleString } from "utils/dateFns";
 
 type Props = {
+  /**
+   * If true, the time to read is being computed and shown
+   */
   isShowingTimeToRead: boolean;
+  /**
+   * The name of the blog post author
+   */
   authorName: string;
+  /**
+   * The date on which the blog post was created
+   */
   postCreatedAtDate: string;
+  /**
+   * The blog post content as plain text or markdown
+   */
   content: string;
+  /**
+   * The data for the blog author image
+   */
   imageData: ResponsiveImageType;
 };
 
