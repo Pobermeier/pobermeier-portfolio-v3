@@ -3,9 +3,21 @@ import Link from "next/link";
 import { noop } from "utils/utilFns";
 
 interface Props {
+  /**
+   * Determines whether this anchor links to external content
+   */
   isExternalLink: boolean;
+  /**
+   * The visible link name
+   */
   name: string;
+  /**
+   * Optional click handler
+   */
   onClick?: () => void;
+  /**
+   * The url the nav-link is pointing towards
+   */
   url: string;
 }
 
