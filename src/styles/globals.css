@@ -106,6 +106,8 @@
 
   .technologies .logo-carousel .logo-carousel__inner .logo-carousel__item h4 {
     position: absolute;
+    left: -5%;
+    z-index: 98;
     opacity: 0;
     height: 0;
     font-size: 0.9rem;
