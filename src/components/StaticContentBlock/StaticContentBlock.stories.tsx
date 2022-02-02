@@ -5,7 +5,7 @@ import mockData from "components/StaticContentBlock/StaticContentBlock.mock";
 import StaticContentBlock from "components/StaticContentBlock/StaticContentBlock";
 
 export default {
-  title: "StaticContentBlock",
+  title: "Content/StaticContentBlock",
   component: StaticContentBlock,
 } as ComponentMeta<typeof StaticContentBlock>;
 

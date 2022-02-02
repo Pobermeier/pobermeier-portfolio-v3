@@ -2,14 +2,20 @@
 import { PdfFile } from "models/datoCMS";
 
 export type FullscreenPdfViewerProps = {
+  /**
+   * PDF-file metadata
+   */
   pdfFile: PdfFile;
+  /**
+   * The title of the PDF-document
+   */
   pdfTitle: string;
 };
 
 const FullscreenPdfViewer = ({ pdfFile, pdfTitle }: FullscreenPdfViewerProps) => {
   return (
     <>
-      <iframe src={pdfFile.url} id="pdf" title={pdfTitle} />
+      <iframe src={pdfFile.url} id="pdf" title={pdfTitle} className="w-full h-screen" />
       <style jsx>
         {`
           * {
@@ -18,11 +24,6 @@ const FullscreenPdfViewer = ({ pdfFile, pdfTitle }: FullscreenPdfViewerProps) =>
             border: 0;
             border-style: none;
             overflow: hidden;
-          }
-
-          #pdf {
-            width: 100vw;
-            height: 100vh;
           }
         `}
       </style>

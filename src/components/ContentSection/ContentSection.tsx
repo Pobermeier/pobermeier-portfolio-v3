@@ -8,9 +8,13 @@ import ContentSectionParagraph from "components/ContentSection//ContentSectionPa
 
 export interface ContentSectionProps {
   decorationElements?: ReactElement | ReactElement[];
+  /** An optional description of the content section, which is rendered after the heading and before the main content */
   description?: string;
+  /** A collection of allowed CMS components that can be passed as dynamic content */
   dynamicContent?: ContentSectionAllowedComponent[];
+  /** An optional heading rendered at the top of the component */
   heading?: string;
+  /** An optional id that is passed to the outermost element of the component */
   htmlId?: string;
 }
 

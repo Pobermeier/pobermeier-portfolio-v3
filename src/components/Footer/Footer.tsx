@@ -8,8 +8,17 @@ import NoSSR from "components/NoSSR/NoSSR";
 import config from "config";
 
 export interface FooterProps {
+  /**
+   * Some copyright text, displayed at the bottom of the footer
+   */
   copyrightText: string;
+  /**
+   * A collection of social media icons
+   */
   socialMediaIcons: SocialMediaIcon[];
+  /**
+   * A collection of navigation links
+   */
   navigationLinks: NavigationLink[];
 }
 

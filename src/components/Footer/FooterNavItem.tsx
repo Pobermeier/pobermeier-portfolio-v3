@@ -1,8 +1,17 @@
 import Link from "next/link";
 
 interface Props {
+  /**
+   * Determines whether this anchor links to external content
+   */
   isExternalLink: boolean;
+  /**
+   * The visible link name
+   */
   name: string;
+  /**
+   * The url the nav-link is pointing towards
+   */
   url: string;
 }
 

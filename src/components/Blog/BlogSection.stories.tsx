@@ -5,7 +5,7 @@ import mockData from "components/Blog/BlogPosts.mock";
 import BlogSection from "components/Blog/BlogSection";
 
 export default {
-  title: "BlogSection",
+  title: "Blog/BlogSection",
   component: BlogSection,
 } as ComponentMeta<typeof BlogSection>;
 

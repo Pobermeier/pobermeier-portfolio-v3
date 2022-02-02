@@ -17,8 +17,17 @@ import { noop } from "utils/utilFns";
 import config from "config";
 
 export interface NavbarProps {
+  /**
+   * A collection of social media icons
+   */
   socialMediaIcons: SocialMediaIcon[];
+  /**
+   * A collection of navigation links
+   */
   navigationLinks: NavigationLink[];
+  /**
+   * A collection of call to action buttons
+   */
   callToActions: CTAContainerProps[];
 }
 

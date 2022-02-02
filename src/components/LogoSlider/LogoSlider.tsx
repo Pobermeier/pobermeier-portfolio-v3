@@ -13,7 +13,13 @@ type TechnologyLogo = {
 };
 
 export interface LogoSliderProps {
+  /**
+   * Optional heading text displayed above the slider
+   */
   title?: string;
+  /**
+   * A collection of technology logos
+   */
   logos: TechnologyLogo[];
 }
 

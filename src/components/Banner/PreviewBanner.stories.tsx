@@ -5,7 +5,7 @@ import PreviewBanner from "components/Banner/PreviewBanner";
 import { noop } from "utils/utilFns";
 
 export default {
-  title: "PreviewBanner",
+  title: "Banner/PreviewBanner",
   component: PreviewBanner,
 } as ComponentMeta<typeof PreviewBanner>;
 

@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import DarkModeToggle from "components/Buttons/DarkModeToggle";
 
 export default {
-  title: "DarkModeToggle",
+  title: "Buttons/DarkModeToggle",
   component: DarkModeToggle,
 } as ComponentMeta<typeof DarkModeToggle>;
 

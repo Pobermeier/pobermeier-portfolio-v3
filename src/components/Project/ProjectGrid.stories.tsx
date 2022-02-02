@@ -5,7 +5,7 @@ import mockProjects from "components/Project/Project.mock";
 import ProjectGrid from "components/Project/ProjectGrid";
 
 export default {
-  title: "ProjectGrid",
+  title: "Project/ProjectGrid",
   component: ProjectGrid,
 } as ComponentMeta<typeof ProjectGrid>;
 

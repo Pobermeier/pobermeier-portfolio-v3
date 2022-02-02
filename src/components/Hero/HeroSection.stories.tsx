@@ -5,7 +5,7 @@ import mockData from "components/Hero/HeroSection.mock";
 import HeroSection from "components/Hero/HeroSection";
 
 export default {
-  title: "HeroSection",
+  title: "Content/HeroSection",
   component: HeroSection,
 } as ComponentMeta<typeof HeroSection>;
 
