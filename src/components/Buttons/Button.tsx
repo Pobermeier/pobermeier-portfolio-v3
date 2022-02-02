@@ -5,7 +5,7 @@ import classNames from "classnames";
 // utils
 import { noop } from "utils/utilFns";
 
-interface Props {
+export interface ButtonProps {
   ariaLabel?: string;
   as?: "button" | "a";
   className?: string;
@@ -33,7 +33,7 @@ const Button = ({
   type = "primary",
   url,
   onClick = noop,
-}: Props) => {
+}: ButtonProps) => {
   const Tag = as;
 
   const computedClassName = classNames(
